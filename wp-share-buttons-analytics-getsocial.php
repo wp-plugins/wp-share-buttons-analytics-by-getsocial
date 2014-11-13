@@ -74,6 +74,9 @@ function add_gs_elements($content) {
         //
         $groups = "";
         $buttons = "";
+
+        $custom_content = $content;
+        
         //
         if(!is_feed() && !is_home()):
             // exit($GS->getGroup());
