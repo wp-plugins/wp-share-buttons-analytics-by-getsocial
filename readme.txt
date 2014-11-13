@@ -1,10 +1,10 @@
 === WP Share Buttons & Analytics by GetSocial ===
-Contributors: GetSocial.io 
-Donate link: 
+Contributors: GetSocial.io
+Donate link:
 Tags: getsocial, sharing buttons, share button, social buttons, social sharing, ecommerce, social analytics, addthis, sharethis, woocommerce, e-commerce, AddThis, addtoany, admin, bookmark, bookmarking, bookmarks, button, Facebook, Facebook share, facebook like, google, google plus, google plus one, Like, linkedin, lockerz, pin, pin it, pinit, pinterest, plugin, plus 1, plus one, Post, posts, Reddit, save, seo, sexybookmarks, share, shareaholic, sharedaddy, sharethis, sharing, sidebar, sociable, social, social bookmarking, social bookmarks, statistics, stats, stumbleupon, tumblr, tweet, twitter, social media, social share, widget
 Requires at least: 3.0
 Tested up to: 4.0
-Stable tag: 1.6
+Stable tag: 0.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,8 +31,8 @@ Add social media share buttons, track sharing activity from main networks, incre
 
 <b>Posts Analytics</b>: See how many unique visitors, page views, and shares have taken place in each item.
 
-<b>Shares Analytics</b>: Understand which social sharing buttons are the most popular and how many leads they are generating. 
- 
+<b>Shares Analytics</b>: Understand which social sharing buttons are the most popular and how many leads they are generating.
+
 
 <h4>(3) Analyze your data: identify opportunities, influencers and conversions</h4>
 
@@ -49,10 +49,10 @@ A <b>comprehensive list of features</b> can be visited our [Feature List](http:/
 
 == Installation ==
 
-1. Extract 'WP-Share-Buttons-Analytics-getsocial.zip' into your WordPress plugins folder. 
+1. Extract 'WP-Share-Buttons-Analytics-getsocial.zip' into your WordPress plugins folder.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Access GetSocial on the left navigation column
-4. Create a GetSocial account or login into your existing account. 
+4. Create a GetSocial account or login into your existing account.
 5. Copy your GetSocial API key and paste into the GetSocial settings page in WordPress
 6. Select the desired positioning of your new sharing buttons
 7. Done!
@@ -83,7 +83,4 @@ Today, facebook buttons are buttons with counters. The data and value you get fr
 6. Sharing Analytics
 
 == Changelog ==
-1.0 - First release
-== Upgrade Notice ==
-1.0 - First release
-
+0.0.1 - First release
