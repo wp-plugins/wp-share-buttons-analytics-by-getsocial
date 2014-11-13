@@ -1,0 +1,372 @@
+.gs-clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+header {
+    background: #49bdef;
+    padding-left: 20px;
+    margin: 0 0 -5px -20px;
+    position: relative;
+}
+
+header h1, header h2 {
+    float: left;
+}
+
+header h1 {
+    display: inline;
+    border-right: 1px solid rgba(255,255,255,0.7);
+    padding: 20px 20px 20px 0
+}
+
+header h2 {
+    width: 60%;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    font-weight: 300;
+}
+
+.help {
+    background: white;
+    color: #49bdef;
+
+}
+
+.half {
+    width: 49%;
+    float: left;
+}
+
+
+#group-builder {
+    background: white;
+    height: 290px;
+    padding: 18px;
+}
+/* ======================================================================================== CTA & NOTIFICATIONS */
+
+
+.notification-bar{
+    font-weight: bold;
+    padding: 15px 21px;
+    margin-top: 10px;
+    /*margin: -6px 0 5px -20px;*/
+    position: relative;
+}
+.notification-bar p{
+    font-size: 15px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.notification-bar a, .notification-bar a:visited, header a{
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px 9px;
+    margin-top: -4px;
+    float: right;
+}
+/* red */
+.red-cta{
+    background: #EB504C;
+    text-shadow: 0px -1px 0px #be403c;
+}
+.red-cta a, .red-cta a:visited{
+    background: #b53430;
+}
+.red-cta a:focus, .red-cta a:hover{
+    background: #d63d38;
+}
+/* yellow */
+.yellow-cta{
+    background: #edac2c;
+    text-shadow: 0px -1px 0px #c79024;
+}
+.yellow-cta a, .yellow-cta a:visited{
+    background: #a97a1f;
+}
+.yellow-cta a:focus, .yellow-cta a:hover{
+    background: #d19726;
+}
+/* blue */
+.blue-cta{
+    background: #2ea2cc;
+    text-shadow: 0px -1px 0px #2789ad;
+}
+
+.blue-cta:hover {
+    background: #2f89bd;
+    color: white
+}
+
+.blue-cta a, .blue-cta a:visited{
+    background: #1a5d76;
+}
+
+.blue-cta a:focus, .blue-cta a:hover{
+    background: #227ea1;
+}
+/* green */
+.green-cta{
+    background: #83b93a;
+    text-shadow: 0px -1px 0px #237BA0;
+}
+.green-cta a, .green-cta a:visited{
+    background: #49bdef;
+}
+.green-cta a:focus, .green-cta a:hover{
+    background: #237BA0;
+}
+
+.cta.big {
+    font-size:
+}
+
+
+/* ======================================================================================== INFO */
+
+
+.intro{
+    margin: 20px 0 20px;
+}
+#steps{
+    width: 100%;
+    margin-bottom: 25px;
+}
+#steps thead{
+    text-align: left;
+}
+#steps h2{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+}
+.steps-list{
+    list-style: initial !important;
+    padding-left: 20px;
+}
+
+/* ======================================================================================== FORM */
+
+
+.form-table{
+    max-width: 700px;
+}
+.form-table th{
+    width: 150px;
+    text-align: right;
+}
+.form-table .submit{
+    padding-left: 10px;
+}
+#config-form .form-title{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 25px 0 10px -10px;
+    display: block;
+    cursor: initial;
+    pointer-events: none;
+}
+#config-form label {
+    padding-left: 10px;
+}
+
+label.onoffswitch-label {
+    padding-left: 0px !important;
+}
+
+.onoffswitch-inner:before {
+    background: #49C252 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+    margin-right: 10px;
+}
+
+.postbox-container fieldset {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+
+.postbox-container fieldset legend {
+    padding: 0 20px;
+}
+
+#reaction-preview {
+    text-align: center;
+}
+
+
+/* ======================================================================================== API KEY */
+
+
+#api-key-wrap, #api-key-field{
+    max-width: 650px;
+}
+#api-key-field{
+    box-sizing: border-box;
+    padding-right: 120px;
+}
+#api-key{
+    width: 100%;
+    box-shadow: 0px 1px 15px #e3e3e3;
+    padding: 10px 45px 10px 15px;
+}
+#api-key:hover, #api-key:focus{
+    border-color: #64a8de;
+}
+#api-key + .badge{
+    width: 17px;
+    height: 17px;
+    margin-top: -30px;
+    position: relative;
+    right: 15px;
+    float: right;
+}
+#save-api{
+    margin-top: -36px;
+    float: right;
+}
+
+
+/* ======================================================================================== BUTTONS POSITION */
+
+
+.radio-position{
+    font-size: 16px;
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+}
+.radio-position input{
+    display: none;
+}
+.radio-position img{
+    width: 75px;
+    margin-bottom: 10px;
+    display: block;
+}
+.radio-position > div{
+    border: 1px solid transparent;
+    padding: 15px;
+}
+.radio-position:active > div{
+    background: #ececec;
+}
+.radio-position:hover > div{
+    border-color: #ccc;
+}
+.radio-position input:checked + div{
+    color: #0074a2;
+    background: #fff;
+    font-weight: bold;
+    border-color: #ddd;
+}
+
+
+/* ======================================================================================== MEDIA QUERIES */
+
+
+@media (max-width: 1000px){
+    .notification-bar p{
+        display: block;
+    }
+    .notification-bar a{
+        margin-top: 10px;
+        float: none;
+        display: inline-block;
+    }
+}
+@media (max-width: 800px){
+    #api-key-field{
+        padding-right: 0;
+    }
+    #save-api{
+        float: none;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 600px){
+    .notification-bar a, .notification-bar p{
+        display: block;
+    }
+}
+
+.onoff {
+    display: none;
+}
+
+.onoffswitch {
+    display: inline-block
+}
+
+.bar-active {
+    /*text-align: right;*/
+    padding: 0 0 0 0;
+}
+
+.onoff_check {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.onoff_check span.label {
+    top: 5px;
+    left: -50px;
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute;
+    margin-right: 10px;
+}
+
+.cl {
+    clear: both;
+}
+
+p.submit {
+    padding: 0;
+    margin: 10 0 0 10px;
+    display: inline-block;
+    float: left;
+}
+
+a.gsbutton {
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 4px 10px;
+    float: right;
+    background: #83b93a;
+    border: 1px solid #719b2e;
+    text-shadow: 0px -1px 0px #66922b;
+    margin-top: 5px;
+}
+
+.custom-expressions {
+    width: 100%
+}
+
+.custom-expressions tr {
+    width: 100%;
+    background: white;
+    border: 1px solid #dbd5d9;
+}
+
+.custom-expressions td {
+    padding: 5px 10px;
+    font-size: 16px;
+}
