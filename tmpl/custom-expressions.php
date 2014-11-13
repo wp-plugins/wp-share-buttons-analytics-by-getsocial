@@ -11,7 +11,7 @@
     <?php settings_fields( 'getsocial-gs-custom-expressions' ); ?>
     <?php do_settings_sections( 'getsocial-gs-custom-expressions' ); ?>
 
-    <? if($has_custom_social_actions): ?>
+    <?php if($has_custom_social_actions): ?>
         <div class="bar-active">
             <a href="http://getsocial.io?source=wordpress" target="_blank" class="gsbutton" >New Custom Expression</a>
 
@@ -38,4 +38,4 @@
 
             <div class="cl"></div>
         </div>
-    <? endif; ?>
+    <?php endif; ?>

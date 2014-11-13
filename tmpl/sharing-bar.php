@@ -21,15 +21,16 @@
 
                                     <br/>
                                     <?php
-                                    $social = [
-                                        'fb' => ['facebook', 'facebook'],
-                                        'tw' => ['twitter', 'twitter'],
-                                        'pn' => ['pinterest', 'pinterest'],
-                                        'gp' => ['google', 'google-plus']
-                                    ];
+                                    $social = array(
+                                        'fb' => array('facebook', 'facebook'),
+                                        'tw' => array('twitter', 'twitter'),
+                                        'pn' => array('pinterest', 'pinterest'),
+                                        'gp' => array('google', 'google-plus')
+                                    ); ?>
 
-                                    foreach($social as $key => $value):
+                                    <?php foreach($social as $key => $value): ?>
 
+                                        <?php
                                         $name = $value[0];
                                         $icon = $value[1];
                                         $option_value_exists = !get_option('gs-group-network-'.$key);
@@ -44,9 +45,9 @@
                                                 rel="<?php echo $key ?>"
                                                 <?php echo ($option_value == 'Y' || !$option_value_exists ? 'checked' : '') ?>/>
 
-                                        <label for="gs-group-network-<?php echo $key ?>" class="no-padding"><? echo $name ?></label>
+                                        <label for="gs-group-network-<?php echo $key ?>" class="no-padding"><?php echo $name ?></label>
 
-                                    <? endforeach; ?>
+                                    <?php endforeach; ?>
                                 </div>
                             </div>
                         </div>
@@ -56,19 +57,19 @@
                                 <label class="form-title" for="gs-buttons-position">Choose Template</label>
 
                                 <?php
-                                    $templates = [
+                                    $templates = array(
                                         'Square Rounded' => 'gs-template1',
                                         'Rounded' => 'gs-template2',
                                         'Special' => 'gs-template3',
                                         'Basic Grey' => 'gs-template4',
                                         'Basic Black' => 'gs-template5'
-                                    ]
+                                    )
                                 ?>
 
                                 <select id="group_template" name="gs-group-template">
-                                <? foreach($templates as $name => $value): ?>
+                                <?php foreach($templates as $name => $value): ?>
                                     <option value="<?= $value ?>" <?= get_option('gs-group-template') == $value ? 'selected' : '' ?>><?= $name ?></option>
-                                <? endforeach; ?>
+                                <?php endforeach; ?>
                                 </select>
                             </div>
                         </div>
@@ -78,16 +79,16 @@
                                 <label class="form-title" for="gs-buttons-position">Choose Size</label>
 
                                 <?php
-                                    $sizes = [
+                                    $sizes = array(
                                         'Small' => 'gs-small',
                                         'Medium' => 'gs-medium',
                                         'Large' => 'gs-large'
-                                    ]
+                                    )
                                 ?>
                                 <select id="group_size" name="gs-group-size">
-                                <? foreach($sizes as $name => $value): ?>
-                                    <option value="<?= $value ?>" <?= get_option('gs-group-size') == $value || (!get_option('gs-group-size') && $value == 'gs-large') ? 'selected' : '' ?> ><?= $name ?></option>
-                                <? endforeach; ?>
+                                <?php foreach($sizes as $name => $value): ?>
+                                    <option value="<?php echo $value ?>" <?php echo get_option('gs-group-size') == $value || (!get_option('gs-group-size') && $value == 'gs-large') ? 'selected' : '' ?> ><?php echo $name ?></option>
+                                <?php endforeach; ?>
                                 </select>
                             </div>
                         </div>
