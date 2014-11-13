@@ -24,7 +24,7 @@ function gs_getsocial_menu(){
 }
 
 function slug_path($s) {
-    $main_slug = 'wp-share-buttons-analytics-getsocial/';
+    $main_slug = 'wp-share-buttons-analytics-by-getsocial/';
     return ($main_slug.$s);
 }
 
