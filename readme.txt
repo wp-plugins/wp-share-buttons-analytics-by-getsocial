@@ -8,44 +8,45 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add social media share buttons, track sharing activity from main networks, increase traffic, improve SEO and understand conversions.
+Add social media sharing buttons from the most popular social networks to track user activity, increase traffic, improve SEO, and understand conversions.
 
 == Description ==
-<b>WP Share Buttons & Analytics</b> by GetSocial is a free WordPress plugin that enables social sharing on your WordPress site. Not only it allows your visitors to share but also tracks how many shares they’re making and how those shares are generating traffic and conversions to your website. It works with main social networks.
+*GetSocial's* **Social Sharing Buttons & Analytics** is a free WordPress plugin that enables social sharing on your site.  These buttons not only allow your visitors to share your content, but they also track analytics such as how many shares have been made, how those shares are generating traffic to your site, and how that traffic is converting into more sales or subscriptions.
 
-<h4>Benefits for your WordPress Site (know more in [Why GetSocial](http://getsocial.io/why-getsocial "Why GetSocial”)):</h4>
+<h4>For more information check out <a href="http://getsocial.io/why-getsocial">Why GetSocial</a></h4>
 
+<h3>Why our users love this plug-in</h3>
 
-<h4>(1) Enable Social Sharing and Increase your SEO ranking</h4>
+<h4>1. Enable Social Sharing and Increase your SEO ranking</h4>
 
-<b>Custom Action Buttons</b>: Create your own sharing buttons, with a customized colorset and the label that fits your needs.
+* **Custom Action Buttons**: Create your own sharing buttons, with unique expressions, sizes, and colors.
 
-<b>Social Sharing Bar</b>: Define which social networks you want your users to share your content and start understanding their behavior.
+* **Social Sharing Bar**: Define which social networks you want your users to share your content and start understanding their behavior.
 
-<b>Classic Share Buttons</b>: Upgrade your existing social buttons with a simple snippet that will help you identify your traffic.
-
-
-<h4>(2) Collect user data through your share buttons</h4>
-
-<b>Users Analytics</b>: Get user data such as name, gender, location, and contact information and see how many visits, pageviews, and actions they have made.
-
-<b>Posts Analytics</b>: See how many unique visitors, page views, and shares have taken place in each item.
-
-<b>Shares Analytics</b>: Understand which social sharing buttons are the most popular and how many leads they are generating.
+* **Classic Share Buttons**: Upgrade your existing social buttons with a simple snippet that will help you identify your traffic.
 
 
-<h4>(3) Analyze your data: identify opportunities, influencers and conversions</h4>
+<h4>2. Collect user data through your share buttons</h4>
 
-<b>Opportunities</b>: Find out who is most active on each of your product pages and then contact them directly to close the sale.
+* **Users Analytics**: Get user data such as name, gender, location, and contact information and see how many visits, page views, and actions they have made.
 
-<b>Influencers</b>: See who is your most influential user and how many leads and conversions they generate for your page.
+* **Posts Analytics**: See how many unique visitors, page views, and shares have taken place in each item.
 
-<b>Conversions</b>: Identify which users, products, and sharing buttons are most effective for increasing conversions through social sharing.
+* **Shares Analytics**: Understand which social sharing buttons are the most popular and how many leads they are generating.
 
 
-<h4>(4) Engage: Export the data you collected and use it with your current marketing tools</h4>
+<h4>3. Analyze your data: identify opportunities, influencers, and conversions</h4>
 
-A <b>comprehensive list of features</b> can be visited our [Feature List](http://getsocial.io/features “Features”) and if you need any help just [Contact us](http://getsocial.io/contacts/stay-in-touch “Contact us”)
+* **Opportunities**: Find out who is most active on each of your product pages and then contact them directly to close the sale.
+
+* **Influencers**: See who is your most influential user and how many leads and conversions they generate for your page.
+
+* **Conversions**: Identify which users, products, and sharing buttons are most effective for increasing conversions through social sharing.
+
+
+<h4>4. Engage: Export the data you collected and use it with your current marketing tools</h4>
+
+A **comprehensive list of features** can be seen <a href="http://getsocial.io/features">here</a> and if you need any help or have any questions please feel free to <a href="http://getsocial.io/contacts/stay-in-touch">contact us</a> at any time.
 
 == Installation ==
 
@@ -55,23 +56,24 @@ A <b>comprehensive list of features</b> can be visited our [Feature List](http:/
 4. Create a GetSocial account or login into your existing account.
 5. Copy your GetSocial API key and paste into the GetSocial settings page in WordPress
 6. Select the desired positioning of your new sharing buttons
-7. Done!
 
-<h4>If to want to see the social sharing analytics for your site just go to your [GetSocial account](http://www.getsocial.io)</h4>
+Then you're done!
+
+<h4>To see the social sharing analytics for your site go to your <a href="http://www.getsocial.io">account</a>.</h4>
 
 == Frequently Asked Questions ==
 
 <h4> What is a custom action button? </h4>
-Custom action buttons are elements placed in your website that, when clicked, will create and automatically post contextualized facebook stories in your users timelines.
+Custom action buttons are elements placed in your website that, when clicked, will create and automatically post contextualized Facebook stories in your users' timelines.
 
 <h4> Which data will I get from your analytics? </h4>
-You'll have access to data regarding users, visits, shares and items (this can be products, news articles, blog posts, etc). You can even download the whole data set generated by GetSocial.
+You'll have access to data regarding users, visits, shares and items (this can be products, news articles, blog posts, etc).  You can even download the whole data set generated by GetSocial.
 
 <h4> What is social influence analysis?</h4>
-Our influence analysis allows our customers to understand how their website is being impacted per user, per item or per share. This means that it's simple to know, for instance, which user brought more new users into your website, which item brought in more pageviews or which share type generated more unique visitors
+Our influence analysis allows our clients to understand how their website is being impacted per user, per item, or per share. This means that it's simple to know, for instance, which user brought more new users into your website, which item brought in more page views or which share type generated more unique visitors
 
-<h4> Why should I use these buttons instead of facebook buttons? </h4>
-Today, facebook buttons are buttons with counters. The data and value you get from them are purely shares. However, you don’t know who’s sharing, what’s their behavior, you just know that 231 people shared something. GetSocial enables your users to express themselves in a unique way (defined by you) in a cramped sharing market and provides you an easy way to create and deploy your own buttons as well as social analytics that give you new info about your business.
+<h4> Why should I use these buttons instead of the ones provided on Facebook? </h4>
+Today, Facebook buttons are simply buttons with counters. The data and value you get from them are purely the number of shares. However, you don’t know who’s sharing or how they are interacting with your site.  Instead, you just know how many people shared something. GetSocial provides you with not only these buttons, but also the social analytics that will help you understand your users and grow your business.
 
 == Screenshots ==
 
@@ -84,7 +86,7 @@ Today, facebook buttons are buttons with counters. The data and value you get fr
 
 == Changelog ==
 
-=0.0.2=
+=1.0.0=
 * This version fixes a bug that prevented the use of the plugin. Please Upgrade.
 
 =0.0.1=
