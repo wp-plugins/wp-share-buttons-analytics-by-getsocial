@@ -1,4 +1,4 @@
-=== WP Share Buttons & Analytics by GetSocial ===
+=== WP Share Buttons & Analytics by *GetSocial* ===
 Contributors: GetSocial.io
 Donate link:
 Tags: getsocial, sharing buttons, share button, social buttons, social sharing, ecommerce, social analytics, addthis, sharethis, woocommerce, e-commerce, AddThis, addtoany, admin, bookmark, bookmarking, bookmarks, button, Facebook, Facebook share, facebook like, google, google plus, google plus one, Like, linkedin, lockerz, pin, pin it, pinit, pinterest, plugin, plus 1, plus one, Post, posts, Reddit, save, seo, sexybookmarks, share, shareaholic, sharedaddy, sharethis, sharing, sidebar, sociable, social, social bookmarking, social bookmarks, statistics, stats, stumbleupon, tumblr, tweet, twitter, social media, social share, widget
@@ -8,45 +8,44 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add social media sharing buttons from the most popular social networks to track user activity, increase traffic, improve SEO, and understand conversions.
+Add social media sharing buttons from the most popular networks to track user activity, increase traffic, improve SEO, and follow conversions.
 
 == Description ==
-*GetSocial's* **Social Sharing Buttons & Analytics** is a free WordPress plugin that enables social sharing on your site.  These buttons not only allow your visitors to share your content, but they also track analytics such as how many shares have been made, how those shares are generating traffic to your site, and how that traffic is converting into more sales or subscriptions.
+*GetSocial's* **Social Sharing Buttons & Analytics** is a free WordPress plugin that enables social sharing on your site.  These buttons not only allow your visitors to share your content, but they also track your users' actions such as how many shares have been made, how those shares are generating traffic to your site, and how that traffic is converting into more sales or subscriptions. 
 
 <h4>For more information check out <a href="http://getsocial.io/why-getsocial">Why GetSocial</a></h4>
 
-<h3>Why our users love this plug-in</h3>
+<h3>GetSocial works in four easy steps</h3>
+ 
 
 <h4>1. Enable Social Sharing and Increase your SEO ranking</h4>
+ 
 
 * **Custom Action Buttons**: Create your own sharing buttons, with unique expressions, sizes, and colors.
-
 * **Social Sharing Bar**: Define which social networks you want your users to share your content and start understanding their behavior.
-
 * **Classic Share Buttons**: Upgrade your existing social buttons with a simple snippet that will help you identify your traffic.
 
 
 <h4>2. Collect user data through your share buttons</h4>
+ 
 
 * **Users Analytics**: Get user data such as name, gender, location, and contact information and see how many visits, page views, and actions they have made.
-
 * **Posts Analytics**: See how many unique visitors, page views, and shares have taken place in each item.
-
 * **Shares Analytics**: Understand which social sharing buttons are the most popular and how many leads they are generating.
 
 
 <h4>3. Analyze your data: identify opportunities, influencers, and conversions</h4>
+ 
 
 * **Opportunities**: Find out who is most active on each of your product pages and then contact them directly to close the sale.
-
 * **Influencers**: See who is your most influential user and how many leads and conversions they generate for your page.
-
 * **Conversions**: Identify which users, products, and sharing buttons are most effective for increasing conversions through social sharing.
 
 
 <h4>4. Engage: Export the data you collected and use it with your current marketing tools</h4>
+ 
 
-A **comprehensive list of features** can be seen <a href="http://getsocial.io/features">here</a> and if you need any help or have any questions please feel free to <a href="http://getsocial.io/contacts/stay-in-touch">contact us</a> at any time.
+A comprehensive list of features can be seen <a href="http://getsocial.io/features">here</a> and if you need any help or have any questions please feel free to <a href="http://getsocial.io/contacts/stay-in-touch">contact us</a> at any time.
 
 == Installation ==
 
@@ -59,12 +58,12 @@ A **comprehensive list of features** can be seen <a href="http://getsocial.io/fe
 
 Then you're done!
 
-<h4>To see the social sharing analytics for your site go to your <a href="http://www.getsocial.io">account</a>.</h4>
+<h4>To see the social sharing analytics for your site go to your <a href="http://www.getsocial.io/customers/sign-in">account</a>.</h4>
 
 == Frequently Asked Questions ==
 
-<h4> What is a custom action button? </h4>
-Custom action buttons are elements placed in your website that, when clicked, will create and automatically post contextualized Facebook stories in your users' timelines.
+<h4> What is a custom action? </h4>
+A custom action is a button placed in your website that, when clicked, will create and post contextualized Facebook stories in your users' timelines.
 
 <h4> Which data will I get from your analytics? </h4>
 You'll have access to data regarding users, visits, shares and items (this can be products, news articles, blog posts, etc).  You can even download the whole data set generated by GetSocial.
@@ -77,17 +76,20 @@ Today, Facebook buttons are simply buttons with counters. The data and value you
 
 == Screenshots ==
 
-1. Sharing Buttons
-2. Custom Actions Creation
-3. Sharing Dashboard
-4. User Analytics
-5. Post Analytics
-6. Sharing Analytics
+1. Classic Shares
+2. Sharing Bar
+3. Custom Sharing Buttons
+4. Sharing Dashboard
+5. User Data
+6. Item Data
+7. Shares Data
 
 == Changelog ==
 
-=1.0.0=
-* This version fixes a bug that prevented the use of the plugin. Please Upgrade.
+**0.0.2**
 
-=0.0.1=
-* First release
+ - This version fixes a bug that prevented the use of the plugin. Please Upgrade.
+
+**0.0.1**
+
+ - First release
