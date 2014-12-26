@@ -4,7 +4,7 @@ Donate link:
 Tags: getsocial, sharing buttons, share button, social buttons, social sharing, ecommerce, social analytics, addthis, sharethis, woocommerce, e-commerce, AddThis, addtoany, admin, bookmark, bookmarking, bookmarks, button, Facebook, Facebook share, facebook like, google, google plus, google plus one, Like, linkedin, lockerz, pin, pin it, pinit, pinterest, plugin, plus 1, plus one, Post, posts, Reddit, save, seo, sexybookmarks, share, shareaholic, sharedaddy, sharethis, sharing, sidebar, sociable, social, social bookmarking, social bookmarks, statistics, stats, stumbleupon, tumblr, tweet, twitter, social media, social share, widget
 Requires at least: 3.0
 Tested up to: 4.0
-Stable tag: 1.0.2
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -86,7 +86,7 @@ Today, Facebook buttons are simply buttons with counters. The data and value you
 
 == Changelog ==
 
-**1.0.2**
+**1.1**
 
 - Create account without leaving the plugin
 - Add Floating Sharing Bar
