@@ -14,7 +14,8 @@
             //     'file' => 'native-bar'
             // ),
             // 'custom expressions' => array(
-            //     'file' => 'custom-expressions'
+            //     'file' => 'custom-expressions',
+            //     'active' => (get_option('gs-custom-expression-active') == '1'),
             // ),
             // 'url tracking' => array(
             //     'file' => 'url tracking'
@@ -32,7 +33,7 @@
             <? if($settings['active']): ?>
                 <div class="app-status done"><i class="fa fa-check"></i></div>
             <? endif; ?>
-            <img src="http://dummyimage.com/290x230/fff/ccc.png&amp;text=<?echo $app ?>" alt="">
+            <img src="<? echo plugins_url( '../images/'.$settings['file'].'.png', __FILE__ ) ?>" alt="">
             <div class="app-link-buttons app-type-edit">
                 <a href="admin.php?page=<? echo slug_path('init.php&tab='.$settings['file']) ?>">
 

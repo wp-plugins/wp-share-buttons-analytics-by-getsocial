@@ -1,8 +1,11 @@
 <?php
 
 class GS {
-    private $gs_url = "http://api.at.getsocial.io/";
+    private $gs_url = "http://api.at.getsocial.io";
     private $api_url = "http://getsocial.io/api/v1/";
+
+    // private $gs_url = "http://localhost:3001";
+    // private $api_url = "http://localhotst:3000/api/v1/";
 
     function __construct($api_key, $identifier, $elements, $lang){
         $this->api_key = $api_key;

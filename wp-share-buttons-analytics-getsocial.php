@@ -3,7 +3,7 @@
  * Plugin Name:  WP Share Buttons & Analytics by GetSocial
  * Plugin URI: http://getsocial.io
  * Description: A brief description of the Plugin.
- * Version: 1.1
+ * Version: 1.0.0
  * Author: Getsocial, S.A.
  * Author URI: http://getsocial.io
  * License: A "Slug" license name e.g. GPL2
