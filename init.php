@@ -25,7 +25,7 @@
                     </dl>
 
                     <p class="create-account">
-                        <a href="<?php echo $GETSOCIAL_URL ?>/api/v1/sites/create?source=wordpress&amp;email=<?php echo get_option('admin_email') ?>&amp;url=<?php echo get_option('siteurl') ?>" class="button button-primary create-gs-account">
+                        <a href="<?php echo $GS->getGSAccount() ?>/api/v1/sites/create?source=wordpress&amp;email=<?php echo get_option('admin_email') ?>&amp;url=<?php echo get_option('siteurl') ?>" class="button button-primary create-gs-account">
                             Get my API KEY!
                         </a>
                     </p>

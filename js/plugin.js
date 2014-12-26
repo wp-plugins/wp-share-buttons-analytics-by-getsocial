@@ -32,7 +32,6 @@ jQuery(function($) {
 
       $.get(graph_api, function(data){
           $.each(['total_visits', 'total_shares', 'total_leads'], function(i,stat){
-              console.log(stat);
               jQuery('.'+stat).html(data[stat]);
           });
 

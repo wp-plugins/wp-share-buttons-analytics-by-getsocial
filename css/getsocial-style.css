@@ -160,15 +160,16 @@ header h2 {
     color: white;
     text-align: center;
 }
-/*.notification-bar a, .notification-bar a:visited, header a{
+.notification-bar a, .notification-bar a:visited, header a{
     font-size: 13px;
-    color: #fff;
+    color: gray;
+    background: white;
     text-decoration: none;
     border-radius: 3px;
     padding: 5px 9px;
     margin-top: -4px;
     float: right;
-}*/
+}
 
 /* red */
 .red-cta{
@@ -185,7 +186,7 @@ header h2 {
     background: #edac2c;
 }
 .yellow-cta a, .yellow-cta a:visited{
-    background: #a97a1f;
+    background: white;
 }
 .yellow-cta a:focus, .yellow-cta a:hover{
     background: #d19726;
@@ -335,6 +336,11 @@ form {
     overflow: hidden;
     border-radius: 4px;
     margin-bottom: 20px;
+}
+
+.form-content h4 {
+    margin: 3px;
+    padding: 5px 15px;
 }
 
 .form-content > * {

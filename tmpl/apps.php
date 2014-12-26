@@ -13,10 +13,10 @@
             // 'native bar' => array(
             //     'file' => 'native-bar'
             // ),
-            // 'custom expressions' => array(
-            //     'file' => 'custom-expressions',
-            //     'active' => (get_option('gs-custom-expression-active') == '1'),
-            // ),
+            'custom expressions' => array(
+                'file' => 'custom-expressions',
+                'active' => (get_option('gs-custom-expression-active') == '1'),
+            ),
             // 'url tracking' => array(
             //     'file' => 'url tracking'
             // ),

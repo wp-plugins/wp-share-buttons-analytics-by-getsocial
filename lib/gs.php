@@ -2,10 +2,12 @@
 
 class GS {
     private $gs_url = "http://api.at.getsocial.io";
+    private $gs_account = "http://getsocial.io/";
     private $api_url = "http://getsocial.io/api/v1/";
 
-    // private $gs_url = "http://localhost:3001";
-    // private $api_url = "http://localhotst:3000/api/v1/";
+    // private $gs_url = "//localhost:3001";
+    // private $gs_account = "http://localhost:3000/";
+    // private $api_url = "http://localhost:3000/api/v1/";
 
     function __construct($api_key, $identifier, $elements, $lang){
         $this->api_key = $api_key;
@@ -48,7 +50,7 @@ class GS {
         if($this->api_key != ''):
             return $this->api('sites/'.$this->api_key);
         else:
-            return '3';
+            return null;
         endif;
     }
 
@@ -61,7 +63,6 @@ class GS {
     }
 
     function save($site_info){
-        print_r($site_info);
         update_option('gs-identifier', $site_info->identifier);
         update_option('gs-elements', json_encode($site_info->elements));
     }
@@ -71,17 +72,17 @@ class GS {
         //     return true;
         // endif;
 
-        $site = $this->getSite();
-
-        $needs_update = $site == null ? '2' : $site == '3' ? '3' : '0';
-
-        if($site != null && $needs_update != '3'):
-            $needs_update = (json_encode($site->elements) != get_option('gs-elements')) ? '1' : '0';
-
-            update_option('gs-needs-update', $needs_update);
-        endif;
-
-        return $needs_update;
+        // $site = $this->getSite();
+        //
+        // $needs_update = $site == null ? '2' : $site == '3' ? '3' : '0';
+        //
+        // if($site != null && $needs_update != '3'):
+        //     $needs_update = (json_encode($site->elements) != get_option('gs-elements')) ? '1' : '0';
+        //
+        //     update_option('gs-needs-update', $needs_update);
+        // endif;
+        //
+        // return $needs_update;
     }
 
     function getLib(){
@@ -182,6 +183,10 @@ EOF;
 
         return $code;
 
+    }
+
+    function getGSAccount(){
+        return $this->gs_account;
     }
 
 }

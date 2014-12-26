@@ -3,7 +3,7 @@ if ( !current_user_can( 'manage_options' ) )  {
     wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
 }
 
-$GETSOCIAL_URL = 'http://getsocial.io';
+// $GETSOCIAL_URL = 'http://getsocial.io';
 // $GETSOCIAL_URL = 'http://localhost:3000';
 
 $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -13,9 +13,9 @@ $GS = new GS(   get_option('gs-api-key'),
                 get_option('gs-elements'),
                 get_option('gs-lang'));
 
-if(isset($_GET["refresh"]) && $GS->needs_update()):
-    $site_info = $GS->refreshSite();
-endif;
+// if(isset($_GET["refresh"]) && $GS->needs_update()):
+$site_info = $GS->refreshSite();
+// endif;
 
 $needs_update = $GS->needs_update();
 
