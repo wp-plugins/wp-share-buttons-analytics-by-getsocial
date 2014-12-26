@@ -5,7 +5,7 @@
 }
 
 header {
-    background: #49bdef;
+    background: #2481b1;
     padding-left: 20px;
     margin: 0 0 -5px -20px;
     position: relative;
@@ -18,27 +18,128 @@ header h1, header h2 {
 header h1 {
     display: inline;
     border-right: 1px solid rgba(255,255,255,0.7);
-    padding: 20px 20px 20px 0
+    padding: 20px 0px;
+    width: 170px;
 }
 
 header h2 {
-    width: 60%;
+    width: 680px;
     color: white;
-    font-size: 16px;
+    font-size: 16px !important;
     padding: 20px;
     font-weight: 300;
 }
 
-.help {
-    background: white;
-    color: #49bdef;
+.wrap h2 {
+    color: #999999;
+    padding: 20px 0px;
+    border-bottom: 1px solid #e1e1e1;
+}
 
+.wrap h2 i {
+    margin-right: 8px;
+}
+
+/***************** TOP NAV **********************/
+
+.top-nav {
+    padding: 12px 0;
+    margin-left: -20px;
+    background: #444;
+    text-align: right;
+}
+
+.top-nav a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: white;
+    display: inline-block;
+}
+
+.top-nav a:focus {
+    outline: none;
+    border: 0;
+    box-shadow: none;
+}
+
+
+
+/***********************************************/
+
+.wrap, .wrap-header {
+    width: 900px;
+    margin: 0 auto;
 }
 
 .half {
     width: 49%;
     float: left;
 }
+
+/*************** APP LIST *****************/
+
+.app-list {
+    margin-top: 20px
+}
+
+.app-wrapper {
+    width: 290px;
+    margin: 20px 12px 0 0;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+.app-wrapper img {
+    height: 230px;
+}
+
+.app-wrapper:nth-child(3n) {
+    margin-rigth: 0px;
+}
+
+.app-link {
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+}
+
+.app-link-buttons a {
+    color: #fff;
+    background: #8db13d;
+    text-decoration: none;
+    padding: 10px 0px;
+    margin-top: -4px;
+    width: 290px;
+    display: inline-block;
+    text-align: center;
+}
+
+.app-status {
+    font-size: 30px;
+    border-style: solid;
+    position: absolute;
+    color: white;
+    font-style: normal;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 6px 2px 4px 6px;
+    border-radius: 100%;
+    -webkit-animation: rotate-in 750ms ease-in-out;
+    animation: rotate-in 750ms ease-in-out;
+    text-align: center;
+}
+
+.app-status.done {
+    background: rgba(160, 200, 72, 0.65);
+    border-color: #9bc048;
+}
+
+/***********************************************/
 
 
 #group-builder {
@@ -50,20 +151,16 @@ header h2 {
 
 
 .notification-bar{
-    font-weight: bold;
+    font-weight: normal;
     padding: 15px 21px;
     margin-top: 10px;
     /*margin: -6px 0 5px -20px;*/
     position: relative;
+    font-size: 16px;
+    color: white;
+    text-align: center;
 }
-.notification-bar p{
-    font-size: 15px;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-.notification-bar a, .notification-bar a:visited, header a{
+/*.notification-bar a, .notification-bar a:visited, header a{
     font-size: 13px;
     color: #fff;
     text-decoration: none;
@@ -71,11 +168,11 @@ header h2 {
     padding: 5px 9px;
     margin-top: -4px;
     float: right;
-}
+}*/
+
 /* red */
 .red-cta{
     background: #EB504C;
-    text-shadow: 0px -1px 0px #be403c;
 }
 .red-cta a, .red-cta a:visited{
     background: #b53430;
@@ -86,7 +183,6 @@ header h2 {
 /* yellow */
 .yellow-cta{
     background: #edac2c;
-    text-shadow: 0px -1px 0px #c79024;
 }
 .yellow-cta a, .yellow-cta a:visited{
     background: #a97a1f;
@@ -97,7 +193,6 @@ header h2 {
 /* blue */
 .blue-cta{
     background: #2ea2cc;
-    text-shadow: 0px -1px 0px #2789ad;
 }
 
 .blue-cta:hover {
@@ -115,7 +210,6 @@ header h2 {
 /* green */
 .green-cta{
     background: #83b93a;
-    text-shadow: 0px -1px 0px #237BA0;
 }
 .green-cta a, .green-cta a:visited{
     background: #49bdef;
@@ -137,11 +231,51 @@ header h2 {
 }
 #steps{
     width: 100%;
-    margin-bottom: 25px;
+    margin: 25px 0;
 }
-#steps thead{
-    text-align: left;
+#steps .step {
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
 }
+
+#steps .info {
+    width: 600px;
+    margin: 50px auto 0px;
+    /*border: 1px solid lightgray;*/
+}
+
+#steps .info dl {
+    margin: 0 auto;
+    font-size: 16px
+}
+
+#steps .info dt {
+    width: 108px;
+    display: inline-block;
+    background: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    border-right: 0px solid white;
+    text-align: right;
+    padding: 10px 20px 10px 10px;
+    float: left;
+}
+
+#steps .info dd {
+    width: 440px;
+    display: inline-block;
+    border: 1px solid #f0f0f0;
+    border-left: 0px solid white;
+    padding: 10px;
+    float: left;
+    margin: 0;
+}
+
+#steps .create-account {
+    margin-top: 50px;
+    text-align: center;
+}
+
 #steps h2{
     font-size: 17px;
     font-weight: 600;
@@ -152,127 +286,6 @@ header h2 {
 .steps-list{
     list-style: initial !important;
     padding-left: 20px;
-}
-
-/* ======================================================================================== FORM */
-
-
-.form-table{
-    max-width: 700px;
-}
-.form-table th{
-    width: 150px;
-    text-align: right;
-}
-.form-table .submit{
-    padding-left: 10px;
-}
-#config-form .form-title{
-    font-size: 14px;
-    font-weight: bold;
-    margin: 25px 0 10px -10px;
-    display: block;
-    cursor: initial;
-    pointer-events: none;
-}
-#config-form label {
-    padding-left: 10px;
-}
-
-label.onoffswitch-label {
-    padding-left: 0px !important;
-}
-
-.onoffswitch-inner:before {
-    background: #49C252 !important;
-}
-
-.no-padding {
-    padding: 0 !important;
-    margin-right: 10px;
-}
-
-.postbox-container fieldset {
-    width: 75%;
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid lightgray;
-}
-
-.postbox-container fieldset legend {
-    padding: 0 20px;
-}
-
-#reaction-preview {
-    text-align: center;
-}
-
-
-/* ======================================================================================== API KEY */
-
-
-#api-key-wrap, #api-key-field{
-    max-width: 650px;
-}
-#api-key-field{
-    box-sizing: border-box;
-    padding-right: 120px;
-}
-#api-key{
-    width: 100%;
-    box-shadow: 0px 1px 15px #e3e3e3;
-    padding: 10px 45px 10px 15px;
-}
-#api-key:hover, #api-key:focus{
-    border-color: #64a8de;
-}
-#api-key + .badge{
-    width: 17px;
-    height: 17px;
-    margin-top: -30px;
-    position: relative;
-    right: 15px;
-    float: right;
-}
-#save-api{
-    margin-top: -36px;
-    float: right;
-}
-
-
-/* ======================================================================================== BUTTONS POSITION */
-
-
-.radio-position{
-    font-size: 16px;
-    float: left;
-    text-align: center;
-    margin-right: 20px;
-}
-.radio-position input{
-    display: none;
-}
-.radio-position img{
-    width: 75px;
-    margin-bottom: 10px;
-    display: block;
-}
-.radio-position > div{
-    border: 1px solid transparent;
-    padding: 15px;
-}
-.radio-position:active > div{
-    background: #ececec;
-}
-.radio-position:hover > div{
-    border-color: #ccc;
-}
-.radio-position input:checked + div{
-    color: #0074a2;
-    background: #fff;
-    font-weight: bold;
-    border-color: #ddd;
 }
 
 
@@ -304,69 +317,101 @@ label.onoffswitch-label {
     }
 }
 
-.onoff {
-    display: none;
-}
-
-.onoffswitch {
-    display: inline-block
-}
-
-.bar-active {
-    /*text-align: right;*/
-    padding: 0 0 0 0;
-}
-
-.onoff_check {
-    position: relative;
-    display: inline-block;
-    margin-left: 50px;
-}
-
-.onoff_check span.label {
-    top: 5px;
-    left: -50px;
-    font-weight: bold;
-    font-size: 14px;
-    position: absolute;
-    margin-right: 10px;
-}
+/*********************************************/
 
 .cl {
     clear: both;
 }
 
-p.submit {
-    padding: 0;
-    margin: 10 0 0 10px;
-    display: inline-block;
+/************************ FORMS ******************/
+
+form {
+    margin-top: 30px;
+}
+
+.form-content {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.form-content > * {
+    padding: 20px 15px;
+}
+
+.form-content label.control {
+    width: 15%;
+    padding-right: 2%;
+    margin-right: 5%;
+    font-weight: bold;
+    text-align: right;
     float: left;
+    border-right: 1px solid #e1e1e1;
+    min-height: 34px;
 }
 
-a.gsbutton {
-    font-size: 13px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
-    padding: 4px 10px;
-    float: right;
-    background: #83b93a;
-    border: 1px solid #719b2e;
-    text-shadow: 0px -1px 0px #66922b;
-    margin-top: 5px;
+.form-content label.control.active {
+    background-color: #c6e7ce;
 }
 
-.custom-expressions {
-    width: 100%
+.form-content .with-inputs-label label {
+    margin-right: 15px;
 }
 
-.custom-expressions tr {
-    width: 100%;
-    background: white;
-    border: 1px solid #dbd5d9;
-}
-
-.custom-expressions td {
+.form-content input[type=text] {
+    width: 70%;
     padding: 5px 10px;
-    font-size: 16px;
+    border-radius: 5px;
+}
+
+.editor-preview {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+/************************ SOCIAL BAR ******************/
+
+
+
+/************************ ICONS ***********************/
+
+i.fa {
+    margin-right: 4px
+}
+
+/************************ GRAPHS **********************/
+
+.graphs {
+    margin-bottom: 40px;
+}
+
+.graph:last-child {
+    margin-right: 0px;
+}
+
+.graph {
+    width: 290px;
+    margin: 20px 12px 0 0;
+    float: left;
+    background: white;
+    border: 1px solid #e1e1e1;
+}
+
+.graph h3 {
+    text-align: center;
+    font-size: 50px;
+    color: #808080;
+}
+
+.graph h4 {
+    padding-left: 10px;
+    font-size: 20px;
+    color: #b3b3b3;
+    text-align: left;
+}
+
+.graph h4 i {
+    margin-right: 12px;
 }

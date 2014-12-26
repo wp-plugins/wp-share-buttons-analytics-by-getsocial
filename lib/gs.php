@@ -29,6 +29,10 @@ class GS {
         }
     }
 
+    function api_url($path){
+        return $this->api_url.$path;
+    }
+
     function getElements(){
         return json_decode($this->elements,true);
     }
@@ -54,6 +58,7 @@ class GS {
     }
 
     function save($site_info){
+        print_r($site_info);
         update_option('gs-identifier', $site_info->identifier);
         update_option('gs-elements', json_encode($site_info->elements));
     }
@@ -115,6 +120,7 @@ EOF;
         $template = get_option('gs-group-template');
         $size = get_option('gs-group-size');
         $counter = get_option('gs-group-counter') == 'Y' ? 'true' : 'false';
+        $position = get_option('gs-group-position');
 
         $ntw_fb = get_option('gs-group-network-fb');
         $ntw_tw = get_option('gs-group-network-tw');
@@ -134,6 +140,40 @@ EOF;
     data-template="$template:$size"
     data-networks="$networks"
     data-counter="$counter"
+    data-url="$permalink"></div>
+EOF;
+
+        return $code;
+
+    }
+
+    function getFloatingBar(){
+        $permalink = esc_url( get_permalink() );
+        $template = get_option('gs-floating-template');
+        $size = get_option('gs-floating-size');
+        $counter = get_option('gs-floating-counter') == 'Y' ? 'true' : 'false';
+        $position = get_option('gs-floating-position');
+        $floating = ($position == '1' ? 'right' : 'left');
+
+        $ntw_fb = get_option('gs-floating-network-fb');
+        $ntw_tw = get_option('gs-floating-network-tw');
+        $ntw_pn = get_option('gs-floating-network-pn');
+        $ntw_gp = get_option('gs-floating-network-gp');
+
+        $networks = '';
+        $networks_available = array('fb', 'tw', 'pn', 'gp');
+        foreach($networks_available as $nw):
+            if(get_option('gs-floating-network-'.$nw) == 'Y'):
+                $networks .= ( $networks == '' ? $nw : ','.$nw);
+            endif;
+        endforeach;
+
+        $code = <<<EOF
+<div class="gs-group"
+    data-template="$template:$size"
+    data-networks="$networks"
+    data-counter="$counter"
+    data-floating="$floating"
     data-url="$permalink"></div>
 EOF;
 

@@ -8,7 +8,7 @@ var groupBuilder = {
         code_template = code_template.replace('SIZE', options.size);
         code_template = code_template.replace('COUNTER', options.counter);
 
-        jQuery('#gs-group-code').html(code_template);
+        // jQuery('#gs-group-code').html(code_template);
     },
 
     updatePreview: function(options){
@@ -79,7 +79,7 @@ var groupBuilder = {
                     }
                 }).join(','),
                 size: jQuery('#group_size').val(),
-                counter: jQuery('input[name="gs-group-counter"]:checked').val() == 'Y' ? 'true' : 'false'
+                counter: jQuery('input.has_counter:checked').val() == 'Y' ? 'true' : 'false'
             };
 
         this.updatePreview(options);
@@ -89,12 +89,12 @@ var groupBuilder = {
 }
 
 jQuery(function(){
-    $group_builder = jQuery('#group-builder');
+    $group_builder = jQuery('#social-bar');
     if($group_builder.size() > 0){
 
         groupBuilder.refresh();
 
-        jQuery('#group-builder input, #group-builder select').on('change', function(){
+        jQuery('#social-bar input, #social-bar select').on('change', function(){
             groupBuilder.refresh();
         })
 

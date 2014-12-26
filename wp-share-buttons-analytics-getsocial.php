@@ -12,6 +12,7 @@
 include('lib/gs.php');
 
 /* MENU */
+
 add_action( 'admin_menu', 'gs_getsocial_menu' );
 
 function gs_getsocial_menu(){
@@ -19,7 +20,7 @@ function gs_getsocial_menu(){
 
     $needs_update = $GS->needs_update() == '0' ? 'on' : 'off';
 
-    add_menu_page( 'Getsocial', 'Getsocial', 'manage_options', slug_path('init.php'), '', plugins_url( 'images/'.$needs_update.'.png', __FILE__ ) );
+    add_menu_page( 'GetSocial', 'GetSocial', 'manage_options', slug_path('init.php'), '', plugins_url( 'images/on.png', __FILE__ ) );
     add_action( 'admin_init', 'register_gs_settings' );
 }
 
@@ -33,18 +34,21 @@ function register_gs_settings(){
     // register_setting( 'getsocial-gs-settings' , 'gs-buttons-position' );
     register_setting( 'getsocial-gs-settings' , 'gs-lang' );
 
-    register_setting( 'getsocial-gs-group' , 'gs-group-active' );
-    register_setting( 'getsocial-gs-group' , 'gs-group-network-fb' );
-    register_setting( 'getsocial-gs-group' , 'gs-group-network-tw' );
-    register_setting( 'getsocial-gs-group' , 'gs-group-network-pn' );
-    register_setting( 'getsocial-gs-group' , 'gs-group-network-gp' );
-    register_setting( 'getsocial-gs-group' , 'gs-group-template' );
-    register_setting( 'getsocial-gs-group' , 'gs-group-size' );
-    register_setting( 'getsocial-gs-group' , 'gs-group-counter' );
-    register_setting( 'getsocial-gs-group' , 'gs-group-position' );
+    foreach(array('group', 'floating') as $app):
+        register_setting( 'getsocial-gs-'.$app , 'gs-'.$app.'-active' );
+        register_setting( 'getsocial-gs-'.$app , 'gs-'.$app.'-network-fb' );
+        register_setting( 'getsocial-gs-'.$app , 'gs-'.$app.'-network-tw' );
+        register_setting( 'getsocial-gs-'.$app , 'gs-'.$app.'-network-pn' );
+        register_setting( 'getsocial-gs-'.$app , 'gs-'.$app.'-network-gp' );
+        register_setting( 'getsocial-gs-'.$app , 'gs-'.$app.'-template' );
+        register_setting( 'getsocial-gs-'.$app , 'gs-'.$app.'-size' );
+        register_setting( 'getsocial-gs-'.$app , 'gs-'.$app.'-counter' );
+        register_setting( 'getsocial-gs-'.$app , 'gs-'.$app.'-position' );
+    endforeach;
 
 
     register_setting( 'getsocial-gs-custom-expressions' , 'gs-custom-expression-active' );
+    register_setting( 'getsocial-gs-custom-expressions' , 'gs-custom-expression-position' );
 }
 
 function get_gs(){
@@ -61,13 +65,12 @@ function add_gs_lib(){
     echo $GS->getLib();
 }
 
-add_filter('the_content', 'add_gs_elements');
+add_filter('the_content', 'on_content');
+add_action('wp_footer', 'on_all_site');
 
-function add_gs_elements($content) {
+function on_content($content) {
     if ( is_single() ):
         $GS = get_gs();
-
-        // $elements = $GS->getElements();
 
         $groups_active = get_option('gs-group-active') == 1;
         $custom_active = get_option('gs-custom-expression-active') == 1;
@@ -76,29 +79,39 @@ function add_gs_elements($content) {
         $buttons = "";
 
         $custom_content = $content;
-        
+
         //
         if(!is_feed() && !is_home()):
-            // exit($GS->getGroup());
             if($groups_active):
                 $groups .= $GS->getGroup();
 
                 $position = get_option('gs-group-position');
 
-                if($position == 0):
-                    $custom_content = $content.$groups;
+                if($position != 2 || $position != 3 ):
+                    if($position == 0 ):
+                        $custom_content = $custom_content.$groups;
+                    elseif ( $position == 1 ):
+                        $custom_content = $groups.'<br/>'.$custom_content;
+                    elseif ( $position == 4 ):
+                        $custom_content = $groups.'<br/>'.$custom_content.$groups;
+                    endif;
                 else:
-                    $custom_content = $groups.'<br/>'.$content;
+                    $custom_content = $groups.$content;
                 endif;
             endif;
-
 
             if($custom_active):
                 foreach($GS->getElements() as $id => $action):
         		    $buttons .= $GS->getButton($id, $action);
                 endforeach;
 
-                $custom_content = $custom_content.$buttons;
+                $position = get_option('gs-custom-expression-position');
+
+                if($position == 0):
+                    $custom_content = $custom_content.$buttons;
+                else:
+                    $custom_content = $buttons.'<br/>'.$custom_content;
+                endif;
             endif;
     	endif;
 
@@ -108,4 +121,17 @@ function add_gs_elements($content) {
     else:
         return $content;
     endif;
+}
+
+function on_all_site(){
+    $GS = get_gs();
+
+    $floating_active = get_option('gs-floating-active') == 1;
+    $floatingbar = "";
+
+    if($floating_active):
+        $floatingbar .= $GS->getFloatingBar();
+    endif;
+
+    echo $floatingbar;
 }

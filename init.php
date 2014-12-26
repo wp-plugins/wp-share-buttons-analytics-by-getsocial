@@ -11,46 +11,63 @@
 
     <?php if(get_option('gs-api-key') == ''): ?>
 
-    <table id="steps">
-        <thead>
-            <tr valign="top">
-                <th>
-                <h1>Step 1 - Create a GetSocial account</h1>
-                <p>To get started, register your GetSocial account and <strong>find your API key in the site settings. If you already have an account, log in.</strong></p>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-           
-        </tbody>
-        <tfoot>
-            <tr valign="top">
-                <td>
-                    <a href="<?php echo $GETSOCIAL_URL ?>?source=wordpress" target="_blank" class="button button-primary">Create GetSocial account</a> ___ 
-                    <a href="<?php echo $GETSOCIAL_URL ?>?source=wordpress" target="_blank" class="button button-primary">Login in your account</a></p>
-                </td>
-            </tr>
-            <tr valign="top" align="left">
-                <th>
-                <h1>Step 2 - Insert your API Key</h1>
-                <p>Visit your <a href="http://www.getsocial.io/redirect/profile">GetSocial profile settings</a> , find, copy and paste your API key in the form below.</p>
-                </th>
-            </tr>
-        </tfoot>
-    </table>
+        <div id="steps" class="form-content">
+            <div class="step">
+                <h1>Thanks for downloading the GetSocial Plugin!</h1>
+                <p>Just one more thing... To get started, you will need an API KEY.</strong></p>
+
+                <div class="info gs-clearfix">
+                    <dl class="gs-clearfix">
+                        <dt>URL</dt>
+                        <dd><?= get_option('siteurl') ?></dd>
+                        <dt>Email</dt>
+                        <dd><?= get_option('admin_email') ?></dd>
+                    </dl>
+
+                    <p class="create-account">
+                        <a href="<?php echo $GETSOCIAL_URL ?>/api/v1/sites/create?source=wordpress&amp;email=<?php echo get_option('admin_email') ?>&amp;url=<?php echo get_option('siteurl') ?>" class="button button-primary create-gs-account">
+                            Get my API KEY!
+                        </a>
+                    </p>
+
+                    <div class="notification-bar success green-cta hidden">
+                        Congratulations! You are ready to start in 3..2..1..
+                    </div>
+
+                    <div class="notification-bar errors red-cta hidden">
+                    </div>
+
+                    <div class="api-key hidden">
+                        <form id="api-key-form" method="post" action="options.php">
+                            <?php settings_fields( 'getsocial-gs-settings' ); ?>
+                            <?php do_settings_sections( 'getsocial-gs-settings' ); ?>
+                            <p>Please go to your Getsocial Account and get your API KEY in the site options page.</p>
+                            <input id="api-key" type="text" name="gs-api-key" size="60" value="" />
+                            <?php submit_button('Save Changes'); ?>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
     <?php else: ?>
 
-        <?php include 'tmpl/tabs.php' ?>
+        <?php if( !isset($_GET['tab']) ): ?>
 
-    <?php endif; ?>
+            <?php include('tmpl/basic_stats.php') ?>
 
-    <?php if( !isset($_GET['tab']) ): ?>
+            <?php include('tmpl/apps.php') ?>
 
-        <?php include('tmpl/settings.php') ?>
+        <?php else: ?>
 
-    <?php else: ?>
+            <?php include('tmpl/'.$_GET['tab'].'.php') ?>
 
-        <?php include('tmpl/'.$_GET['tab'].'.php') ?>
-
+        <?php endif; ?>
     <?php endif; ?>
 </div>
