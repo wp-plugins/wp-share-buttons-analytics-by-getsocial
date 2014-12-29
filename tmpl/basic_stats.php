@@ -1,4 +1,10 @@
-<h2><i class="fa fa-bar-chart"></i>Stats</h2>
+<h2>
+    <i class="fa fa-bar-chart"></i>Stats
+    <? $from = date('Y-m-d', strtotime('-8 days')) ?>
+    <? $to = date('Y-m-d', strtotime('-1 days')) ?>
+    <small>from <strong><? echo $from ?></strong> to <strong><? echo $to ?></strong></small>
+    <a href="http://getsocial.io/dashboard" target="_blank"><i class="fa fa-area-chart"></i>Detailed Stats</a>
+</h2>
 
 <div class="graphs gs-clearfix" data-graph-api="<?php echo $GS->api_url('sites/analytics/'.get_option('gs-api-key')) ?>">
     <div class="graph">

@@ -3,7 +3,7 @@
  * Plugin Name:  WP Share Buttons & Analytics by GetSocial
  * Plugin URI: http://getsocial.io
  * Description: Add social media sharing buttons from the most popular networks to track user activity, increase traffic, improve SEO, and follow conversions.
- * Version: 1.1.1
+ * Version: 1.1.2
  * Author: Getsocial, S.A.
  * Author URI: http://getsocial.io
  * License: GPL2
