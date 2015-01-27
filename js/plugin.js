@@ -7,7 +7,7 @@ jQuery(function($) {
       jQuery.post( 'options.php', data).success( function(response){
           jQuery('.notification-bar.success').show();
 
-          setTimeout('window.location.reload();', 3000);
+          setTimeout('window.location = window.location.href + "&signup=true"', 3000);
       });
       return false;
   });
