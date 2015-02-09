@@ -10,20 +10,13 @@ $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 $GS = new GS(   get_option('gs-api-key'),
                 get_option('gs-identifier'),
-                get_option('gs-elements'),
                 get_option('gs-lang'));
 
-// if(isset($_GET["refresh"]) && $GS->needs_update()):
 $site_info = $GS->refreshSite();
-// endif;
-
-$needs_update = $GS->needs_update();
 
 wp_register_style( 'getsocial-style', plugins_url('../css/getsocial-style.css', __FILE__) );
-wp_register_style( 'group-buttons', plugins_url('../css/group-buttons.css', __FILE__) );
 
 wp_enqueue_style( 'getsocial-style' );
-wp_enqueue_style( 'group-buttons' );
 
 wp_register_script( 'builder', plugins_url('../js/builder.js', __FILE__) );
 wp_register_script( 'plugin', plugins_url('../js/plugin.js', __FILE__) );

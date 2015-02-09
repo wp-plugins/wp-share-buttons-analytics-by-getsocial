@@ -1,17 +1,6 @@
 <? include('tmpl/header.php'); ?>
 <? include('tmpl/alerts.php'); ?>
 
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WJ2VJ3"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WJ2VJ3');</script>
-<!-- End Google Tag Manager -->
-
-
 <div class="wrap">
     <?php if( isset($_GET['settings-updated']) && $_GET['settings-updated'] == true): ?>
         <div id="message" class="updated below-h2">
@@ -24,8 +13,8 @@
 
         <div id="steps" class="form-content">
             <div class="step">
-                <h1>Thanks for downloading the GetSocial Plugin!</h1>
-                <p>Just one more thing... To get started, you will need an API KEY.</strong></p>
+                <h1>Welcome and thanks for downloading GetSocial’s Share Buttons with Analytics.</h1>
+                <p>To get started click on the button below to automatically create a GetSocial account.</strong></p>
 
                 <div class="info gs-clearfix">
                     <dl class="gs-clearfix">
@@ -33,11 +22,12 @@
                         <dd><?= get_option('siteurl') ?></dd>
                         <dt>Email</dt>
                         <dd><?= get_option('admin_email') ?></dd>
+
                     </dl>
 
                     <p class="create-account">
-                        <a href="<?php echo $GS->getGSAccount() ?>/api/v1/sites/create?source=wordpress&amp;email=<?php echo get_option('admin_email') ?>&amp;url=<?php echo get_option('siteurl') ?>" class="button button-primary create-gs-account">
-                            Get my API KEY!
+                        <a href="<?php echo $GS->gs_account() ?>/api/v1/sites/create?source=wordpress&amp;email=<?php echo get_option('admin_email') ?>&amp;url=<?php echo get_option('siteurl') ?>" class="button button-primary create-gs-account">
+                            Create Account
                         </a>
                     </p>
 
@@ -60,9 +50,6 @@
                 </div>
 
 
-
-
-
             </div>
 
         </div>
@@ -77,7 +64,13 @@
 
         <?php else: ?>
 
-            <?php include('tmpl/'.$_GET['tab'].'.php') ?>
+            <?php if( isset($_GET['update']) ||  isset($_GET['delete'])  ): ?>
+                <div class="notification-bar green-cta" id="success-message">
+                    <p>App <?= isset($_GET['update']) ? 'updated' : 'deactivated' ?> with success</p>
+                </div>
+            <?php endif; ?>
+
+            <?php include('tmpl/apps/'.$_GET['tab'].'.php') ?>
 
         <?php endif; ?>
     <?php endif; ?>

@@ -4,17 +4,16 @@ class GS {
     private $gs_url = "http://api.at.getsocial.io";
     private $gs_account = "http://getsocial.io/";
     private $api_url = "http://getsocial.io/api/v1/";
-
     // private $gs_url = "//localhost:3001";
     // private $gs_account = "http://localhost:3000/";
     // private $api_url = "http://localhost:3000/api/v1/";
 
-    function __construct($api_key, $identifier, $elements, $lang){
+    function __construct($api_key, $identifier, $lang){
         $this->api_key = $api_key;
         $this->identifier = $identifier;
-        $this->elements = $elements;
         $this->lang = $lang == null ? 'en' : $lang;
     }
+
 
     private function api($path) {
         try {
@@ -38,14 +37,6 @@ class GS {
         return $this->api_url.$path;
     }
 
-    function getElements(){
-        return json_decode($this->elements,true);
-    }
-
-    function hasElements(){
-        return count($this->getElements()) > 0;
-    }
-
     function getSite(){
         if($this->api_key != ''):
             return $this->api('sites/'.$this->api_key);
@@ -58,31 +49,34 @@ class GS {
         $site = $this->getSite();
         if($site != null):
             $this->save($site);
-            update_option('gs-needs-update', 0);
         endif;
     }
 
     function save($site_info){
         update_option('gs-identifier', $site_info->identifier);
-        update_option('gs-elements', json_encode($site_info->elements));
+        update_option('gs-pro', $site_info->pro);
+        update_option('gs-apps', json_encode($site_info->gs_apps));
     }
 
-    function needs_update(){
-        // if(get_option('gs-needs-update') == '1'):
-        //     return true;
-        // endif;
+    function apps($app_name){
+        $apps = json_decode(get_option('gs-apps'), true);
 
-        // $site = $this->getSite();
-        //
-        // $needs_update = $site == null ? '2' : $site == '3' ? '3' : '0';
-        //
-        // if($site != null && $needs_update != '3'):
-        //     $needs_update = (json_encode($site->elements) != get_option('gs-elements')) ? '1' : '0';
-        //
-        //     update_option('gs-needs-update', $needs_update);
-        // endif;
-        //
-        // return $needs_update;
+        return (array_key_exists($app_name, $apps) ? $apps[$app_name] : false);
+    }
+
+    function is_pro(){
+        return get_option('gs-pro');
+    }
+
+    function is_active($app_name){
+        $app = $this->apps($app_name);
+
+        return (!empty($app) ? $app['active'] : false);
+    }
+
+    function prop($app_name, $prop){
+        $app = $this->apps($app_name);
+        return $app[$prop];
     }
 
     function getLib(){
@@ -100,92 +94,19 @@ EOF;
         return $code;
     }
 
-    function getButton($identifier, $action){
-        global $post;
 
-        $permalink = esc_url( get_permalink() );
-        $title = esc_html( get_the_title() );
-        $image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-
-        $code = <<<EOF
-<div class="getsocial gs-expression gs-$identifier"
-    data-action="$action"
-    data-identifier="$identifier"
-    data-url="$permalink"
-    data-image="$image"
-    data-title="$title">
-</div>
-EOF;
-        return $code;
+    function getCode($app_name){
+        switch ($app_name) {
+            case 'sharing_bar':
+                return '<div class="getsocial gs-inline-group"></div>';
+            case 'native_bar':
+                return '<div class="getsocial gs-native-bar"></div>';
+            case 'custom_actions':
+                return '<div class="getsocial gs-custom-actions"></div>';
+        }
     }
 
-    function getGroup(){
-        $permalink = esc_url( get_permalink() );
-        $template = get_option('gs-group-template');
-        $size = get_option('gs-group-size');
-        $counter = get_option('gs-group-counter') == 'Y' ? 'true' : 'false';
-        $position = get_option('gs-group-position');
-
-        $ntw_fb = get_option('gs-group-network-fb');
-        $ntw_tw = get_option('gs-group-network-tw');
-        $ntw_pn = get_option('gs-group-network-pn');
-        $ntw_gp = get_option('gs-group-network-gp');
-
-        $networks = '';
-        $networks_available = array('fb', 'tw', 'pn', 'gp');
-        foreach($networks_available as $nw):
-            if(get_option('gs-group-network-'.$nw) == 'Y'):
-                $networks .= ( $networks == '' ? $nw : ','.$nw);
-            endif;
-        endforeach;
-
-        $code = <<<EOF
-<div class="gs-group"
-    data-template="$template:$size"
-    data-networks="$networks"
-    data-counter="$counter"
-    data-url="$permalink"></div>
-EOF;
-
-        return $code;
-
-    }
-
-    function getFloatingBar(){
-        $permalink = esc_url( get_permalink() );
-        $template = get_option('gs-floating-template');
-        $size = get_option('gs-floating-size');
-        $counter = get_option('gs-floating-counter') == 'Y' ? 'true' : 'false';
-        $position = get_option('gs-floating-position');
-        $floating = ($position == '1' ? 'right' : 'left');
-
-        $ntw_fb = get_option('gs-floating-network-fb');
-        $ntw_tw = get_option('gs-floating-network-tw');
-        $ntw_pn = get_option('gs-floating-network-pn');
-        $ntw_gp = get_option('gs-floating-network-gp');
-
-        $networks = '';
-        $networks_available = array('fb', 'tw', 'pn', 'gp');
-        foreach($networks_available as $nw):
-            if(get_option('gs-floating-network-'.$nw) == 'Y'):
-                $networks .= ( $networks == '' ? $nw : ','.$nw);
-            endif;
-        endforeach;
-
-        $code = <<<EOF
-<div class="gs-group"
-    data-template="$template:$size"
-    data-networks="$networks"
-    data-counter="$counter"
-    data-floating="$floating"
-    data-url="$permalink"></div>
-EOF;
-
-        return $code;
-
-    }
-
-    function getGSAccount(){
+    function gs_account(){
         return $this->gs_account;
     }
 
