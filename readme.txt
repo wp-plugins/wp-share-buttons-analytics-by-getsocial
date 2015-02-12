@@ -1,14 +1,14 @@
 === Share Buttons & Analytics by GetSocial ===
 Contributors: GetSocial.io
 Donate link:
-Tags: getsocial, sharing buttons, share button, social buttons, social sharing, ecommerce, social analytics, addthis, sharethis, woocommerce, e-commerce, AddThis, addtoany, admin, bookmark, bookmarking, bookmarks, button, Facebook, Facebook share, facebook like, google, google plus, google plus one, Like, linkedin, lockerz, pin, pin it, pinit, pinterest, plugin, plus 1, plus one, Post, posts, Reddit, save, seo, sexybookmarks, share, shareaholic, sharedaddy, sharethis, sharing, sidebar, sociable, social, social bookmarking, social bookmarks, statistics, stats, stumbleupon, tumblr, tweet, twitter, social media, social share, widget
+Tags: share buttons, sharing buttons, share button, sharing button, sharing, share links, social buttons, social button, social sharing, social share, ecommerce, social analytics, addthis, sharethis, woocommerce, e-commerce, addtoany, admin, bookmark, bookmarking, bookmarks, button, Facebook, Facebook share, facebook like, google, google plus, google plus one, Like, linkedin, lockerz, pin, pin it, pinit, pinterest, plugin, plus 1, plus one, Post, posts, Reddit, save, seo, sexybookmarks, share, shareaholic, sharedaddy, sharethis, sharing, sidebar, sociable, social, social bookmarking, social bookmarks, statistics, stats, stumbleupon, tumblr, tweet, twitter, social media, widget, Sociable, Social Media Widget ,Really Simple Share ,Social Share Buttons for WordPress ,Slick Social Share Buttons ,Sharebar ,Socialize ,Trackable Social Share Icons ,Facebook Social Plugins ,Tilt Social Share Widget ,Artiss Social Share ,WP Socializer, Hupso Share Buttons for Twitter, Easy Facebook Share Thumbnail, Floating Social Media Links, Social Metrics, Socialize This
 Requires at least: 3.0
 Tested up to: 4.1
 Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Easily add social sharing buttons to increase your traffic and boost your SEO. Free to use, no coding required.
+Share buttons with analytics. Increase traffic your traffic, grow referrals and boost your SEO. FREE to use, NO CODE required.
 
 == Upgrade Notice ==
 
@@ -17,7 +17,7 @@ We’ve updated our button’s design to make them look even better on your webs
 
 == Description ==
 
-**Social Sharing Buttons & Analytics by GetSocial** is a free WordPress plugin that enables trackable social sharing on your site. Supporting shares in over 10 major social networks, you not only allow your visitors to share your content, but they also track their actions such as how many shares have been made, how those shares are
+**Share Buttons & Analytics by GetSocial** is a free WordPress plugin that enables trackable social sharing on your site. Supporting shares in over 10 major social networks, it allows your visitors to share your content, but they also track their actions such as how many shares have been made, how those shares are
 generating traffic to your site, and how that traffic is converting into more sales or subscriptions.
 
 Our product consists of:
