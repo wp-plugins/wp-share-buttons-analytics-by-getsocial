@@ -8,7 +8,7 @@ Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Share buttons with analytics. Increase traffic your traffic, grow referrals and boost your SEO. FREE to use, NO CODE required.
+Share buttons with analytics. Increase traffic, grow referrals and boost your SEO. FREE to use, no code required.
 
 == Upgrade Notice ==
 
