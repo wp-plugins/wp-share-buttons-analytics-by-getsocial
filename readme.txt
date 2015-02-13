@@ -55,7 +55,7 @@ For a manual installation:
 
 **Is GetSocial Free?**
 
-Yes. Most of our apps are free. You can upgrade to our Pro Plan ($9/month) for enhanced experience, such as mobile web sharing and white-labeling.
+Yes. Most of our apps are free. You can upgrade to our Pro Plan ($9/month) for enhanced experience, such as mobile web sharing, white-labeling and custom actions.
 
 **Why install GetSocial?**
 
