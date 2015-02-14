@@ -13,7 +13,7 @@ Share buttons with analytics. Increase traffic, grow referrals and boost your SE
 == Upgrade Notice ==
 
 = 2.0.0 =
-We’ve updated our button’s design to make them look even better on your website. If you update the plugin you won’t have access to our old buttons.
+We have updated our button’s design to make them look even better on your website. If you update the plugin you won’t have access to our old buttons.
 
 == Description ==
 
