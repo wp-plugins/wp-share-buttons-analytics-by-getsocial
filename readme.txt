@@ -43,7 +43,7 @@ For an automatic installation through WordPress:
 1. Go to the "Plugins" menu in your left sidebar, and click "Add New" link.
 1. Search for 'Share Buttons & Analytics by GetSocial'
 1. Click 'Install Now' and activate the plugin
-1. On the left bar a menu item "GetSocial" will appear.
+1. On the left bar a menu item 'GetSocial' will appear.
 
 For a manual installation:
 
