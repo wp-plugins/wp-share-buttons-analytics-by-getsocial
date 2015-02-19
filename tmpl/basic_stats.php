@@ -1,9 +1,9 @@
 <h2>
     <i class="fa fa-bar-chart"></i>Stats
-    <? $from = date('Y-m-d', strtotime('-8 days')) ?>
-    <? $to = date('Y-m-d', strtotime('-1 days')) ?>
-    <small>from <strong><? echo $from ?></strong> to <strong><? echo $to ?></strong></small>
-    <a href="<?= $GS->gs_account().'/sites/gs-wordpress/analytics/dashboard?api_key='.$GS->api_key.'&amp;source=wordpress' ?>" target="_blank" class="btn btn-default"><i class="fa fa-area-chart"></i>Detailed Stats</a>
+    <?php $from = date('Y-m-d', strtotime('-8 days')) ?>
+    <?php $to = date('Y-m-d', strtotime('-1 days')) ?>
+    <small>from <strong><?php echo $from ?></strong> to <strong><?php echo $to ?></strong></small>
+    <a href="<?php echo $GS->gs_account().'/sites/gs-wordpress/analytics/dashboard?api_key='.$GS->api_key.'&amp;source=wordpress' ?>" target="_blank" class="btn btn-default"><i class="fa fa-area-chart"></i>Detailed Stats</a>
 </h2>
 <div class="sub-wrap">
     <div class="graphs gs-clearfix" data-graph-api="<?php echo $GS->api_url('sites/analytics/'.get_option('gs-api-key')) ?>">
