@@ -1,9 +1,9 @@
 
 <h2>
     <i class="fa fa-list"></i>Apps
-    <? if(!$GS->is_pro()): ?>
-    <a href="<?= $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?= $GS->api_key ?>&amp;source=wordpress" target="_blank" class="btn btn-pro">Upgrade to Pro</a>
-    <? endif; ?>
+    <?php if(!$GS->is_pro()): ?>
+    <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?= $GS->api_key ?>&amp;source=wordpress" target="_blank" class="btn btn-pro">Upgrade to Pro</a>
+    <?php endif; ?>
 </h2>
 <div class="sub-wrap">
     <div class="app-list">
@@ -47,27 +47,27 @@
         ?>
 
         <div class="app-wrapper">
-            <img src="<? echo plugins_url( '../images/'.$settings['file'].'.png', __FILE__ ) ?>" alt="">
+            <img src="<?php echo plugins_url( '../images/'.$settings['file'].'.png', __FILE__ ) ?>" alt="">
 
 
             <div class="title">
                 <div class="info">
-                    <? if($settings['active']): ?>
+                    <?php if($settings['active']): ?>
                         <div class="app-status done">Installed</div>
-                    <? endif; ?>
+                    <?php endif; ?>
 
-                    <? if( isset($settings['pro']) && $settings['pro'] ): ?>
+                    <?php if( isset($settings['pro']) && $settings['pro'] ): ?>
                         <div class="app-status pro">Pro</div>
-                    <? else: ?>
+                    <?php else: ?>
                         <div class="app-status free">Free</div>
-                    <? endif; ?>
+                    <?php endif; ?>
 
                 </div>
-                <? echo $app ?>
-                <p><? echo $settings['desc'] ?></p>
+                <?php echo $app ?>
+                <p><?php echo $settings['desc'] ?></p>
             </div>
             <div class="app-link-buttons app-type-edit">
-                <a class="getsocial-tab" href="<?= $settings['href'] ?>" target="_blank">
+                <a class="getsocial-tab" href="<?php echo $settings['href'] ?>" target="_blank">
                     <?php echo ($settings['active']) ? '<i class="fa fa-edit"></i>Edit' : '<i class="fa fa-plus"></i>Add' ?>
                 </a>
             </div>

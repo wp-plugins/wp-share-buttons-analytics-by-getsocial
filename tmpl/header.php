@@ -49,8 +49,8 @@ wp_enqueue_script( 'plugin' );
 <div class="cl"></div>
 <div class="top-nav">
     <div class="wrap">
-        <a href="admin.php?page=<? echo slug_path('init.php') ?>" class="<?php echo !isset($_GET['tab']) ? 'active' : '' ?>"><i class="fa fa-home"></i>Home</a>
-        <a href="admin.php?page=<? echo slug_path('init.php&tab=settings') ?>" class="<?php echo ($_GET['tab'] == 'settings') ? 'active' : '' ?>"><i class="fa fa-cog"></i>Settings</a>
+        <a href="admin.php?page=<?php echo slug_path('init.php') ?>" class="<?php echo !isset($_GET['tab']) ? 'active' : '' ?>"><i class="fa fa-home"></i>Home</a>
+        <a href="admin.php?page=<?php echo slug_path('init.php&tab=settings') ?>" class="<?php echo ($_GET['tab'] == 'settings') ? 'active' : '' ?>"><i class="fa fa-cog"></i>Settings</a>
         <a href="mailto:support@getsocial.io"><i class="fa fa-question-circle"></i>Can we help you?</a>
     </div>
 </div>
