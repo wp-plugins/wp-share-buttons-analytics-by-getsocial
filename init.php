@@ -1,5 +1,5 @@
-<? include('tmpl/header.php'); ?>
-<? include('tmpl/alerts.php'); ?>
+<?php include('tmpl/header.php'); ?>
+<?php include('tmpl/alerts.php'); ?>
 
 <div class="wrap">
     <?php if( isset($_GET['settings-updated']) && $_GET['settings-updated'] == true): ?>
@@ -19,9 +19,9 @@
                 <div class="info gs-clearfix">
                     <dl class="gs-clearfix">
                         <dt>URL</dt>
-                        <dd><?= get_option('siteurl') ?></dd>
+                        <dd><?php echo get_option('siteurl') ?></dd>
                         <dt>Email</dt>
-                        <dd><?= get_option('admin_email') ?></dd>
+                        <dd><?php echo get_option('admin_email') ?></dd>
 
                     </dl>
 
