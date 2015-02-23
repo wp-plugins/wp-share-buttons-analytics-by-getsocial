@@ -31,10 +31,10 @@ wp_enqueue_script( 'plugin' );
 <header class="gs-clearfix">
     <div class="wrap-header">
         <h1>
-            <img src="<?= plugins_url( '../images/logo.png', __FILE__ ) ?>" alt="GetSocial" />
-            <? if(isset($sub_menu)): ?>
-                <small>- <?= $sub_menu ?></small>
-            <? endif; ?>
+            <img src="<?php echo plugins_url( '../images/logo.png', __FILE__ ) ?>" alt="GetSocial" />
+            <?php if(isset($sub_menu)): ?>
+                <small>- <?php echo $sub_menu ?></small>
+            <?php endif; ?>
         </h1>
 
         <h2>
