@@ -17,7 +17,7 @@ We have updated our button’s design to make them look even better on your webs
 
 == Description ==
 
-**Share Buttons & Analytics by GetSocial** is a free WordPress plugin that enables you to track social shares on Wordpress. Provide beautiful wordpress sharing buttons, track how many shares were made in each post and see how much traffic and conversions each post generated. Optimize your SEO and social shares with GetSocial.
+**Share Buttons by GetSocial.io** is a free WordPress plugin that enables you to track social shares on Wordpress. Provide beautiful wordpress sharing buttons, track how many shares were made in each post and see how much traffic and conversions each post generated. Optimize your SEO and social shares with GetSocial.
 
 GetSocial.io is the social media app-store for all your needs: from awareness to conversion. You can find more info about our product <a href="http://getsocial.io">here</a>. In this plugin, you'll find the following features:
 
