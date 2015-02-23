@@ -1,4 +1,4 @@
-=== Share Buttons & Analytics by GetSocial ===
+=== Share Buttons by GetSocial.io ===
 Contributors: GetSocial.io
 Donate link:
 Tags: share buttons, sharing buttons, share button, sharing button, sharing, share links, social buttons, social button, social sharing, social share, ecommerce, social analytics, addthis, sharethis, woocommerce, e-commerce, addtoany, admin, bookmark, bookmarking, bookmarks, button, Facebook, Facebook share, facebook like, google, google plus, google plus one, Like, linkedin, lockerz, pin, pin it, pinit, pinterest, plugin, plus 1, plus one, Post, posts, Reddit, save, seo, sexybookmarks, share, shareaholic, sharedaddy, sharethis, sharing, sidebar, sociable, social, social bookmarking, social bookmarks, statistics, stats, stumbleupon, tumblr, tweet, twitter, social media, widget, Sociable, Social Media Widget ,Really Simple Share ,Social Share Buttons for WordPress ,Slick Social Share Buttons ,Sharebar ,Socialize ,Trackable Social Share Icons ,Facebook Social Plugins ,Tilt Social Share Widget ,Artiss Social Share ,WP Socializer, Hupso Share Buttons for Twitter, Easy Facebook Share Thumbnail, Floating Social Media Links, Social Metrics, Socialize This
@@ -17,23 +17,18 @@ We have updated our button’s design to make them look even better on your webs
 
 == Description ==
 
-**Share Buttons & Analytics by GetSocial** is a free WordPress plugin that enables you to track social shares on Wordpress. Provide beautiful wordpress sharing buttons, track how many shares were made in each post and see how much traffic and conversions each post generated. Optimize your SEO and social shares with GetSocial. 
+**Share Buttons & Analytics by GetSocial** is a free WordPress plugin that enables you to track social shares on Wordpress. Provide beautiful wordpress sharing buttons, track how many shares were made in each post and see how much traffic and conversions each post generated. Optimize your SEO and social shares with GetSocial.
 
-Our product consists of:
+GetSocial.io is the social media app-store for all your needs: from awareness to conversion. You can find more info about our product <a href="http://getsocial.io">here</a>. In this plugin, you'll find the following features:
 
 <h4>Social Apps</h4>
 
-In our appstore you'll find all the tools that you need to provide a way for your users express themselves and drive more traffic to your website. There are three tools you can use to achieve this goal:
-
-* Custom Sharing Actions: Sometimes we need to say more than a simple 'Like'. Here you'll find more than 50 custom stories such as Awesome, Wish or Love.
-* Horizontal Sharing Bar: Use one of our templates or design your own social sharing bar. Customize size, shape & color.
-* Floating Sharing Bar: Left or right, provide an easy way for your users to share your content. Customize size, shape & color.
-* Native Sharing Bar: It doesn't get much more classic than this. Your native sharing buttons with tracking abilities. Great for those who want to keep it real.
-
-<h4>Analytics</h4>
-
-Every app that you install has analytics attached to it. In this new era of information, no one is able to ignore all the data that goes and comes from the social media networks.
-Our analytics will present to you the most influential users, the most shared content, and the social networks that drive your business.
+* **Social media bar**: Add our floating social bar and get free social media tracking of the shares made on your website. This social media widget will help your users to do more social shares of your content.
+* **Dark social media tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL will allow you to effectively measure social media ROI.
+* **Free Social Media Analytics**: All our social sharing plugins contribute for your undertanding on how social sharing is driving you traffic and conversions. From social share buttons to conversion tracking, your social media monitoring will be available in simple yet comprehensive dashboards.
+* **Custom Sharing Actions**: Sometimes we need to say more than a simple 'Like'. Here you'll find more than 50 custom stories such as Awesome, Wish or Love.
+* **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network.
+* **Mobile Web Sharing**: Mobile sharing doesn't have to be a terrible experinece. Create beautiful interfaces for your mobile users to share their thoughts about your content.
 
 == Installation ==
 
