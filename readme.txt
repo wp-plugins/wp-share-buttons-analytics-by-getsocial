@@ -38,15 +38,15 @@ These are the shortcodes available:
 
 * Sharing Bar
 
-[getsocial app="sharing_bar"]
+`[getsocial app="sharing_bar"]`
 
 * Native Bar
 
-[getsocial app="native_bar"]
+`[getsocial app="native_bar"]`
 
 * Custom Actions
 
-[getsocial app="custom_actions"]
+`[getsocial app="custom_actions"]`
 
 == Installation ==
 
