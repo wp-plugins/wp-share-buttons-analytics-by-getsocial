@@ -103,6 +103,8 @@ EOF;
                 return '<div class="getsocial gs-native-bar"></div>';
             case 'custom_actions':
                 return '<div class="getsocial gs-custom-actions"></div>';
+            default:
+                return '';
         }
     }
 

@@ -3,7 +3,7 @@
  * Plugin Name:  Share Buttons & Analytics by GetSocial
  * Plugin URI: http://getsocial.io
  * Description: Add social media sharing buttons from the most popular networks to track user activity, increase traffic, improve SEO, and follow conversions.
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author: Getsocial, S.A.
  * Author URI: http://getsocial.io
  * License: GPL2
@@ -74,7 +74,6 @@ function add_gs_lib(){
 }
 
 add_filter('the_content', 'on_content');
-add_action('wp_footer', 'on_all_site');
 
 function on_content($content) {
     if ( is_single() ):
@@ -144,15 +143,16 @@ function on_content($content) {
     endif;
 }
 
-function on_all_site(){
-    // $GS = get_gs();
+add_shortcode( 'getsocial', 'gs_bars_shortcode' );
 
-    // $floating_active = get_option('gs-floating-active') == 1;
-    // $floatingbar = "";
-    //
-    // if($floating_active):
-    //     $floatingbar .= $GS->getFloatingBar();
-    // endif;
-    //
-    // echo $floatingbar;
+function gs_bars_shortcode($atts) {
+    $GS = get_gs();
+    // if no type defined
+    if(array_key_exists('app',$atts)){
+        return $GS->getCode($atts['app']);
+    } else {
+        return "";
+    }
+
+
 }

@@ -4,7 +4,7 @@ Donate link:
 Tags: share buttons, sharing buttons, share button, sharing button, sharing, share links, social buttons, social button, social sharing, social share, ecommerce, social analytics, addthis, sharethis, woocommerce, e-commerce, addtoany, admin, bookmark, bookmarking, bookmarks, button, Facebook, Facebook share, facebook like, google, google plus, google plus one, Like, linkedin, lockerz, pin, pin it, pinit, pinterest, plugin, plus 1, plus one, Post, posts, Reddit, save, seo, sexybookmarks, share, shareaholic, sharedaddy, sharethis, sharing, sidebar, sociable, social, social bookmarking, social bookmarks, statistics, stats, stumbleupon, tumblr, tweet, twitter, social media, widget, Sociable, Social Media Widget ,Really Simple Share ,Social Share Buttons for WordPress ,Slick Social Share Buttons ,Sharebar ,Socialize ,Trackable Social Share Icons ,Facebook Social Plugins ,Tilt Social Share Widget ,Artiss Social Share ,WP Socializer, Hupso Share Buttons for Twitter, Easy Facebook Share Thumbnail, Floating Social Media Links, Social Metrics, Socialize This
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,24 @@ GetSocial.io is the social media app-store for all your needs: from awareness to
 * **Custom Sharing Actions**: Sometimes we need to say more than a simple 'Like'. Here you'll find more than 50 custom stories such as Awesome, Wish or Love.
 * **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network.
 * **Mobile Web Sharing**: Mobile sharing doesn't have to be a terrible experinece. Create beautiful interfaces for your mobile users to share their thoughts about your content.
+
+<h4>Now with shortcodes!</h4>
+
+With version **2.0.1** we've added the ability to insert shortcodes on your site.  These allow you to insert our sharing bars in your Pages or in the middle of your Posts by adding a shortcode of your choice.
+
+These are the shortcodes available:
+
+* Sharing Bar
+
+'[getsocial app="sharing_bar"]'
+
+* Native Bar
+
+'[getsocial app="native_bar"]'
+
+* Custom Actions
+
+'[getsocial app="custom_actions"]'
 
 == Installation ==
 
@@ -82,6 +100,10 @@ Have more doubts? You can go to <a href="http://feedback.getsocial.io">Getsocial
 5. Analytics
 
 == Changelog ==
+
+**2.0.1**
+
+- Added Shortcodes
 
 **2.0.0**
 
