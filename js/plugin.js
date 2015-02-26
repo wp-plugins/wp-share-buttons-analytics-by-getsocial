@@ -44,6 +44,7 @@ jQuery(function($) {
       jQuery('.api-key').hide();
 
       jQuery.post( 'options.php', data).success( function(response){
+          jQuery('.loading-create').hide();
           jQuery('.notification-bar.success').show();
 
           setTimeout('window.location.reload();', 3000);
@@ -53,9 +54,11 @@ jQuery(function($) {
 
   jQuery('.create-gs-account').on('click', function(e){
       e.preventDefault();
-      jQuery('.create-account').hide();
+      jQuery('.create-gs-account').hide();
+      jQuery('.loading-create').show();
       jQuery.post(jQuery(this).attr('href'), { source: 'wordpress' }, function(data){
           if(data.errors != undefined){
+              jQuery('.loading-create').hide();
               jQuery('.notification-bar.errors').html(data.errors[0]).show();
               jQuery('.api-key').show();
           } else {
