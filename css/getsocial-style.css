@@ -519,3 +519,7 @@ i.fa {
 .btn.btn-pro:hover {
     background: #E07415;
 }
+
+.loading-create {
+    display: none;
+}

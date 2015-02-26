@@ -29,6 +29,10 @@
                         <a href="<?php echo $GS->gs_account() ?>/api/v1/sites/create?source=wordpress&amp;email=<?php echo get_option('admin_email') ?>&amp;url=<?php echo get_option('siteurl') ?>" class="button button-primary create-gs-account">
                             Create Account
                         </a>
+
+                        <span class="loading-create">
+                            <i class="fa fa-circle-o-notch fa-spin"></i> Creating Account...
+                        </span>
                     </p>
 
                     <div class="notification-bar success green-cta hidden">
