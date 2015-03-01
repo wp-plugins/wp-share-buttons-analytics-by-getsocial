@@ -82,6 +82,7 @@ function on_content($content) {
         $groups_active = $GS->is_active('sharing_bar');
         $native_active = $GS->is_active('native_bar');
         $custom_active = $GS->is_active('custom_actions');
+        $big_counter_bar_active = $GS->is_active('social_bar_big_counter');
         //
         $before_content = "";
         $after_content = "";
@@ -117,6 +118,20 @@ function on_content($content) {
 
                 if ( $position == 'top' || $position == 'both' ):
                     $before_content = $before_content.$custom.'<br/>';
+                endif;
+            endif;
+
+            if($big_counter_bar_active):
+                $big_counter = $GS->getCode('social_bar_big_counter');
+
+                $position = $GS->prop('social_bar_big_counter', 'position');
+
+                if($position == 'bottom' || $position == 'both'):
+                    $after_content = $after_content.$big_counter;
+                endif;
+
+                if ( $position == 'top' || $position == 'both' ):
+                    $before_content = $before_content.$big_counter.'<br/>';
                 endif;
             endif;
 

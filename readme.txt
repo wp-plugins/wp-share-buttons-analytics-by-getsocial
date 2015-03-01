@@ -32,8 +32,6 @@ GetSocial.io is the social media app-store for all your needs: from awareness to
 
 <h4>Now with shortcodes!</h4>
 
-With version **2.0.1** we've added the ability to insert shortcodes on your site.  These allow you to insert our sharing bars in your Pages or in the middle of your Posts by adding a shortcode of your choice.
-
 These are the shortcodes available:
 
 * Sharing Bar
@@ -47,6 +45,10 @@ These are the shortcodes available:
 * Custom Actions
 
 `[getsocial app="custom_actions"]`
+
+* Big Total Shares Horizontal
+
+`[getsocial app="sharing_bar_big_total"]`
 
 == Installation ==
 
@@ -100,6 +102,10 @@ Have more doubts? You can go to <a href="http://feedback.getsocial.io">Getsocial
 5. Analytics
 
 == Changelog ==
+
+**2.1**
+
+- Added Big Total Shares Floating and Horizontal new apps.
 
 **2.0.1**
 

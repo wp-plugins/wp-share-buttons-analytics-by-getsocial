@@ -22,6 +22,20 @@
                     'href' => $GS->gs_account().'/sites/gs-wordpress/groups/new?api_key='.$GS->api_key.'&amp;source=wordpress',
                     'desc' => "Use one of our templates or design your own social sharing bar. Customize size, shape & colour and pick from 15 social networks."
                 ),
+                'Big Total Shares Horizontal' => array(
+                    'file' => 'social-bar-big-counter',
+                    'active' => $GS->is_active('social_bar_big_counter'),
+                    'href' => $GS->gs_account().'/sites/gs-wordpress/big_counter_sharing_bar/new?api_key='.$GS->api_key.'&amp;source=wordpress',
+                    'pro' => true,
+                    'desc' => "Increase engagement by showing the total number of shares in a big counter on the left of your horizontal share bar."
+                ),
+                'Big Total Shares Floating' => array(
+                    'file' => 'floating-bar-big-counter',
+                    'active' => $GS->is_active('floating_bar_big_counter'),
+                    'href' => $GS->gs_account().'/sites/gs-wordpress/big_counter_floating_bar/new?api_key='.$GS->api_key.'&amp;source=wordpress',
+                    'pro' => true,
+                    'desc' => "Increase engagement by showing the total number of shares in a big counter on top of your floating share bar."
+                ),
                 'Native Sharing Bar' => array(
                     'file' => 'native-bar',
                     'active' => $GS->is_active('native_bar'),
