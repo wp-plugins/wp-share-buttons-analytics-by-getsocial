@@ -2,6 +2,7 @@
 
 class GS {
     private $gs_url = "http://api.at.getsocial.io";
+    private $gs_url_api = "//api.at.getsocial.io";
     private $gs_account = "http://getsocial.io/";
     private $api_url = "http://getsocial.io/api/v1/";
     // private $gs_url = "//localhost:3001";
@@ -86,7 +87,7 @@ class GS {
     var GETSOCIAL_LANG = "$this->lang";
     (function() {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = '$this->gs_url/widget/v1/gs_async.js?id='+GETSOCIAL_ID;
+    po.src = '$this->gs_url_api/widget/v1/gs_async.js?id='+GETSOCIAL_ID;
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
     })();
 </script>
@@ -103,6 +104,8 @@ EOF;
                 return '<div class="getsocial gs-native-bar"></div>';
             case 'custom_actions':
                 return '<div class="getsocial gs-custom-actions"></div>';
+            case 'social_bar_big_counter':
+                return '<div class="getsocial gs-inline-group gs-big-counter"></div>';
             default:
                 return '';
         }
