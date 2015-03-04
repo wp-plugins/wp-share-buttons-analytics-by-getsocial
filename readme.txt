@@ -21,6 +21,8 @@ We have updated our button’s design to make them look even better on your webs
 
 GetSocial.io is the social media app-store for all your needs: from awareness to conversion. You can find more info about our product <a href="http://getsocial.io">here</a>. In this plugin, you'll find the following features:
 
+Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="http://blog.getsocial.io/add-social-sharing-buttons-wordpress/">How to add free Social Sharing Buttons on WordPress</a>
+
 <h4>Social Apps</h4>
 
 * **Social media bar**: Add our floating social bar and get free social media tracking of the shares made on your website. This social media widget will help your users to do more social shares of your content.
