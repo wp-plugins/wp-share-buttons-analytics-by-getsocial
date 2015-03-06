@@ -6,7 +6,7 @@ class GS {
     private $gs_account = "http://getsocial.io/";
     private $api_url = "http://getsocial.io/api/v1/";
     // private $gs_url = "//localhost:3001";
-    // private $gs_account = "https://getsocial.fwd.wf/";
+    // private $gs_account = "http://localhost:3000/";
     // private $gs_url_api = "http://localhost:3001";
     // private $api_url = "http://localhost:3000/api/v1/";
 
