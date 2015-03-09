@@ -1,13 +1,13 @@
 <?php
 
 class GS {
-    private $gs_url = "http://api.at.getsocial.io";
-    private $gs_url_api = "//api.at.getsocial.io";
-    private $gs_account = "http://getsocial.io/";
-    private $api_url = "http://getsocial.io/api/v1/";
-    // private $gs_url = "//localhost:3001";
-    // private $gs_account = "http://localhost:3000/";
-    // private $api_url = "http://localhost:3000/api/v1/";
+    // private $gs_url = "http://api.at.getsocial.io";
+    // private $gs_url_api = "//api.at.getsocial.io";
+    // private $gs_account = "http://getsocial.io/";
+    // private $api_url = "http://getsocial.io/api/v1/";
+    private $gs_url = "//localhost:3001";
+    private $gs_account = "http://localhost:3000/";
+    private $api_url = "http://localhost:3000/api/v1/";
 
     function __construct($api_key, $identifier, $lang){
         $this->api_key = $api_key;
@@ -18,7 +18,7 @@ class GS {
 
     private function api($path) {
         try {
-            $r = wp_remote_get($this->api_url.$path, array());
+            $r = wp_remote_get($this->api_url.$path, array( 'sslverify' => false ));
 
             if(is_wp_error($r)):
                 return null;
