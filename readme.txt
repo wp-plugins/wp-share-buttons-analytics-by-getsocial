@@ -1,20 +1,19 @@
-=== Share Buttons & Mobile Sharing by GetSocial.io ===
-Contributors: joaoromao, GetSocial.io
+=== Share Buttons by GetSocial.io ===
+Contributors: joaoromao
 Donate link:
-Tags: share buttons, sharing buttons, share button, sharing button, sharing, share links, social buttons, social button, social sharing, social share, mobile sharing, mobile web shares, mobile shares, ecommerce, social analytics, addthis, sharethis, woocommerce, e-commerce, addtoany, admin, bookmark, bookmarking, bookmarks, button, Facebook, Facebook share, facebook like, google, google plus, google plus one, Like, linkedin, lockerz, pin, pin it, pinit, pinterest, plugin, plus 1, plus one, Post, posts, Reddit, save, seo, sexybookmarks, share, shareaholic, sharedaddy, sharethis, sharing, sidebar, sociable, social, social bookmarking, social bookmarks, statistics, stats, stumbleupon, tumblr, tweet, twitter, social media, widget, Sociable, Social Media Widget ,Really Simple Share ,Social Share Buttons for WordPress ,Slick Social Share Buttons ,Sharebar ,Socialize ,Trackable Social Share Icons ,Facebook Social Plugins ,Tilt Social Share Widget ,Artiss Social Share ,WP Socializer, Hupso Share Buttons for Twitter, Easy Facebook Share Thumbnail, Floating Social Media Links, Social Metrics, Socialize This
+Tags: share buttons, sharing buttons, share button, sharing button, sharing, share links, social buttons, social button, social sharing, social share, mobile sharing, mobile web shares, mobile shares, big counter, share counter, total shares, ecommerce, social analytics, addthis, sharethis, woocommerce, e-commerce, addtoany, admin, bookmark, bookmarking, bookmarks, button, Facebook, Facebook share, facebook like, google, google plus, google plus one, Like, linkedin, lockerz, pin, pin it, pinit, pinterest, plugin, plus 1, plus one, Post, posts, Reddit, save, seo, sexybookmarks, share, shareaholic, sharedaddy, sharethis, sharing, sidebar, sociable, social, social bookmarking, social bookmarks, statistics, stats, stumbleupon, tumblr, tweet, twitter, social media, widget, Sociable, Social Media Widget ,Really Simple Share ,Social Share Buttons for WordPress ,Slick Social Share Buttons ,Sharebar ,Socialize ,Trackable Social Share Icons ,Facebook Social Plugins ,Tilt Social Share Widget ,Artiss Social Share ,WP Socializer, Hupso Share Buttons for Twitter, Easy Facebook Share Thumbnail, Floating Social Media Links, Social Metrics, Socialize This
 Requires at least: 3.0
 Tested up to: 4.1
 Stable tag: 2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Share buttons for Wordpress and Mobile. Increase traffic from Facebook, Twitter, Google+, Pinterest and others. No code required.
+Share buttons with big counters for Wordpress and Mobile. Increase traffic from Facebook, Twitter, Google+ and others. No code required.
 
 == Upgrade Notice ==
 
 = 2.1 =
-We have updated our button’s design to make them look even better on your website. If you update the plugin you won’t have access to our old buttons.
-We also added the Big Total Sharing buttons and increased the range of social networks your users can share to.
+We have added the Big Total Sharing buttons and increased the range of social networks your users can share to.
 
 == Description ==
 
