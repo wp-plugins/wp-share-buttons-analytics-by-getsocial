@@ -50,7 +50,7 @@ These are the shortcodes available:
 
 * Big Total Shares Horizontal
 
-`[getsocial app="sharing_bar_big_total"]`
+`[getsocial app="social_bar_big_counter"]`
 
 == Installation ==
 
