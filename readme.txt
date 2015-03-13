@@ -4,7 +4,7 @@ Donate link:
 Tags: share buttons, sharing buttons, share button, sharing button, sharing, share links, social buttons, social button, social sharing, social share, mobile sharing, mobile web shares, mobile shares, big counter, share counter, total shares, ecommerce, social analytics, addthis, sharethis, woocommerce, e-commerce, addtoany, admin, bookmark, bookmarking, bookmarks, button, Facebook, Facebook share, facebook like, google, google plus, google plus one, Like, linkedin, lockerz, pin, pin it, pinit, pinterest, plugin, plus 1, plus one, Post, posts, Reddit, save, seo, sexybookmarks, share, shareaholic, sharedaddy, sharethis, sharing, sidebar, sociable, social, social bookmarking, social bookmarks, statistics, stats, stumbleupon, tumblr, tweet, twitter, social media, widget, Sociable, Social Media Widget ,Really Simple Share ,Social Share Buttons for WordPress ,Slick Social Share Buttons ,Sharebar ,Socialize ,Trackable Social Share Icons ,Facebook Social Plugins ,Tilt Social Share Widget ,Artiss Social Share ,WP Socializer, Hupso Share Buttons for Twitter, Easy Facebook Share Thumbnail, Floating Social Media Links, Social Metrics, Socialize This
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 2.1
+Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,7 @@ Also, there's a tutorial on how to install this plugin in your Wordpress Account
 * **Dark social media tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL will allow you to effectively measure social media ROI.
 * **Free Social Media Analytics**: All our social sharing plugins contribute for your undertanding on how social sharing is driving you traffic and conversions. From social share buttons to conversion tracking, your social media monitoring will be available in simple yet comprehensive dashboards.
 * **Custom Sharing Actions**: Sometimes we need to say more than a simple 'Like'. Here you'll find more than 50 custom stories such as Awesome, Wish or Love.
+* **Welcome Bar**: Easily lead your visitors to a specific link. Great to generate conversions, engage with promotions and increase traffic.
 * **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network.
 * **Mobile Web Sharing**: Mobile sharing doesn't have to be a terrible experinece. Create beautiful interfaces for your mobile users to share their thoughts about your content.
 
@@ -104,6 +105,10 @@ Have more doubts? You can go to <a href="http://feedback.getsocial.io">Getsocial
 5. Analytics
 
 == Changelog ==
+
+**2.2**
+
+- Added Welcome Bar App.
 
 **2.1**
 

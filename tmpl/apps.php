@@ -55,6 +55,12 @@
                     'href' => $GS->gs_account().'/sites/gs-wordpress/mobile_bar/new?api_key='.$GS->api_key.'&amp;source=wordpress',
                     "desc" => "Mobile Web is one of the fastest growing platform both in traffic and shares. Don't miss out on the opportunity to boost your traffic with our slick mobile web sharing interface. No code needed."
                 ),
+                'Welcome Bar' => array(
+                    'file' => 'welcome-bar',
+                    'active' => $GS->is_active('welcome_bar'),
+                    'href' => $GS->gs_account().'/sites/gs-wordpress/welcome_bars/new?api_key='.$GS->api_key.'&amp;source=wordpress',
+                    "desc" => "Easily lead your visitors to a specific link. Great to generate conversions, engage with promotions and increase traffic. No code needed."
+                ),
             );
 
             foreach($apps as $app => $settings):

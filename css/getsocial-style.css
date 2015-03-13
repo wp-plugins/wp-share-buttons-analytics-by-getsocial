@@ -345,7 +345,7 @@ header h2 {
 }
 
 #steps .create-account {
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -522,4 +522,16 @@ i.fa {
 
 .loading-create {
     display: none;
+}
+
+.example {
+    margin-top: 50px;
+    text-align: center;
+    color: gray;
+}
+
+.create-gs-account {
+    font-size: 18px !important;
+    padding: 6px 50px !important;
+    height: auto !important;
 }

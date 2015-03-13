@@ -16,6 +16,11 @@
                 <h1>Welcome and thanks for downloading GetSocial’s Share Buttons with Analytics.</h1>
                 <p>To get started click on the button below to automatically create a GetSocial account.</strong></p>
 
+                <p class="example">
+                    <span>A few seconds away from this...</span><br/>
+                    <img src="<?php echo plugins_url( '/images/big_total_horizontal.png', __FILE__ ) ?>" alt="">
+                </p>
+
                 <div class="info gs-clearfix">
                     <dl class="gs-clearfix">
                         <dt>URL</dt>
@@ -27,7 +32,7 @@
 
                     <p class="create-account">
                         <a href="<?php echo $GS->gs_account() ?>/api/v1/sites/create?source=wordpress&amp;email=<?php echo get_option('admin_email') ?>&amp;url=<?php echo get_option('siteurl') ?>" class="button button-primary create-gs-account">
-                            Create Account
+                            Create your FREE account
                         </a>
 
                         <span class="loading-create">
