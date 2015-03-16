@@ -63,7 +63,11 @@ class GS {
     function apps($app_name){
         $apps = json_decode(get_option('gs-apps'), true);
 
-        return (array_key_exists($app_name, $apps) ? $apps[$app_name] : false);
+        if($apps == null){
+            return false;
+        } else {
+            return (array_key_exists($app_name, $apps) ? $apps[$app_name] : false);
+        }
     }
 
     function is_pro(){
