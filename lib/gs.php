@@ -62,7 +62,7 @@ class GS {
 
     function apps($app_name){
         $apps = json_decode(get_option('gs-apps'), true);
-        
+
         if($apps == null){
             return false;
         } else {

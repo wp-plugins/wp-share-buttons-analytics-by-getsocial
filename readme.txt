@@ -4,7 +4,7 @@ Donate link:
 Tags: share buttons, sharing buttons, share button, sharing button, sharing, share links, social buttons, social button, social sharing, social share, mobile sharing, mobile web shares, mobile shares, big counter, share counter, total shares, ecommerce, social analytics, addthis, sharethis, woocommerce, e-commerce, addtoany, admin, bookmark, bookmarking, bookmarks, button, Facebook, Facebook share, facebook like, google, google plus, google plus one, Like, linkedin, lockerz, pin, pin it, pinit, pinterest, plugin, plus 1, plus one, Post, posts, Reddit, save, seo, sexybookmarks, share, shareaholic, sharedaddy, sharethis, sharing, sidebar, sociable, social, social bookmarking, social bookmarks, statistics, stats, stumbleupon, tumblr, tweet, twitter, social media, widget, Sociable, Social Media Widget ,Really Simple Share ,Social Share Buttons for WordPress ,Slick Social Share Buttons ,Sharebar ,Socialize ,Trackable Social Share Icons ,Facebook Social Plugins ,Tilt Social Share Widget ,Artiss Social Share ,WP Socializer, Hupso Share Buttons for Twitter, Easy Facebook Share Thumbnail, Floating Social Media Links, Social Metrics, Socialize This
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 2.2
+Stable tag: 2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -105,6 +105,10 @@ Have more doubts? You can go to <a href="http://feedback.getsocial.io">Getsocial
 5. Analytics
 
 == Changelog ==
+
+**2.3**
+
+- Added Subscriber Bar App.
 
 **2.2**
 

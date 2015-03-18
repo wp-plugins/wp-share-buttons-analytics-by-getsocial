@@ -499,6 +499,7 @@ i.fa {
 .btn {
     padding: 5px 10px;
     border-radius: 3px;
+    text-decoration: none;
 }
 
 .btn.btn-default {
@@ -518,6 +519,35 @@ i.fa {
 
 .btn.btn-pro:hover {
     background: #E07415;
+}
+
+.upgrade {
+    text-align: right;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.promocode {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.promocode span {
+    padding: 2px 6px;
+    margin: 0 3px;
+    color: white;
+    font-size: 14px;
+    background: rgb(67, 174, 67);
+}
+
+.promocode small {
+    font-size: 11px !important;
 }
 
 .loading-create {

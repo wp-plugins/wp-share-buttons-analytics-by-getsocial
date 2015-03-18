@@ -1,12 +1,21 @@
 
 <h2>
     <i class="fa fa-list"></i>Apps
-    <?php if(!$GS->is_pro()): ?>
-    <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?= $GS->api_key ?>&amp;source=wordpress" target="_blank" class="btn btn-pro">Upgrade to Pro</a>
-    <?php endif; ?>
+
 </h2>
 <div class="sub-wrap">
     <div class="app-list">
+        <?php // if(!$GS->is_pro()): ?>
+        <div class="upgrade">
+            <div class="promocode">
+                COUPON
+                <span>33OFF_4LIFE</span>
+                <small>30% discount <b>forever</b>, limited to the first 100</small>
+            </div>
+            <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?= $GS->api_key ?>&amp;source=wordpress" target="_blank" class="btn btn-pro">Upgrade to Pro</a>
+        </div>
+        <?php // endif; ?>
+
         <?php
             $apps = array(
                 'Custom Sharing Actions' => array(
@@ -60,6 +69,13 @@
                     'active' => $GS->is_active('welcome_bar'),
                     'href' => $GS->gs_account().'/sites/gs-wordpress/welcome_bars/new?api_key='.$GS->api_key.'&amp;source=wordpress',
                     "desc" => "Easily lead your visitors to a specific link. Great to generate conversions, engage with promotions and increase traffic. No code needed."
+                ),
+                'Subscriber Bar' => array(
+                    'file' => 'subscriber-bar',
+                    'active' => $GS->is_active('subscriber_bar'),
+                    'pro' => true,
+                    'href' => $GS->gs_account().'/sites/gs-wordpress/subscribe_bars/new?api_key='.$GS->api_key.'&amp;source=wordpress',
+                    "desc" => "Easily capture emails from your visitors by providing them with an engaging top bar. Export data to your favorite CRM or e-Mail marketing software."
                 ),
             );
 
