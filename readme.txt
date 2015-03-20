@@ -30,6 +30,7 @@ Also, there's a tutorial on how to install this plugin in your Wordpress Account
 * **Free Social Media Analytics**: All our social sharing plugins contribute for your undertanding on how social sharing is driving you traffic and conversions. From social share buttons to conversion tracking, your social media monitoring will be available in simple yet comprehensive dashboards.
 * **Custom Sharing Actions**: Sometimes we need to say more than a simple 'Like'. Here you'll find more than 50 custom stories such as Awesome, Wish or Love.
 * **Welcome Bar**: Easily lead your visitors to a specific link. Great to generate conversions, engage with promotions and increase traffic.
+* **Subscriber Bar**: Easily capture emails from your visitors by providing them with an engaging top bar. Export data to your favorite CRM or e-Mail marketing software.
 * **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network.
 * **Mobile Web Sharing**: Mobile sharing doesn't have to be a terrible experinece. Create beautiful interfaces for your mobile users to share their thoughts about your content.
 
