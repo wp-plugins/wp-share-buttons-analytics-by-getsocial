@@ -23,7 +23,8 @@ GetSocial.io is the social media app-store for all your needs: from awareness to
 
 Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="http://blog.getsocial.io/add-social-sharing-buttons-wordpress/">How to add free Social Sharing Buttons on WordPress</a>
 
-<h4>Promocode on the PRO plan</h4>
+<h4>Promocode for the PRO plan</h4>
+
 
 Use **33OFF_4LIFE** for 33% lifetime discount, limited to the first 100
 
