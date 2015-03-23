@@ -5,7 +5,7 @@ Tags: share buttons, sharing buttons, share button, sharing button, sharing, sha
 Requires at least: 3.0
 Tested up to: 4.1
 Stable tag: 2.3
-License: GPLv2 or later
+License: GPLv2 or later 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Share buttons with big counters for Wordpress and Mobile. Increase traffic from Facebook, Twitter, Google+ and others. No code required.
@@ -24,7 +24,6 @@ GetSocial.io is the social media app-store for all your needs: from awareness to
 Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="http://blog.getsocial.io/add-social-sharing-buttons-wordpress/">How to add free Social Sharing Buttons on WordPress</a>
 
 <h4>Promocode for the PRO plan</h4>
-
 
 Use **33OFF_4LIFE** for 33% lifetime discount, limited to the first 100
 
