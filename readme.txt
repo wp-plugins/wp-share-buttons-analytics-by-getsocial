@@ -10,11 +10,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Share buttons with big counters for Wordpress and Mobile. Increase traffic from Facebook, Twitter, Google+ and others. No code required.
 
-== Upgrade Notice ==
-
-= 2.1 =
-We have added the Big Total Sharing buttons and increased the range of social networks your users can share to.
-
 == Description ==
 
 **Share Buttons by GetSocial.io** is a free WordPress plugin that enables you to track social shares on Wordpress. Provide beautiful wordpress sharing buttons, track how many shares were made in each post and see how much traffic and conversions each post generated. Optimize your SEO and social shares with GetSocial.
