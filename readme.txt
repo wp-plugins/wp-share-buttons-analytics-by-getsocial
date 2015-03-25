@@ -14,13 +14,11 @@ Share buttons with big counters for Wordpress and Mobile. Increase traffic from 
 
 **Share Buttons by GetSocial.io** is a free WordPress plugin that enables you to track social shares on Wordpress. Provide beautiful wordpress sharing buttons, track how many shares were made in each post and see how much traffic and conversions each post generated. Optimize your SEO and social shares with GetSocial.
 
-GetSocial.io is the social media app-store for all your needs: **from awareness to conversion**. You can find more info about our product <a href="http://getsocial.io/?utm_source=wordpress_plugin">here</a>. In this plugin, you'll find the following features:
-
-Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="http://blog.getsocial.io/add-social-sharing-buttons-wordpress/?utm_source=wordpress_plugin">How to add free Social Sharing Buttons on WordPress</a>
-
 <h4>Promocode for the PRO plan</h4>
 
-Use **33OFF_4LIFE** for 33% lifetime discount, limited to the first 100
+Use **33OFF_4LIFE** for 33% lifetime discount, limited to the first 100 ( only 27 left )
+
+GetSocial.io is the social media app-store for all your needs: **from awareness to conversion**. You can find more info about our product <a href="http://getsocial.io/?utm_source=wordpress_plugin">here</a>. In this plugin, you'll find the following features:
 
 <h4>Social Apps</h4>
 
@@ -33,7 +31,9 @@ Use **33OFF_4LIFE** for 33% lifetime discount, limited to the first 100
 * **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network.
 * **Mobile Web Sharing**: Mobile sharing doesn't have to be a terrible experinece. Create beautiful interfaces for your mobile users to share their thoughts about your content.
 
-<h4>Now with shortcodes!</h4>
+Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="http://blog.getsocial.io/add-social-sharing-buttons-wordpress/?utm_source=wordpress_plugin">How to add free Social Sharing Buttons on WordPress</a>
+
+<h4>Want to add it to Pages?</h4>
 
 These are the shortcodes available:
 
