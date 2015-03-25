@@ -8,7 +8,7 @@ Stable tag: 2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Share buttons with big counters for Wordpress and Mobile. Increase traffic from Facebook, Twitter, Google+ and others. No code required.
+Share buttons with big counters for Wordpress and Mobile. Increase traffic from Facebook, Twitter, Google+, Linkedin, WhatsApp and others. No code required.
 
 == Description ==
 
