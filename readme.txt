@@ -20,7 +20,7 @@ GetSocial.io is the social media app-store for all your needs: **from awareness 
 
 <h4>Promocode for the PRO plan</h4>
 
-Use **33OFF_4LIFE** for 33% lifetime discount, limited to the first 100 ( only 11 left )
+Use **33OFF_4LIFE** for 33% lifetime discount, limited to the first 100 ( only 9 left )
 
 <h4>Social Sharing Features</h4>
 
