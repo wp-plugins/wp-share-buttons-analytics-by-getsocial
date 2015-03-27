@@ -5,6 +5,7 @@
     <small>from <strong><?php echo $from ?></strong> to <strong><?php echo $to ?></strong></small>
     <a href="<?php echo $GS->gs_account().'/sites/gs-wordpress/analytics/dashboard?api_key='.$GS->api_key.'&amp;source=wordpress' ?>" target="_blank" class="btn btn-default"><i class="fa fa-area-chart"></i>Detailed Stats</a>
 </h2>
+
 <div class="sub-wrap">
     <div class="graphs gs-clearfix" data-graph-api="<?php echo $GS->api_url('sites/analytics/'.get_option('gs-api-key')) ?>">
         <div class="graph">
