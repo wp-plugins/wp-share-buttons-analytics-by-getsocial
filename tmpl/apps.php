@@ -10,7 +10,7 @@
             <div class="promocode">
                 COUPON
                 <span>33OFF_4LIFE</span>
-                <small>33% discount <b>forever</b>, limited to the first 100 ( only 4 left )</small>
+                <small>33% discount <b>forever</b>, limited to the first 100 ( only 3 left )</small>
             </div>
             <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?= $GS->api_key ?>&amp;source=wordpress" target="_blank" class="btn btn-pro">Upgrade to <b>Pro</b> @ <b>6$</b> / month</a>
         </div>
