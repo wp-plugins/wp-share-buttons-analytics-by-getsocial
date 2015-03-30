@@ -89,7 +89,7 @@ If you're not confortable around code and if we've failed to help you with our t
 
 **Do you have a visit limit for my website?**
 
-Yes. The plans above (Free, Pro, Premium) are available for websites with less then 1 million visits per month. A visit is the period time a user is actively engaged on areas of your website where our share buttons are available. If your traffic is above 1M per month please request a quote from us. Pricing starts at $99/month.
+Yes. The plans above (Free, Pro, Premium) are available for websites with less then 1 million visits per month. A visit is the period time a user is actively engaged on areas of your website where our share buttons are available. If your traffic is above 1M per month please request a quote from us. Pricing goes from 9$/month ( Pro Plan ) to 99$/month ( Premium Plan ).
 
 **What is included in the free plan?**
 
