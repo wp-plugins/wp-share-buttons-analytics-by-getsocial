@@ -18,10 +18,6 @@ Share buttons for Wordpress. Includes Mobile and Total Shares. Increase traffic 
 
 GetSocial.io is the social media app-store for all your needs: **from awareness to conversion**. You can find more info about our product <a href="http://getsocial.io/?utm_source=wordpress_plugin">here</a>. In this plugin, you'll find the following features:
 
-<h4>Promocode for the PRO plan</h4>
-
-Use **33OFF_4LIFE** for 33% lifetime discount, limited to the first 100 ( only 3 left ). **Only 6$ / month**.
-
 <h4>Social Sharing Features</h4>
 
 * **Social media shares bar**: Add our horizontal and vertical social shares bar and get free social media tracking of the shares made on your website. This social media widget will help your users to do more social shares of your content. Social sharing is a vital piece to increase website traffic.
