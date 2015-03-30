@@ -529,6 +529,7 @@ i.fa {
     text-align: left;
     padding: 10px;
     margin-bottom: 20px;
+    min-height: 30px;
     background: white;
 }
 
