@@ -18,10 +18,8 @@ wp_register_style( 'getsocial-style', plugins_url('../css/getsocial-style.css', 
 
 wp_enqueue_style( 'getsocial-style' );
 
-wp_register_script( 'builder', plugins_url('../js/builder.js', __FILE__) );
 wp_register_script( 'plugin', plugins_url('../js/plugin.js', __FILE__) );
 
-wp_enqueue_script( 'builder' );
 wp_enqueue_script( 'plugin' );
 
 ?>
