@@ -16,7 +16,7 @@ Share buttons for Wordpress. Includes Mobile and Total Shares. Increase traffic 
 
 **Share Buttons by GetSocial.io** is a free WordPress plugin that enables you to track social shares on Wordpress. Provide beautiful wordpress sharing buttons, track how many shares were made in each post and see how much traffic, conversions and shares each post generated. Optimize your SEO and increase social shares with GetSocial.io.
 
-GetSocial.io is the social media app store for all your needs: **from awareness to conversion**. You can find more info about our product <a href="http://getsocial.io/?utm_source=wordpress_plugin">here</a>. In this plugin, you'll find the following features:
+GetSocial.io is the social media app store for all your needs: **from awareness to conversion**. You can find more info about our product <a href="http://getsocial.io/?utm_source=wordpress_plugin">here</a>. In this plugin, you will find the following features:
 
 <h4>Social Sharing Features</h4>
 
