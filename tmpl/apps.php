@@ -5,11 +5,11 @@
 </h2>
 <div class="sub-wrap">
     <div class="app-list">
-        <?php // if(!$GS->is_pro()): ?>
+        <?php if(!$GS->is_pro()): ?>
         <div class="upgrade">
             <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?= $GS->api_key ?>&amp;source=wordpress" target="_blank" class="btn btn-pro">Upgrade to <b>Pro</b> @ <b>9$</b> / month</a>
         </div>
-        <?php // endif; ?>
+        <?php endif; ?>
 
         <?php
             $apps = array(

@@ -30,7 +30,7 @@ GetSocial.io is the social media app store for all your needs: **from awareness 
 
 * **Welcome Bar**: Easily lead your visitors to a specific link. Great to generate conversions, engage with promotions and increase traffic. Increase your conversion rates and improve your funnel with this hello bar like feature. Track conversions coming from this top bar for wordpress.
 
-* **Subscriber Bar**: Easily capture emails from your visitors by providing them with an engaging top bar. Export data to your favorite CRM or e-Mail marketing software. Improve engagement, conversion and even sales with this easy to install, no code required feature.
+* **Subscriber Bar**: Easily capture emails from your visitors by providing them with an engaging top bar. Export data to your favorite CRM or e-Mail marketing software. Improve engagement, conversion and even sales with this easy to install, no code required.
 
 * **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network. Social sharing definitely contributes to your website and your share analytics shall prove just that
 
