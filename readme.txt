@@ -147,15 +147,15 @@ Have more doubts? You can go to <a href="http://feedback.getsocial.io">Getsocial
 
 **2.3**
 
-- Added Subscriber Bar App.
+- Added Subscriber Bar App
 
 **2.2**
 
-- Added Welcome Bar App.
+- Added Welcome Bar App
 
 **2.1**
 
-- Added Big Total Shares Floating and Horizontal new apps.
+- Added Big Total Shares Floating and Horizontal new apps
 
 **2.0.1**
 
