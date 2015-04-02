@@ -43,13 +43,11 @@ wp_enqueue_script( 'plugin' );
             <ul class="clearfix">
                 <?php if(get_option('gs-api-key') != ''): ?>
 
-                    <?php if( isset($_GET['debug']) && $_GET['debug'] == '1'): ?>
-                        <li class="nav-submenu-link">
-                            <a id="api-key" href="javascript:void(0)">
-                                <span class="idle">API Key</span><span class="active"><i class="fa fa-pencil"></i> Edit</span> <?php echo get_option('gs-api-key'); ?>
-                            </a>
-                        </li>
-                    <?php endif; ?>
+                    <li class="nav-submenu-link">
+                        <a id="api-key" href="javascript:void(0)">
+                            <span class="idle">API Key</span><span class="active"><i class="fa fa-pencil"></i> Edit</span> <?php echo get_option('gs-api-key'); ?>
+                        </a>
+                    </li>
 
                     <li class="nav-submenu-link">
                         <a href="<?php echo $GS->gs_account().'/sites/gs-wordpress/analytics/dashboard?api_key='.$GS->api_key.'&amp;source=wordpress' ?>" target="_blank"><i class="fa fa-bar-chart"></i> Social Analytics</i></a>
