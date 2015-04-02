@@ -90,7 +90,7 @@
                     <div class="col-16">
                         <p class="alert-title">Use this Coupon <span class="success">33OFF_4LIFE</span> for a 33% discount forever!</p>
                         <p id="info"><strong>This offer is limited to the first 50</strong></p>
-                        <a href="#" class="button cta pro">Upgrade to PRO @ <strong>6$ / month</strong></a>
+                        <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress" target="_blank" class="button cta pro">Upgrade to PRO @ <strong>6$ / month</strong></a>
                     </div>
                     <!-- <a href="javascript:void(0)" class="close"><i class="fa fa-times"></i></a> -->
                 </div>
