@@ -30,13 +30,8 @@ jQuery('.getsocial-tab').on('click', function(e){
 function handleMessage(event){
     currEvent = event.data;
 
-    alert('');
-
-    console.log(currEvent);
-
     switch (currEvent){
         case 'publish':
-            console.log('forceUpdate');
             forceUpdate(currEvent);
             break;
         default:
