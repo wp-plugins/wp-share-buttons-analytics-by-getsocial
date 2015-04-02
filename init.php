@@ -1,81 +1,163 @@
-<?php include('tmpl/header.php'); ?>
-<?php include('tmpl/alerts.php'); ?>
+<div id="gs-master-wrapper">
+    <?php include('tmpl/header.php'); ?>
 
-<div class="wrap">
-    <?php if( isset($_GET['settings-updated']) && $_GET['settings-updated'] == true): ?>
-        <div id="message" class="updated below-h2">
-            <p>Preferences updated with success</p>
-        </div>
-    <?php endif; ?>
+    <?php include('tmpl/alerts.php'); ?>
 
+    <main>
 
-    <?php if(get_option('gs-api-key') == ''): ?>
+        <?php if( isset($_GET['settings-updated']) && $_GET['settings-updated'] == true): ?>
 
-        <div id="steps" class="form-content">
-            <div class="step">
-                <h1>Welcome and thanks for downloading GetSocial’s Share Buttons with Analytics.</h1>
-                <p>To get started click on the button below to automatically create a GetSocial account.</strong></p>
-
-                <div class="info gs-clearfix">
-                    <dl class="gs-clearfix">
-                        <dt>URL</dt>
-                        <dd><?php echo get_option('siteurl') ?></dd>
-                        <dt>Email</dt>
-                        <dd><?php echo get_option('admin_email') ?></dd>
-
-                    </dl>
-
-                    <p class="create-account">
-                        <a href="<?php echo $GS->gs_account() ?>/api/v1/sites/create?source=wordpress&amp;email=<?php echo get_option('admin_email') ?>&amp;url=<?php echo get_option('siteurl') ?>" class="button button-primary create-gs-account">
-                            Create your account
-                        </a>
-
-                        <span class="loading-create">
-                            <i class="fa fa-circle-o-notch fa-spin"></i> Creating Account...
-                        </span>
-                    </p>
-
-                    <div class="notification-bar success green-cta hidden">
-                        Congratulations! You are ready to start in 3..2..1..
-                    </div>
-
-                    <div class="notification-bar errors red-cta hidden">
-                    </div>
-
-                    <div class="api-key hidden">
-                        <form id="api-key-form" method="post" action="options.php">
-                            <?php settings_fields( 'getsocial-gs-settings' ); ?>
-                            <?php do_settings_sections( 'getsocial-gs-settings' ); ?>
-                            <p>Please go to your Getsocial Account and get your API KEY in the site options page.</p>
-                            <input id="api-key" type="text" name="gs-api-key" size="60" value="" />
-                            <?php submit_button('Save Changes'); ?>
-                        </form>
-                    </div>
+            <div class="notification-bar alert success clearfix small">
+                <div class="col-16">
+                    <p>Preferences updated successfully</p>
                 </div>
-
-
             </div>
 
-        </div>
+        <?php endif; ?>
 
-    <?php else: ?>
+        <?php if(get_option('gs-api-key') == ''): ?>
+            <div class="title-wrapper">
+                <h1>Welcome and thanks for downloading <span>GetSocial’s Share Buttons with Analytics.</span></h1>
+                <p>To get started click on the button below to automatically create a GetSocial account.</strong></p>
+            </div>
 
-        <?php if( !isset($_GET['tab']) ): ?>
+            <div class="account-info form small">
+                <div class="form-content">
+                    <div class="field-group">
+                        <div class="field-label no-desc">
+                            <label for="site-name">URL</label>
+                        </div>
+                        <div class="field-input">
+                            <?php echo get_option('siteurl') ?>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <div class="field-label no-desc">
+                            <label for="site-name">Email</label>
+                        </div>
+                        <div class="field-input">
+                            <?php echo get_option('admin_email') ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-button-group">
+                    <a href="<?php echo $GS->gs_account() ?>/api/v1/sites/create?source=wordpress&amp;email=<?php echo get_option('admin_email') ?>&amp;url=<?php echo get_option('siteurl') ?>" class="button success create-gs-account">Create your account</a>
+                    <span class="loading-create button success trans border">
+                        <i class="fa fa-refresh rotate"></i> Creating Account...
+                    </span>
+                </div>
+            </div>
 
-            <?php include('tmpl/basic_stats.php') ?>
+            <div class="notification-bar alert success clearfix small hidden">
+                <div class="col-16">
+                    <p><i class="fa fa-check"></i> <strong>Congratulations!</strong> You are ready to start in 3..2..1..</p>
+                </div>
+            </div>
 
-            <?php include('tmpl/apps.php') ?>
+            <div class="notification-bar alert error clearfix small hidden">
+                <div class="col-16">
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="small">
+                <form id="api-key-form" method="post" class="api-key form hidden" action="options.php">
+                    <?php settings_fields( 'getsocial-gs-settings' ); ?>
+                    <?php do_settings_sections( 'getsocial-gs-settings' ); ?>
+
+                    <div class="form-content">
+                        <div class="field-clean">
+                            <div class="field-input">
+                                <p>Please go to your Getsocial Account and get your API KEY in the site options page.</p>
+                                <input id="gs-api-key" type="text" name="gs-api-key" size="60" value="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-button-group">
+                        <input type="submit" class="button success" value="Save Changes" />
+                    </div>
+                </form>
+            </div>
 
         <?php else: ?>
 
-            <?php if( isset($_GET['update']) ||  isset($_GET['delete'])  ): ?>
-                <div class="notification-bar green-cta" id="success-message">
-                    <p>App <?= isset($_GET['update']) ? 'updated' : 'deactivated' ?> with success</p>
+            <?php if( !isset($_GET['tab']) ): ?>
+
+                <?php //include('tmpl/basic_stats.php') ?>
+
+                <?php if(!$GS->is_pro()): ?>
+                <div class="alert cta default clearfix simple">
+                    <div class="col-16">
+                        <p class="alert-title">Use this Coupon <span class="success">33OFF_4LIFE</span> for a 33% discount forever!</p>
+                        <p id="info"><strong>This offer is limited to the first 50</strong></p>
+                        <a href="#" class="button cta pro">Upgrade to PRO @ <strong>6$ / month</strong></a>
+                    </div>
+                    <!-- <a href="javascript:void(0)" class="close"><i class="fa fa-times"></i></a> -->
                 </div>
+                <?php endif; ?>
+
+                <div class="medium">
+                    <?php include('tmpl/apps.php') ?>
+                </div>
+
+            <?php else: ?>
+
+                <?php if( isset($_GET['update']) ||  isset($_GET['delete'])  ): ?>
+
+                    <div class="notification-bar alert global success clearfix simple small">
+                        <div class="col-16">
+                            <p class="alert-title">App <?= isset($_GET['update']) ? 'updated' : 'deactivated' ?> with success</p>
+                        </div>
+                    </div>
+
+                <?php endif; ?>
+
+                <?php include('tmpl/apps/'.$_GET['tab'].'.php') ?>
+
             <?php endif; ?>
-
-            <?php include('tmpl/apps/'.$_GET['tab'].'.php') ?>
-
         <?php endif; ?>
-    <?php endif; ?>
+
+    </main>
+
+    <div id="api-key-modal" class="modal-wrapper hide">
+        <div class="modal">
+            <div class="modal-title">
+                <p class="title">Edit your API Key</p>
+            </div>
+            <form id="config-form" method="post" action="options.php" class="form">
+                <?php settings_fields( 'getsocial-gs-settings' ); ?>
+                <?php do_settings_sections( 'getsocial-gs-settings' ); ?>
+
+                <!-- <div class="notification-bar alert error clearfix small">
+                    <div class="col-16">
+                        <p>Preferences updated successfully</p>
+                    </div>
+                </div> -->
+
+                <div class="form-content">
+                    <div class="field-group">
+                        <div class="field-label no-desc">
+                            <label for="">Current<br>API Key</label>
+                        </div>
+                        <div class="field-input">
+                            <p class="api-key-value"><?php echo get_option('gs-api-key'); ?></p>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <div class="field-label no-desc">
+                            <label for="">New<br>API Key</label>
+                        </div>
+                        <div class="field-input">
+                            <input type="text" name="gs-api-key" size="60" placeholder="Insert your new API Key here" value="<?php echo get_option('gs-api-key'); ?>" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-button-group">
+                    <input type="submit" value="Submit New API Key" class="button success">
+                    <a href="javascript:void(0)" class="button error trans modal-close">Cancel</a>
+                </div>
+            </form>
+        </div>
+        <div class="modal-cover modal-close"></div>
+    </div>
 </div>
