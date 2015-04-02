@@ -78,8 +78,10 @@ add_filter('the_content', 'on_content');
 function on_content($content) {
     global $post;
     // $meta_values = get_post_meta( $post->post_id, '_my_meta_getsocialio_hide', true );
-    if(isset(get_post_custom()['_my_meta_getsocialio_hide'])){
-        $hide_bars = get_post_custom()['_my_meta_getsocialio_hide'][0];
+
+    $getsocial_meta = get_post_custom();
+    if(isset($getsocial_meta['_my_meta_getsocialio_hide'])){
+        $hide_bars = $getsocial_meta['_my_meta_getsocialio_hide'][0];
 
         if($hide_bars == 1){
             return $content;
