@@ -6,7 +6,7 @@ Tags: addthis share, addtoany share, artiss social share , big counter, bookmar
 
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 2.4
+Stable tag: 2.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,9 +38,7 @@ GetSocial.io is the social media app store for all your needs: **from awareness 
 
 Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="http://blog.getsocial.io/add-social-sharing-buttons-wordpress/?utm_source=wordpress_plugin">How to add free Social Sharing Buttons on WordPress</a>
 
-<h4>Want to add it to Pages?</h4>
-
-These are the shortcodes available:
+<h4>These are the shortcodes available:</h4>
 
 * Sharing Bar
 
@@ -127,6 +125,10 @@ Absolutely not! There are no contracts. Pay monthly, cancel anytime. There are n
 
 Sure, we’re always here to help. You can contact us at support@getsocial.io or use the help widget on the bottom-right corner of this page.
 
+**Can I hide GetSocial in specific posts / pages?**
+
+Yes you can! When you edit your post/page in the right sidebar you have an option to hide the social horizontal bars ( this does not include the mobile bar ).
+
 Have more doubts? You can go to <a href="http://feedback.getsocial.io">Getsocial Help Page</a> or <a mailto="support@getsocial.io">contact us</a>. We will try to be as fast as possible.
 
 == Screenshots ==
@@ -144,6 +146,10 @@ Have more doubts? You can go to <a href="http://feedback.getsocial.io">Getsocial
 11. Subscribe Top Bar
 
 == Changelog ==
+
+**2.4.1**
+
+- Easy way to add social bars to pages and possibility to hide it.
 
 **2.4**
 
