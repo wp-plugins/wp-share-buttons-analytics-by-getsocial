@@ -106,7 +106,7 @@
 
                     <div class="notification-bar alert global success clearfix simple small">
                         <div class="col-16">
-                            <p class="alert-title">App <?= isset($_GET['update']) ? 'updated' : 'deactivated' ?> with success</p>
+                            <p class="alert-title">App <?php echo isset($_GET['update']) ? 'updated' : 'deactivated' ?> with success</p>
                         </div>
                     </div>
 

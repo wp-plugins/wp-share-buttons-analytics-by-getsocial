@@ -76,7 +76,7 @@
             </div>
         <?php else: ?>
             <?php if( isset($settings['pro']) && $settings['pro'] ): ?>
-                <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?= $GS->api_key ?>&amp;source=wordpress" target="_blank" class="app-link-plan clearfix text-right tooltip plan-pro">
+                <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress" target="_blank" class="app-link-plan clearfix text-right tooltip plan-pro">
                     Pro <div>This app is only available in the <strong>Pro plan</strong></div>
                 </a>
             <?php endif; ?>
@@ -106,6 +106,6 @@
     <a id="backToTop" href="javascript:void(0)" class="button primary"><i class="fa fa-angle-up"></i> Back to Top</a>
     <?php if(!$GS->is_pro()): ?>
     &nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?= $GS->api_key ?>&amp;source=wordpress" target="_blank" class="button plan-pro">Upgrade to Pro</a>
+    <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress" target="_blank" class="button plan-pro">Upgrade to Pro</a>
     <?php endif; ?>
 </footer>
