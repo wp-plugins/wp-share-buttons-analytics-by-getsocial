@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:  Share Buttons & Mobile Sharing by GetSocial.io
+ * Plugin Name:  Share Buttons by GetSocial.io
  * Plugin URI: http://getsocial.io
  * Description: Share buttons for Wordpress and Mobile. Increase traffic from Facebook, Twitter, Google+, Pinterest and others. No code required.
  * Version: 2.4.1
