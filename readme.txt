@@ -75,7 +75,7 @@ For a manual installation:
 
 **What is GetSocial?**
 
-GetSocial is a software as a service that helps websites owners understand how social sharing drives their traffic and conversions. We provide a social media app store for all your needs, from awareness to conversion.
+GetSocial.io is a software as a service that helps websites owners understand how social sharing drives their traffic and conversions. We provide a social media app store for all your needs, from awareness to conversion.
 
 **How do I install GetSocial?**
 
