@@ -83,8 +83,6 @@
 
             <?php if( !isset($_GET['tab']) ): ?>
 
-                <?php //include('tmpl/basic_stats.php') ?>
-
                 <?php if(!$GS->is_pro()): ?>
                 <div class="alert cta default clearfix simple">
                     <div class="col-16">
@@ -96,12 +94,6 @@
                 </div>
                 <?php endif; ?>
 
-                <div class="medium">
-                    <?php include('tmpl/apps.php') ?>
-                </div>
-
-            <?php else: ?>
-
                 <?php if( isset($_GET['update']) ||  isset($_GET['delete'])  ): ?>
 
                     <div class="notification-bar alert global success clearfix simple small">
@@ -112,17 +104,26 @@
 
                 <?php endif; ?>
 
-                <?php include('tmpl/apps/'.$_GET['tab'].'.php') ?>
+                <div class="medium">
+                    <?php include('tmpl/apps.php') ?>
+                </div>
 
+
+            <?php else: ?>
+
+
+                <?php include('tmpl/apps/'.$_GET['tab'].'.php') ?>
             <?php endif; ?>
+
+
         <?php endif; ?>
 
     </main>
 
-    <div id="api-key-modal" class="modal-wrapper hide">
+    <div id="settings-modal" class="modal-wrapper hide">
         <div class="modal">
             <div class="modal-title">
-                <p class="title">Edit your API Key</p>
+                <p class="title">Settings</p>
             </div>
             <form id="config-form" method="post" action="options.php" class="form">
                 <?php settings_fields( 'getsocial-gs-settings' ); ?>
@@ -137,23 +138,31 @@
                 <div class="form-content">
                     <div class="field-group">
                         <div class="field-label no-desc">
-                            <label for="">Current<br>API Key</label>
+                            <label for=""><br>API KEY</label>
                         </div>
                         <div class="field-input">
-                            <p class="api-key-value"><?php echo get_option('gs-api-key'); ?></p>
+                            <input type="text" name="gs-api-key" size="60" value="<?php echo get_option('gs-api-key'); ?>" />
                         </div>
                     </div>
                     <div class="field-group">
                         <div class="field-label no-desc">
-                            <label for="">New<br>API Key</label>
+                            <label for="">Where it appears?</label>
                         </div>
                         <div class="field-input">
-                            <input type="text" name="gs-api-key" size="60" placeholder="Insert your new API Key here" value="<?php echo get_option('gs-api-key'); ?>" />
+                            <div class="one-third">
+                                <input type="radio" name="gs-place" value="place-posts" <?php echo (get_option('gs-place') == 'place-posts') ? 'checked' : '' ?> /><label>Only Posts</label>
+                            </div>
+                            <div class="one-third">
+                                <input type="radio" name="gs-place" value="place-pages" <?php echo (get_option('gs-place') == 'place-pages') ? 'checked' : '' ?>/><label>Only Pages</label>
+                            </div>
+                            <div class="one-third">
+                                <input type="radio" name="gs-place" value="place-all" <?php echo (get_option('gs-place') == 'place-all' || get_option('gs-place') == null) ? 'checked' : '' ?>/><label>Pages & Posts</label>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="form-button-group">
-                    <input type="submit" value="Submit New API Key" class="button success">
+                    <input type="submit" value="Save Settings" class="button success">
                     <a href="javascript:void(0)" class="button error trans modal-close">Cancel</a>
                 </div>
             </form>

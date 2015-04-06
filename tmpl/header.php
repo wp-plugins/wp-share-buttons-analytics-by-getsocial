@@ -43,9 +43,15 @@ wp_enqueue_script( 'plugin' );
             <ul class="clearfix">
                 <?php if(get_option('gs-api-key') != ''): ?>
 
-                    <li class="nav-submenu-link">
+                    <!-- <li class="nav-submenu-link">
                         <a id="api-key" href="javascript:void(0)">
                             <span class="idle">API Key</span><span class="active"><i class="fa fa-pencil"></i> Edit</span> <?php echo get_option('gs-api-key'); ?>
+                        </a>
+                    </li> -->
+
+                    <li class="nav-submenu-link">
+                        <a id="settings" href="javascript:void(0)">
+                            <i class="fa fa-cogs"></i> Settings
                         </a>
                     </li>
 

@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:  Share Buttons & Mobile Sharing by GetSocial.io
+ * Plugin Name:  Share Buttons by GetSocial.io
  * Plugin URI: http://getsocial.io
  * Description: Share buttons for Wordpress and Mobile. Increase traffic from Facebook, Twitter, Google+, Pinterest and others. No code required.
- * Version: 2.4.1
+ * Version: 2.4.2
  * Author: Getsocial, S.A.
  * Author URI: http://getsocial.io
  * License: GPL2
@@ -40,6 +40,7 @@ function update_getsocial() {
 
 function register_gs_settings(){
     register_setting( 'getsocial-gs-settings' , 'gs-api-key' );
+    register_setting( 'getsocial-gs-settings' , 'gs-place' );
     // register_setting( 'getsocial-gs-settings' , 'gs-buttons-position' );
     register_setting( 'getsocial-gs-settings' , 'gs-lang' );
 
@@ -80,6 +81,7 @@ function on_content($content) {
     // $meta_values = get_post_meta( $post->post_id, '_my_meta_getsocialio_hide', true );
 
     $getsocial_meta = get_post_custom();
+
     if(isset($getsocial_meta['_my_meta_getsocialio_hide'])){
         $hide_bars = $getsocial_meta['_my_meta_getsocialio_hide'][0];
 
@@ -88,9 +90,19 @@ function on_content($content) {
         }
     }
 
-    if ( is_single() || is_page() ):
+    $places = get_option('gs-place');
 
+    $condition = true;
 
+    if($places == null || $places == 'place-all'):
+        $condition = (is_single() || is_page());
+    elseif ($places == 'place-posts'):
+        $condition = is_single();
+    elseif ($places == 'place-pages'):
+        $condition = is_page();
+    endif;
+
+    if ( $condition ):
         $GS = get_gs();
 
         $groups_active = $GS->is_active('sharing_bar');

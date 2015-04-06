@@ -91,10 +91,15 @@
                 <p class="app-title"><?php echo $app ?></p>
                 <p><?php echo $settings['desc'] ?></p>
             </div>
-            <div class="app-link-buttons app-type-simple">
+            <div class="app-link-buttons app-type-<?php echo ($settings['active']) ? 'double' : 'simple' ?>">
                 <a href="<?php echo $settings['href'] ?>" target="_blank" class="getsocial-tab">
                     <?php echo ($settings['active']) ? 'Edit App' : 'Install App' ?>
                 </a>
+                <?php if($settings['active']): ?>
+                    <a href="#" class="stop deactivate" data-disable-app="<?php echo $GS->api_url('sites/disable/'.get_option('gs-api-key').'/'.$settings['file']) ?>">
+                        Deactivate
+                    </a>
+                <?php endif; ?>
             </div>
         </div>
     </div>

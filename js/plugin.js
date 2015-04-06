@@ -93,6 +93,22 @@ jQuery(function($){
         })
     }
 
+    jQuery(document).on('click', '.deactivate', function(e){
+        e.preventDefault();
+
+        $this = jQuery(this);
+
+        if(confirm('Are you sure you want to deactivate the application?') == true){
+            $.post($this.attr('data-disable-app'), function(data){
+                if(window.location.href.match(/delete/)) {
+                    window.location.reload();
+                } else {
+                    window.location = window.location.href+'&delete=1'
+                }
+            });
+        }
+    });
+
     if (!window.addEventListener){
         window.attachEvent('onmessage', handleMessage);
     } else {
@@ -142,16 +158,6 @@ jQuery(function($){
      * ===================================== */
     function modal(trigger){
         $(trigger).on('click', function(){
-            $('div.modal-wrapper').find('input[type="text"]').val('');
-
-            if(trigger !== '#need-help') {
-                $('div.modal-wrapper').find('textarea').val('');
-            }
-
-            if(trigger === '.download' && !window.ANAL_2ND_LEVEL) {
-                return;
-            }
-
             var modal_link = $(this).attr('id'),
                 modal_id = '#' + modal_link + '-modal';
 
@@ -168,7 +174,7 @@ jQuery(function($){
             });
         });
     }
-    modal('#api-key');
+    modal('#settings');
 
     function closeModal() {
         $('.modal-wrapper.active').stop().removeClass('active').addClass('rewind').delay(700).queue(function(){
