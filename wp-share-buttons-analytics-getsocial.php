@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:  Share Buttons & Mobile Sharing by GetSocial.io
+ * Plugin Name:  Share Buttons by GetSocial.io
  * Plugin URI: http://getsocial.io
  * Description: Share buttons for Wordpress and Mobile. Increase traffic from Facebook, Twitter, Google+, Pinterest and others. No code required.
- * Version: 2.3
+ * Version: 2.4.2
  * Author: Getsocial, S.A.
  * Author URI: http://getsocial.io
  * License: GPL2
@@ -18,7 +18,7 @@ add_action( 'admin_menu', 'gs_getsocial_menu' );
 function gs_getsocial_menu(){
     $GS = get_gs();
 
-    add_menu_page( 'GetSocial', 'GetSocial', 'manage_options', slug_path('init.php'), '', plugins_url( 'images/on.png', __FILE__ ) );
+    add_menu_page( 'GetSocial', 'GetSocial', 'manage_options', slug_path('init.php'), '', 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjAiPjxwYXRoIGZpbGw9IiMzMzlFRDUiIGQ9Ik0xOCAwaC0xNmMtMS4xIDAtMiAuOS0yIDJ2MTZjMCAxLjEuOSAyIDIgMmgxNmMxLjEgMCAyLS45IDItMnYtMTZjMC0xLjEtLjktMi0yLTJ6bS0xMS45IDE0LjZjLTIgMC00LjEtMS4yLTQuMS0zLjkgMC0xLjMuNi0yLjcgMS42LTMuN3MyLjMtMS42IDMuOS0xLjZjMS44IDAgMi45LjcgMy42IDEuNWwtMS41IDEuM2MtLjUtLjYtMS4yLTEtMi4zLTEtLjkgMC0xLjcuNC0yLjMgMS0uNi42LTEgMS41LTEgMi41IDAgMS40IDEgMi4xIDIuMiAyLjEuNyAwIDEuMi0uMiAxLjYtLjNsLjQtMS41aC0xLjlsLjQtMS43aDMuOGwtMS4yIDQuNGMtLjkuNi0xLjkuOS0zLjIuOXptOC45LTUuMmMxLjIuNSAyIDEuMSAyIDIuMyAwIC43LS4zIDEuNC0uNyAxLjktLjYuNi0xLjUgMS0yLjUgMS0xLjYgMC0yLjgtLjUtMy42LTEuNWwxLjMtMS4xYy43LjggMS41IDEuMSAyLjQgMS4xLjggMCAxLjQtLjQgMS40LTEuMSAwLS41LS4zLS44LTEuNS0xLjMtMS4xLS41LTItMS0yLTIuMyAwLS43LjMtMS40LjctMS45LjYtLjYgMS41LTEgMi42LTEgMS4zIDAgMi4zLjQgMyAxLjJsLTEuMyAxLjNjLS42LS42LTEuMi0uOS0yLS45LS45IDAtMS40LjUtMS40IDEgMCAuNi41LjggMS42IDEuM3oiLz48L3N2Zz4=' );
     add_action( 'admin_init', 'register_gs_settings' );
 }
 
@@ -40,6 +40,7 @@ function update_getsocial() {
 
 function register_gs_settings(){
     register_setting( 'getsocial-gs-settings' , 'gs-api-key' );
+    register_setting( 'getsocial-gs-settings' , 'gs-place' );
     // register_setting( 'getsocial-gs-settings' , 'gs-buttons-position' );
     register_setting( 'getsocial-gs-settings' , 'gs-lang' );
 
@@ -76,7 +77,32 @@ function add_gs_lib(){
 add_filter('the_content', 'on_content');
 
 function on_content($content) {
-    if ( is_single() ):
+    global $post;
+    // $meta_values = get_post_meta( $post->post_id, '_my_meta_getsocialio_hide', true );
+
+    $getsocial_meta = get_post_custom();
+
+    if(isset($getsocial_meta['_my_meta_getsocialio_hide'])){
+        $hide_bars = $getsocial_meta['_my_meta_getsocialio_hide'][0];
+
+        if($hide_bars == 1){
+            return $content;
+        }
+    }
+
+    $places = get_option('gs-place');
+
+    $condition = true;
+
+    if($places == null || $places == 'place-all'):
+        $condition = (is_single() || is_page());
+    elseif ($places == 'place-posts'):
+        $condition = is_single();
+    elseif ($places == 'place-pages'):
+        $condition = is_page();
+    endif;
+
+    if ( $condition ):
         $GS = get_gs();
 
         $groups_active = $GS->is_active('sharing_bar');
@@ -171,3 +197,103 @@ function gs_bars_shortcode($atts) {
 
 
 }
+
+
+/**
+ * Adds a box to the main column on the Post and Page edit screens.
+ */
+function getsocialio_add_meta_box_settings() {
+
+	$screens = array( 'post', 'page' );
+
+	foreach ( $screens as $screen ) {
+
+		add_meta_box(
+			'getsocialio_settings',
+			__( 'GetSocial', 'getsocialio_textdomain' ),
+			'getsocialio_meta_box_callback',
+			$screen,
+            'side'
+		);
+	}
+}
+add_action( 'add_meta_boxes', 'getsocialio_add_meta_box_settings' );
+
+/**
+ * Prints the box content.
+ *
+ * @param WP_Post $post The object for the current post/page.
+ */
+function getsocialio_meta_box_callback( $post ) {
+
+	// Add an nonce field so we can check for it later.
+	wp_nonce_field( 'getsocialio_meta_box', 'getsocialio_meta_box_nonce' );
+
+	/*
+	 * Use get_post_meta() to retrieve an existing value
+	 * from the database and use the value for the form.
+	 */
+	$value = get_post_meta( $post->ID, '_my_meta_getsocialio_hide', true );
+    $checked = (esc_attr( $value ) == "1") ? 'checked' : '';
+
+    echo '<input type="checkbox" id="getsocialio_hide" name="getsocialio_hide" value="1"' . $checked . ' />';
+    echo '<label for="">';
+	_e( ' Hide social bars?', 'getsocialio_textdomain' );
+	echo '</label>';
+    echo '<br/><br/><p class="howto"><i>Limited to Horizontal Bars</i></p>';
+
+}
+
+/**
+ * When the post is saved, saves our custom data.
+ *
+ * @param int $post_id The ID of the post being saved.
+ */
+function getsocialio_save_meta_box_data( $post_id ) {
+
+	/*
+	 * We need to verify this came from our screen and with proper authorization,
+	 * because the save_post action can be triggered at other times.
+	 */
+
+	// Check if our nonce is set.
+	if ( ! isset( $_POST['getsocialio_meta_box_nonce'] ) ) {
+		return;
+	}
+
+	// Verify that the nonce is valid.
+	if ( ! wp_verify_nonce( $_POST['getsocialio_meta_box_nonce'], 'getsocialio_meta_box' ) ) {
+		return;
+	}
+
+	// If this is an autosave, our form has not been submitted, so we don't want to do anything.
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+
+	// Check the user's permissions.
+	if ( isset( $_POST['post_type'] ) && 'page' == $_POST['post_type'] ) {
+		if ( ! current_user_can( 'edit_page', $post_id ) ) {
+			return;
+		}
+	} else {
+		if ( ! current_user_can( 'edit_post', $post_id ) ) {
+			return;
+		}
+	}
+
+	/* OK, it's safe for us to save the data now. */
+
+	// Make sure that it is set.
+	if ( ! isset( $_POST['getsocialio_hide'] ) ) {
+		$my_data = 0;
+	} else {
+        // Sanitize user input.
+        $my_data = sanitize_text_field( $_POST['getsocialio_hide'] );
+    }
+
+	// Update the meta field in the database.
+	update_post_meta( $post_id, '_my_meta_getsocialio_hide', $my_data );
+}
+
+add_action( 'save_post', 'getsocialio_save_meta_box_data' );

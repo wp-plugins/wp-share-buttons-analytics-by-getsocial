@@ -1,24 +1,47 @@
-<h2>
-    <i class="fa fa-bar-chart"></i>Stats
-    <?php $from = date('Y-m-d', strtotime('-8 days')) ?>
-    <?php $to = date('Y-m-d', strtotime('-1 days')) ?>
-    <small>from <strong><?php echo $from ?></strong> to <strong><?php echo $to ?></strong></small>
-    <a href="<?php echo $GS->gs_account().'/sites/gs-wordpress/analytics/dashboard?api_key='.$GS->api_key.'&amp;source=wordpress' ?>" target="_blank" class="btn btn-default"><i class="fa fa-area-chart"></i>Detailed Stats</a>
-</h2>
-<div class="sub-wrap">
-    <div class="graphs gs-clearfix" data-graph-api="<?php echo $GS->api_url('sites/analytics/'.get_option('gs-api-key')) ?>">
-        <div class="graph">
-            <h4><i class="fa fa-group"></i>Visits</h4>
-            <h3 class="total_visits">...</h5>
+
+<div class="title-wrapper">
+    <!-- <div class="alert global primary clearfix simple">
+        <div class="col-16">
+            <p class="alert-title">Use this COUPON <span class="success">33OFF_4LIFE</span> for a 33% discount forever!</p>
+            <p><strong>This offer is limited to the first 100 (only 11 left)</strong></p>
+            <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?= $GS->api_key ?>&amp;source=wordpress" class="button cta pro" target="_blank">Upgrade to Pro</a>
         </div>
-        <div class="graph">
-            <h4><i class="fa fa-share-alt"></i>Shares</h4>
-            <h3 class="total_shares">...</h5>
+        <a href="javascript:void(0)" class="close"><i class="fa fa-times"></i></a>
+    </div> -->
+
+    <div id="dashboard-analytics" class="clearfix" data-graph-api="<?php echo $GS->api_url('sites/analytics/'.get_option('gs-api-key')) ?>">
+        <div class="dashboard-tile">
+            <div class="visits">
+                <a href="<?php echo $GS->gs_account().'/sites/gs-wordpress/analytics/dashboard?api_key='.$GS->api_key.'&amp;source=wordpress' ?>" target="_blank" class="overlay tile-overlay">
+                    <span>View details</span>
+                </a>
+                Visits
+                <span class="small total_visits">(No data to be displayed)</span>
+            </div>
         </div>
-        <div class="graph">
-            <h4><i class="fa fa-sign-in"></i>Leads</h4>
-            <h3 class="total_leads">...</h5>
+        <div class="dashboard-tile">
+            <div class="shares">
+                <a href="<?php echo $GS->gs_account().'/sites/gs-wordpress/analytics/dashboard?api_key='.$GS->api_key.'&amp;source=wordpress' ?>" target="_blank" class="overlay tile-overlay">
+                    <span>View details</span>
+                </a>
+                Shares
+                <span class="small total_shares">(No data to be displayed)</span>
+            </div>
+        </div>
+        <div class="dashboard-tile">
+            <div class="leads">
+                <a href="<?php echo $GS->gs_account().'/sites/gs-wordpress/analytics/dashboard?api_key='.$GS->api_key.'&amp;source=wordpress' ?>" target="_blank" class="overlay tile-overlay">
+                    <span>View details</span>
+                </a>
+                Leads
+                <span class="small total_leads">(No data to be displayed)</span>
+            </div>
         </div>
     </div>
-    <div class="cl"></div>
+    <div class="dashboard-info">
+        <?php $from = date('d-m-Y', strtotime('-8 days')) ?>
+        <?php $to = date('d-n-Y', strtotime('-1 days')) ?>
+        Stats collected from <strong><?php echo $from ?></strong> to <strong><?php echo $to ?></strong>
+        <a href="<?php echo $GS->gs_account().'/sites/gs-wordpress/analytics/dashboard?api_key='.$GS->api_key.'&amp;source=wordpress' ?>" target="_blank">View detailed Stats</a>
+    </div>
 </div>
