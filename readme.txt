@@ -6,7 +6,7 @@ Tags: addthis share, addtoany share, artiss social share , big counter, bookmar
 
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 2.4.2
+Stable tag: 2.4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -146,6 +146,10 @@ Have more doubts? You can go to <a href="http://feedback.getsocial.io">Getsocial
 11. Subscribe Top Bar
 
 == Changelog ==
+
+**2.4.3**
+
+- Bug fix for pages containing posts. The social bars appear in each of the posts ( eg: FAQ pages ) and didn't work correctly
 
 **2.4.2**
 
