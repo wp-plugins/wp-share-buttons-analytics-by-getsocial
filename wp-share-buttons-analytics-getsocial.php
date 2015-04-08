@@ -75,20 +75,21 @@ function add_gs_lib(){
 }
 
 if ( class_exists( 'WooCommerce' ) ) {
-    add_filter('woocommerce_short_description', 'on_product_content');
+    add_action( 'woocommerce_single_product_summary', 'on_product_after_content', 55 );
 }
 
 add_filter('the_content', 'on_post_content');
 
-function on_product_content($content) {
-    return add_buttons_to_content($content, true);
+function on_product_after_content($content) {
+    echo add_buttons_to_content($content, true, 'bottom');
 }
+
 
 function on_post_content($content) {
     return add_buttons_to_content($content, false);
 }
 
-function add_buttons_to_content($content, $woocomerce){
+function add_buttons_to_content($content, $woocomerce, $wooposition = null){
     global $post;
     // $meta_values = get_post_meta( $post->post_id, '_my_meta_getsocialio_hide', true );
 
@@ -142,7 +143,7 @@ function add_buttons_to_content($content, $woocomerce){
             if($groups_active):
                 $groups = $GS->getCode('sharing_bar');
 
-                $position = $GS->prop('sharing_bar', 'position');
+                $position = ($wooposition != null ? $wooposition : $GS->prop('sharing_bar', 'position'));
 
                 if($position == 'bottom' || $position == 'both'):
                     $after_content = $groups;
@@ -156,7 +157,7 @@ function add_buttons_to_content($content, $woocomerce){
             if($custom_active):
                 $custom = $GS->getCode('custom_actions');
 
-                $position = $GS->prop('custom_actions', 'position');
+                $position = ($wooposition != null ? $wooposition : $GS->prop('custom_actions', 'position'));
 
                 if($position == 'bottom' || $position == 'both'):
                     $after_content = $after_content.$custom;
@@ -170,7 +171,7 @@ function add_buttons_to_content($content, $woocomerce){
             if($big_counter_bar_active):
                 $big_counter = $GS->getCode('social_bar_big_counter');
 
-                $position = $GS->prop('social_bar_big_counter', 'position');
+                $position = ($wooposition != null ? $wooposition : $GS->prop('social_bar_big_counter', 'position'));
 
                 if($position == 'bottom' || $position == 'both'):
                     $after_content = $after_content.$big_counter;
@@ -184,7 +185,7 @@ function add_buttons_to_content($content, $woocomerce){
             if($native_active):
                 $native = $GS->getCode('native_bar');
 
-                $position = $GS->prop('native_bar', 'position');
+                $position = ($wooposition != null ? $wooposition : $GS->prop('native_bar', 'position'));
 
                 if($position == 'bottom' || $position == 'both'):
                     $after_content = $after_content.$native;
