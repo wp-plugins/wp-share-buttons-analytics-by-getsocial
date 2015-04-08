@@ -74,9 +74,21 @@ function add_gs_lib(){
     echo $GS->getLib();
 }
 
-add_filter('the_content', 'on_content');
+if ( class_exists( 'WooCommerce' ) ) {
+    add_filter('woocommerce_short_description', 'on_product_content');
+}
 
-function on_content($content) {
+add_filter('the_content', 'on_post_content');
+
+function on_product_content($content) {
+    return add_buttons_to_content($content, true);
+}
+
+function on_post_content($content) {
+    return add_buttons_to_content($content, false);
+}
+
+function add_buttons_to_content($content, $woocomerce){
     global $post;
     // $meta_values = get_post_meta( $post->post_id, '_my_meta_getsocialio_hide', true );
 
@@ -91,6 +103,10 @@ function on_content($content) {
     }
 
     if(is_singular('page') && $post->post_type != 'page'){
+        return $content;
+    }
+
+    if(!$woocomerce && $post->post_type == 'product'){
         return $content;
     }
 
