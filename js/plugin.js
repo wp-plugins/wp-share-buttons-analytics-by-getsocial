@@ -46,6 +46,7 @@ jQuery(function($){
 
         if(jQuery(this).find('#gs-api-key').val() != 0){
             jQuery(this).find('input').prop('disabled', true);
+            jQuery(this).addClass('gs-disabled');
 
             jQuery.post( 'options.php', data).success( function(response){
                 jQuery('.loading-create').removeClass('active');
