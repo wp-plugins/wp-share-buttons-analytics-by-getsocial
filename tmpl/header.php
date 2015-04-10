@@ -14,7 +14,7 @@ $GS = new GS(   get_option('gs-api-key'),
 
 $site_info = $GS->refreshSite();
 
-wp_register_style( 'getsocial-style', plugins_url('../css/getsocial-source-style.css', __FILE__) );
+wp_register_style( 'getsocial-style', plugins_url('../css/getsocial-style.css', __FILE__) );
 wp_enqueue_style( 'getsocial-style' );
 
 wp_register_script( 'plugin', plugins_url('../js/plugin.js', __FILE__) );
@@ -35,12 +35,12 @@ wp_enqueue_script( 'plugin' );
 </script>
 
 <header>
-    <div id="main-subnav" class="clearfix">
+    <div id="main-subnav" class="gs-clearfix">
         <a id="logo-wrapper" href="http://getsocial.io" target="_blank">
             <img src="<?php echo plugins_url('../img/getsocial-app-logo.png', __FILE__ ) ?>" alt="GetSocial">
         </a>
         <div>
-            <ul class="clearfix">
+            <ul class="gs-clearfix">
                 <?php if(get_option('gs-api-key') != ''): ?>
 
                     <!-- <li class="nav-submenu-link">
@@ -50,14 +50,15 @@ wp_enqueue_script( 'plugin' );
                     </li> -->
 
                     <li class="nav-submenu-link">
+                        <a href="<?php echo $GS->gs_account().'/sites/gs-wordpress/analytics/dashboard?api_key='.$GS->api_key.'&amp;source=wordpress' ?>" target="_blank"><i class="fa fa-bar-chart"></i> Social Analytics</i></a>
+                    </li>
+
+                    <li class="nav-submenu-link">
                         <a id="settings" href="javascript:void(0)">
                             <i class="fa fa-cogs"></i> Settings
                         </a>
                     </li>
 
-                    <li class="nav-submenu-link">
-                        <a href="<?php echo $GS->gs_account().'/sites/gs-wordpress/analytics/dashboard?api_key='.$GS->api_key.'&amp;source=wordpress' ?>" target="_blank"><i class="fa fa-bar-chart"></i> Social Analytics</i></a>
-                    </li>
                 <?php endif; ?>
                 <li class="nav-submenu-link">
                     <a href="javascript:void(0)"><i class="fa fa-question-circle"></i> Help & Support <i class="fa fa-angle-down"></i></a>
@@ -74,7 +75,7 @@ wp_enqueue_script( 'plugin' );
                 </li>
                 <?php if(get_option('gs-api-key') != '' && !$GS->is_pro()): ?>
                 <li id="user-nav" class="nav-submenu-link">
-                    <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress" target="_blank" class="button plan-pro">Upgrade to PRO</a>
+                    <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress" target="_blank" class="gs-button plan-pro">Upgrade to PRO</a>
                 </li>
             <?php endif; ?>
             </ul>

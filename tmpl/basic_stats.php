@@ -1,15 +1,15 @@
 
 <div class="title-wrapper">
-    <!-- <div class="alert global primary clearfix simple">
-        <div class="col-16">
+    <!-- <div class="gs-alert global primary gs-clearfix simple">
+        <div class="gs-col-16">
             <p class="alert-title">Use this COUPON <span class="success">33OFF_4LIFE</span> for a 33% discount forever!</p>
             <p><strong>This offer is limited to the first 100 (only 11 left)</strong></p>
-            <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?= $GS->api_key ?>&amp;source=wordpress" class="button cta pro" target="_blank">Upgrade to Pro</a>
+            <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?= $GS->api_key ?>&amp;source=wordpress" class="gs-button cta pro" target="_blank">Upgrade to Pro</a>
         </div>
         <a href="javascript:void(0)" class="close"><i class="fa fa-times"></i></a>
     </div> -->
 
-    <div id="dashboard-analytics" class="clearfix" data-graph-api="<?php echo $GS->api_url('sites/analytics/'.get_option('gs-api-key')) ?>">
+    <div id="dashboard-analytics" class="gs-clearfix" data-graph-api="<?php echo $GS->api_url('sites/analytics/'.get_option('gs-api-key')) ?>">
         <div class="dashboard-tile">
             <div class="visits">
                 <a href="<?php echo $GS->gs_account().'/sites/gs-wordpress/analytics/dashboard?api_key='.$GS->api_key.'&amp;source=wordpress' ?>" target="_blank" class="overlay tile-overlay">
