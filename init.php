@@ -146,10 +146,10 @@
                     </div>
                     <div class="field-group">
                         <div class="field-label">
-                            <label for="">Where its displayed?</label>
+                            <label for="">Where to display</label>
                         </div>
                         <div class="field-input">
-                            <p>Choose where your wish to have your apps displayed</p>
+                            <p>Choose where to have your apps displayed</p>
                             <div class="checkbox-list">
                                 <label><input type="radio" name="gs-place" value="place-posts" <?php echo (get_option('gs-place') == 'place-posts') ? 'checked' : '' ?> />Only Posts</label>
                             </div>
