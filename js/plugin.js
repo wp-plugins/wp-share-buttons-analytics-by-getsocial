@@ -21,7 +21,9 @@ jQuery('.getsocial-tab').on('click', function(e){
     e.preventDefault();
     $this = jQuery(this);
 
-    getsocial_window = window.open($this.attr('href'));
+    if(!$this.hasClass('only-activate')){
+        getsocial_window = window.open($this.attr('href'));
+    }
 
     // setInterval('checkForUpdate()', 10000);
     setInterval('forceUpdate()', 5000);
@@ -108,6 +110,16 @@ jQuery(function($){
                 }
             });
         }
+    });
+
+    jQuery(document).on('click', '.only-activate', function(e){
+        e.preventDefault();
+
+        $.post($(this).attr('href'), function(data){
+            window.location = window.location.href+'&update=1'
+        });
+
+        return false;
     });
 
     if (!window.addEventListener){

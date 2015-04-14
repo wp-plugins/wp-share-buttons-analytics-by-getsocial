@@ -3,7 +3,14 @@
 <div class="app-grid gs-clearfix">
     <?php
         $apps = array(
-
+            'Price Alert' => array(
+                'file' => 'price-alert',
+                'active' => $GS->is_active('price_alert'),
+                'new' => true,
+                'pro' => true,
+                'href' => $GS->gs_account().'/sites/gs-wordpress/price_alerts/new?api_key='.$GS->api_key.'&amp;source=wordpress',
+                'desc' => "Allow your visitors to get notified when a price drop occurs on a product they want to purchase. Increase sales and fight cart abandonment."
+            ),
             'Horizontal Sharing Bar' => array(
                 'file' => 'sharing-bar',
                 'active' => $GS->is_active('sharing_bar'),
@@ -56,6 +63,14 @@
                 'href' => $GS->gs_account().'/sites/gs-wordpress/subscribe_bars/new?api_key='.$GS->api_key.'&amp;source=wordpress',
                 "desc" => "Easily capture emails from your visitors by providing them with an engaging top bar. Export data to your favorite CRM or e-Mail marketing software."
             ),
+            'Address Bar Tracking' => array(
+                'file' => 'address-tracker',
+                'active' => $GS->is_active('address_tracking'),
+                'only_activate' => true,
+                'new' => true,
+                'href' => $GS->api_url('sites/activate/'.get_option('gs-api-key').'/address-tracker'),
+                "desc" => "Don't lose track of shares made through copying and pasting an URL on the address bar to social networks, email or other platforms."
+            ),
             'Custom Sharing Actions' => array(
                 'file' => 'custom-actions',
                 'active' => $GS->is_active('custom_actions'),
@@ -83,7 +98,9 @@
         <?php endif; ?>
 
         <div class="app-link">
-            <!-- <div class="app-badge badge-special">New</div> -->
+            <?php if(isset($settings['new'])): ?>
+                <div class="app-badge badge-special">New</div>
+            <?php endif; ?>
             <div class="app-image">
                 <img src="<?php echo plugins_url( '../img/apps/'.$settings['file'].'.png', __FILE__ ) ?>" alt="">
             </div>
@@ -91,10 +108,19 @@
                 <p class="app-title"><?php echo $app ?></p>
                 <p><?php echo $settings['desc'] ?></p>
             </div>
-            <div class="app-link-buttons app-type-<?php echo ($settings['active']) ? 'double' : 'simple' ?>">
-                <a href="<?php echo $settings['href'] ?>" target="_blank" class="getsocial-tab">
-                    <?php echo ($settings['active']) ? 'Edit App' : 'Install App' ?>
-                </a>
+            <div class="app-link-buttons app-type-<?php echo ($settings['active'] && !isset($settings['only_activate'])) ? 'double' : 'simple' ?>">
+                <?php if(!isset($settings['only_activate']) || ( isset($settings['only_activate']) && !$settings['active'] )): ?>
+                    <a href="<?php echo $settings['href'] ?>" target="<?php echo ($settings['only_activate'] ? '' : '_blank') ?>" class="getsocial-tab <?php echo ($settings['only_activate'] ? 'only-activate' : '') ?>">
+                        <?php echo ($settings['active']) ? 'Edit App' : 'Install App' ?>
+
+                        <?php if($app == 'Price Alert' && !$settings['active']): ?>
+                            <span class="gs-tooltip">
+                                <img src="<?php echo plugins_url('../img/woocommerce.png', __FILE__ ) ?>" alt="WooCommerce">
+                                <div>This App requires WooCommerce to be installed</div>
+                            </span>
+                       <?php endif; ?>
+                    </a>
+                <?php endif; ?>
                 <?php if($settings['active']): ?>
                     <a href="#" class="stop deactivate" data-disable-app="<?php echo $GS->api_url('sites/disable/'.get_option('gs-api-key').'/'.$settings['file']) ?>">
                         Deactivate

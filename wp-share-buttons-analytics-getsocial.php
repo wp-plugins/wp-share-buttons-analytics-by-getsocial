@@ -2,8 +2,8 @@
 /**
  * Plugin Name:  Share Buttons by GetSocial.io
  * Plugin URI: http://getsocial.io
- * Description: Share buttons for Wordpress and Mobile. Increase traffic from Facebook, Twitter, Google+, Pinterest and others. No code required.
- * Version: 2.4.3
+ * Description: Share Buttons by GetSocial.io is a freemium WordPress plugin that enables you to track social shares on Wordpress. Provide beautiful wordpress sharing buttons, track how many shares were made in each post and see how much traffic, conversions and shares each post generated. Optimize your SEO and increase social shares with GetSocial.io.
+ * Version: 2.5
  * Author: Getsocial, S.A.
  * Author URI: http://getsocial.io
  * License: GPL2
@@ -129,6 +129,7 @@ function add_buttons_to_content($content, $woocomerce, $wooposition = null){
         $groups_active = $GS->is_active('sharing_bar');
         $native_active = $GS->is_active('native_bar');
         $custom_active = $GS->is_active('custom_actions');
+        $price_alert_active = $GS->is_active('price_alert');
         $big_counter_bar_active = $GS->is_active('social_bar_big_counter');
         //
         $before_content = "";
@@ -152,6 +153,18 @@ function add_buttons_to_content($content, $woocomerce, $wooposition = null){
                 if ( $position == 'top' || $position == 'both' ):
                     $before_content = $groups.'<br/>';
                 endif;
+            endif;
+
+            if($price_alert_active && $wooposition):
+
+                $product = new WC_Product( get_the_ID() );
+                $price = $product->price;
+
+                $price_alert_button = $GS->getCode('price_alert', $price, get_woocommerce_currency_symbol());
+
+                $position = $wooposition;
+
+                $after_content = $price_alert_button;
             endif;
 
             if($custom_active):
