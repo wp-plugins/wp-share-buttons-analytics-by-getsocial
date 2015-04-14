@@ -16,7 +16,6 @@ class GS {
         $this->lang = $lang == null ? 'en' : $lang;
     }
 
-
     private function api($path) {
         try {
             $r = wp_remote_get($this->api_url.$path, array( 'sslverify' => false ));
@@ -49,6 +48,7 @@ class GS {
 
     function refreshSite(){
         $site = $this->getSite();
+
         if($site != null):
             $this->save($site);
         endif;
@@ -101,7 +101,7 @@ EOF;
     }
 
 
-    function getCode($app_name){
+    function getCode($app_name, $price = null, $currency = null){
         switch ($app_name) {
             case 'sharing_bar':
                 return '<div class="getsocial gs-inline-group"></div>';
@@ -111,6 +111,8 @@ EOF;
                 return '<div class="getsocial gs-custom-actions"></div>';
             case 'social_bar_big_counter':
                 return '<div class="getsocial gs-inline-group gs-big-counter"></div>';
+            case 'price_alert':
+                return '<div class="getsocial gs-price-alert" data-price="'.$price.'" data-currency="'.$currency.'"></div>';
             default:
                 return '';
         }
