@@ -121,6 +121,8 @@ function add_buttons_to_content($content, $woocomerce, $wooposition = null){
         $condition = is_single();
     elseif ($places == 'place-pages'):
         $condition = is_page();
+    elseif ($places == 'only-shortcodes'):
+        $condition = false;
     endif;
 
     if ( $condition ):
@@ -223,15 +225,12 @@ add_shortcode( 'getsocial', 'gs_bars_shortcode' );
 function gs_bars_shortcode($atts) {
     $GS = get_gs();
     // if no type defined
-    if(array_key_exists('app',$atts)){
+    if(array_key_exists('app',$atts) && (is_single() || is_page())){
         return $GS->getCode($atts['app']);
     } else {
         return "";
     }
-
-
 }
-
 
 /**
  * Adds a box to the main column on the Post and Page edit screens.

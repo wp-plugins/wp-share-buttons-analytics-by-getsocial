@@ -149,7 +149,10 @@
                             <label for="">Where to display</label>
                         </div>
                         <div class="field-input">
-                            <p>Choose where to have your apps displayed</p>
+                            <p>
+                                Choose where to have your apps displayed. <strong>For now this is limited to Horizontal Bars</strong>
+                            </p>
+
                             <div class="checkbox-list">
                                 <label><input type="radio" name="gs-place" value="place-posts" <?php echo (get_option('gs-place') == 'place-posts') ? 'checked' : '' ?> />Only Posts</label>
                             </div>
@@ -158,6 +161,9 @@
                             </div>
                             <div class="checkbox-list">
                                 <label><input type="radio" name="gs-place" value="place-all" <?php echo (get_option('gs-place') == 'place-all' || get_option('gs-place') == null) ? 'checked' : '' ?>/>Pages & Posts</label>
+                            </div>
+                            <div class="checkbox-list">
+                                <label><input type="radio" name="gs-place" value="only-shortcodes" <?php echo (get_option('gs-place') == 'only-shortcodes') ? 'checked' : '' ?> />None. I will use shortcodes.</label>
                             </div>
                         </div>
                     </div>
