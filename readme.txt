@@ -9,7 +9,7 @@ Stable tag: 2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Share buttons for Wordpress & WooCommerce. Increase web & mobile traffic and sharing to Facebook, Twitter, Pinterest, WhatsApp and more.
+Share buttons for Wordpress & WooCommerce. Increase web & mobile traffic and sharing to Facebook, Twitter, Pinterest, WhatsApp and more. 
 
 == Description ==
 
