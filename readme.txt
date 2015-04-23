@@ -155,7 +155,7 @@ The Pro and Premium plans differ in the access to certain features and also in t
 
 **How do I upgrade and pay for GetSocial?**
 
-In your billing area you have a ‘Select a plan’ menu where you can easily upgrade your plan.Paying for GetSocial is as simple as introducing a valid credit card in your billing area.
+In your billing area you have a 'Select a plan' menu where you can easily upgrade your plan.Paying for GetSocial is as simple as introducing a valid credit card in your billing area.
 
 **Do I need to sign a long-term contract?**
 
