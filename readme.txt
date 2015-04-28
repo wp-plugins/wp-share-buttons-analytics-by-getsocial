@@ -26,7 +26,7 @@ Our apps include trackable sharing buttons, welcome & subscribe bars, conversion
 * **eCommerce specific**: Allow your customers to follow the price of your products, generating more returning traffic with increase purchase intent.
 
 
-In this plugin, you'll find the following features: 
+In this plugin, you'll find the following features:
 
 <h4>Social Sharing Tools</h4>
 
