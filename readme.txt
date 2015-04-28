@@ -15,7 +15,7 @@ Share buttons & more free apps. Grow web & mobile traffic with Facebook, Twitter
 
 **Share Buttons by GetSocial.io** is an app store for all social media needs. Provide beautiful wordpress sharing buttons, track how many shares were made in each post and see how much traffic, conversions and shares each post generated. Optimize your SEO and increase social shares with GetSocial.io.
 
-GetSocial.io is the social media app store for all your needs: **from awareness to conversion**. You can find more info about our product <a href="http://getsocial.io/?utm_source=wordpress_plugin">here</a>. This app store is organized in 4 different product verticals:
+Our apps include trackable sharing buttons, welcome & subscribe bars, conversion tracking, copy paste share tracking and more. You can find more info about our product <a href="http://getsocial.io/?utm_source=wordpress_plugin">here</a>. This app store is organized in 4 different product verticals:
 
 * **Social Sharing Tools**: You'll find 5 apps focused on improving, optimizing and streamlining the number of shares made on your website. A/B test the placement of your share buttons and increase your referral traffic coming from social networks. Track dark social sharing and enable mobile sharing to your mobile users. 
 
