@@ -1,4 +1,4 @@
-<h1>Install your apps bellow</h1>
+<h1>Install your apps below</h1>
 
 <div class="app-grid gs-clearfix">
     <?php
