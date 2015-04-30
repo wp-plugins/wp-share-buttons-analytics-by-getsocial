@@ -17,7 +17,7 @@ Share buttons & more free apps. Grow web & mobile traffic with Facebook, Twitter
 
 Our apps include trackable sharing buttons, welcome & subscribe bars, conversion tracking, copy paste share tracking and more. You can find more info about our product <a href="http://getsocial.io/?utm_source=wordpress_plugin">here</a>. This app store is organized in 4 different product verticals:
 
-* **Social Sharing Tools**: You'll find 5 apps focused on improving, optimizing and streamlining the number of shares made on your website. A/B test the placement of your share buttons and increase your referral traffic coming from social networks. Track dark social sharing and enable mobile sharing to your mobile users. 
+* **Social Sharing Tools**: You'll find 5 apps focused on improving, optimizing and streamlining the number of shares made on your website. A/B test the placement of your share buttons and increase your referral traffic coming from social networks. Track dark social sharing and enable mobile sharing to your mobile users.
 
 * **Conversion Tools**: Social media is fantastic if you are able to measure it. Track how your share buttons are driving your conversions. Add conversion pixels easily, no code required, to signups and purchases.
 
