@@ -32,7 +32,7 @@ In this plugin, you'll find the following features:
 
 * **Social media shares bar**: Add our horizontal and vertical social shares bar and get free social media tracking of the shares made on your website. This social media widget will help your users to do more social shares of your content. Social sharing is a vital piece to increase your website’s traffic.
 
-* **Dark social media shares tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter clients.
+* **Copy Paste Share tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL (Dark Social) will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter clients.
 
 * **Free Social Sharing Analytics**: All our social sharing plugins contribute for your undertanding on how social sharing is driving you traffic and conversions. From social share buttons to conversion tracking, your social shares monitoring will be available in simple yet comprehensive dashboards. Share buttons don’t have to be just counters. Here you’ll find a way to have insights on the shares made on your website.
 
