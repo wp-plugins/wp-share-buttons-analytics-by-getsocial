@@ -17,8 +17,8 @@
 
         <?php if(get_option('gs-api-key') == ''): ?>
             <div class="title-wrapper">
-                <h1>Welcome and thanks for downloading <span>GetSocial’s Share Buttons with Analytics.</span></h1>
-                <p>To get started click on the button below to automatically create a GetSocial account.</strong></p>
+                <h1>Welcome and thanks for downloading <span>GetSocial’s Share Buttons & Social Media App Store</span></h1>
+                <p>To get started click on the button below to automatically activate your GetSocial account.</strong></p>
             </div>
 
             <div class="account-info gs-form gs-small">
@@ -41,9 +41,9 @@
                     </div>
                 </div>
                 <div class="form-button-group">
-                    <a href="<?php echo $GS->gs_account() ?>/api/v1/sites/create?source=wordpress&amp;email=<?php echo get_option('admin_email') ?>&amp;url=<?php echo get_option('siteurl') ?>" class="gs-button success create-gs-account">Create your account</a>
+                    <a href="<?php echo $GS->gs_account() ?>/api/v1/sites/create?source=wordpress&amp;email=<?php echo get_option('admin_email') ?>&amp;url=<?php echo get_option('siteurl') ?>" class="gs-button success create-gs-account">Activating your account</a>
                     <span class="loading-create gs-button success trans border">
-                        <i class="fa fa-refresh rotate"></i> Creating Account...
+                        <i class="fa fa-refresh rotate"></i> Activating Account...
                     </span>
                 </div>
             </div>
