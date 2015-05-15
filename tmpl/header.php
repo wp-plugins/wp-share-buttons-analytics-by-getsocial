@@ -75,7 +75,7 @@ wp_enqueue_script( 'plugin' );
                 </li>
                 <?php if(get_option('gs-api-key') != '' && !$GS->is_pro()): ?>
                 <li id="user-nav" class="nav-submenu-link">
-                    <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress" target="_blank" class="gs-button plan-pro">Upgrade to PRO</a>
+                    <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress&amp;source=wordpress&amp;utm_source=pluginwp&amp;utm_medium=header&amp;utm_campaign=header" target="_blank" class="gs-button plan-pro">Upgrade to PRO</a>
                 </li>
             <?php endif; ?>
             </ul>

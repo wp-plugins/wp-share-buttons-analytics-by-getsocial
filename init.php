@@ -87,7 +87,7 @@
                 <div class="gs-alert cta default gs-clearfix simple">
                     <div class="gs-col-16">
                         <p class="alert-title">Unlock amazing <span style="background: #e78834">PRO FEATURES</span> such as Mobile Share Bar!</p>
-                        <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress" target="_blank" class="gs-button cta pro">Upgrade to PRO @ <strong>9$ / month</strong></a>
+                        <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress&amp;utm_source=pluginwp&amp;utm_medium=alert9usd&amp;utm_campaign=alert" target="_blank" class="gs-button cta pro">Upgrade to PRO @ <strong>9$ / month</strong></a>
                     </div>
                     <!-- <a href="javascript:void(0)" class="close"><i class="fa fa-times"></i></a> -->
                 </div>
