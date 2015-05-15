@@ -3,14 +3,6 @@
 <div class="app-grid gs-clearfix">
     <?php
         $apps = array(
-            'Price Alert' => array(
-                'file' => 'price-alert',
-                'active' => $GS->is_active('price_alert'),
-                'new' => true,
-                'pro' => true,
-                'href' => $GS->gs_account().'/sites/gs-wordpress/price_alerts/new?api_key='.$GS->api_key.'&amp;source=wordpress',
-                'desc' => "Allow your visitors to get notified when a price drop occurs on a product they want to purchase. Increase sales and fight cart abandonment."
-            ),
             'Horizontal Sharing Bar' => array(
                 'file' => 'sharing-bar',
                 'active' => $GS->is_active('sharing_bar'),
@@ -30,25 +22,19 @@
                 'href' => $GS->gs_account().'/sites/gs-wordpress/floating_bar/new?api_key='.$GS->api_key.'&amp;source=wordpress',
                 "desc" => "Use one of our templates or design your own floating sharing bar. Customize size, shape & placement and pick from 15 social networks."
             ),
-            'Big Total Shares Horizontal' => array(
-                'file' => 'social-bar-big-counter',
-                'active' => $GS->is_active('social_bar_big_counter'),
-                'href' => $GS->gs_account().'/sites/gs-wordpress/big_counter_sharing_bar/new?api_key='.$GS->api_key.'&amp;source=wordpress',
-                'pro' => true,
-                'desc' => "Increase engagement by showing the total number of shares in a big counter on the left of your horizontal share bar."
+            'Copy Paste Share Tracking' => array(
+                'file' => 'address-tracker',
+                'active' => $GS->is_active('address_tracking'),
+                'only_activate' => true,
+                'new' => true,
+                'href' => $GS->api_url('sites/activate/'.get_option('gs-api-key').'/address-tracker'),
+                "desc" => "Don't lose track of shares made through copying and pasting an URL on the address bar to social networks, email or other platforms."
             ),
             'Native Sharing Bar' => array(
                 'file' => 'native-bar',
                 'active' => $GS->is_active('native_bar'),
                 'href' => $GS->gs_account().'/sites/gs-wordpress/native_bar/new?api_key='.$GS->api_key.'&amp;source=wordpress',
                 'desc' => "It doesn't get much more classic than this. Your native sharing buttons with tracking abilities. Great for those who want to keep it real."
-            ),
-            'Big Total Shares Floating' => array(
-                'file' => 'floating-bar-big-counter',
-                'active' => $GS->is_active('floating_bar_big_counter'),
-                'href' => $GS->gs_account().'/sites/gs-wordpress/big_counter_floating_bar/new?api_key='.$GS->api_key.'&amp;source=wordpress',
-                'pro' => true,
-                'desc' => "Increase engagement by showing the total number of shares in a big counter on top of your floating share bar."
             ),
             'Welcome Bar' => array(
                 'file' => 'welcome-bar',
@@ -63,13 +49,19 @@
                 'href' => $GS->gs_account().'/sites/gs-wordpress/subscribe_bars/new?api_key='.$GS->api_key.'&amp;source=wordpress',
                 "desc" => "Easily capture emails from your visitors by providing them with an engaging top bar. Export data to your favorite CRM or e-Mail marketing software."
             ),
-            'Address Bar Tracking' => array(
-                'file' => 'address-tracker',
-                'active' => $GS->is_active('address_tracking'),
-                'only_activate' => true,
-                'new' => true,
-                'href' => $GS->api_url('sites/activate/'.get_option('gs-api-key').'/address-tracker'),
-                "desc" => "Don't lose track of shares made through copying and pasting an URL on the address bar to social networks, email or other platforms."
+            'Big Total Shares Horizontal' => array(
+                'file' => 'social-bar-big-counter',
+                'active' => $GS->is_active('social_bar_big_counter'),
+                'href' => $GS->gs_account().'/sites/gs-wordpress/big_counter_sharing_bar/new?api_key='.$GS->api_key.'&amp;source=wordpress',
+                'pro' => true,
+                'desc' => "Increase engagement by showing the total number of shares in a big counter on the left of your horizontal share bar."
+            ),
+            'Big Total Shares Floating' => array(
+                'file' => 'floating-bar-big-counter',
+                'active' => $GS->is_active('floating_bar_big_counter'),
+                'href' => $GS->gs_account().'/sites/gs-wordpress/big_counter_floating_bar/new?api_key='.$GS->api_key.'&amp;source=wordpress',
+                'pro' => true,
+                'desc' => "Increase engagement by showing the total number of shares in a big counter on top of your floating share bar."
             ),
             'Custom Sharing Actions' => array(
                 'file' => 'custom-actions',
@@ -77,6 +69,14 @@
                 'pro' => true,
                 'href' => $GS->gs_account().'/sites/gs-wordpress/elements/new?api_key='.$GS->api_key.'&amp;source=wordpress',
                 'desc' => "Sometimes we need to say more than a simple 'Like'. Here you'll find more than 50 custom stories such as Awesome, Wish or Love."
+            ),
+            'Price Alert' => array(
+                'file' => 'price-alert',
+                'active' => $GS->is_active('price_alert'),
+                'new' => true,
+                'pro' => true,
+                'href' => $GS->gs_account().'/sites/gs-wordpress/price_alerts/new?api_key='.$GS->api_key.'&amp;source=wordpress',
+                'desc' => "Allow your visitors to get notified when a price drop occurs on a product they want to purchase. Increase sales and fight cart abandonment."
             ),
         );
 
