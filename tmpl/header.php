@@ -14,7 +14,7 @@ $GS = new GS(   get_option('gs-api-key'),
 
 $site_info = $GS->refreshSite();
 
-wp_register_style( 'getsocial-style', plugins_url('../css/getsocial-style.css', __FILE__) );
+wp_register_style( 'getsocial-style', plugins_url('../css/getsocial-style.css?v=2.6', __FILE__) );
 wp_enqueue_style( 'getsocial-style' );
 
 wp_register_script( 'plugin', plugins_url('../js/plugin.js', __FILE__) );
@@ -65,7 +65,7 @@ wp_enqueue_script( 'plugin' );
                     <div class="nav-submenu-wrapper">
                         <ul class="nav-submenu">
                             <li>
-                                <a href="mailto:support@getsocial.io?subject=GetSocial.io - Wordpress Plugin Support">Email Support</a>
+                                <a href="#" id="support">Email Support</a>
                             </li>
                             <li>
                                 <a href="http://feedback.getsocial.io/" target="_blank"><i class="fa fa-life-bouy"></i> Documentation</a>
@@ -73,9 +73,13 @@ wp_enqueue_script( 'plugin' );
                         </ul>
                     </div>
                 </li>
+
                 <?php if(get_option('gs-api-key') != '' && !$GS->is_pro()): ?>
                 <li id="user-nav" class="nav-submenu-link">
-                    <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress&amp;source=wordpress&amp;utm_source=pluginwp&amp;utm_medium=header&amp;utm_campaign=header" target="_blank" class="gs-button plan-pro">Upgrade to PRO</a>
+                    <?php if(get_option('gs-ask-review')): ?>
+                        <a href="https://wordpress.org/support/view/plugin-reviews/wp-share-buttons-analytics-by-getsocial" target="_blank" class="gs-cta gs-button trans special">Support us with a 5 <i class="fa fa-star"></i> Review!</a>
+                    <?php endif; ?>
+                    <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress" target="_blank" class="gs-button plan-pro">Upgrade to PRO</a>
                 </li>
             <?php endif; ?>
             </ul>

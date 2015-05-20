@@ -8,7 +8,23 @@ function forceUpdate(event){
     };
 
     // since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
-    jQuery.post(ajaxurl, data, function(response) { console.log('getsocial.io updated')});
+    jQuery.post(ajaxurl, data, function(response) { console.log('getsocial.io updated');});
+}
+
+function forceUpdateWithValues(){
+    jQuery.get(jQuery('main').attr('data-href'), {}, function(response){
+        var data = {
+            'action': 'gs_update_with_values',
+            'response': response
+        };
+
+        // since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
+        jQuery.post(ajaxurl, data , function(response) {
+            console.log('getsocial.io updated');
+        });
+    });
+
+
 }
 
 var getsocial_window;
@@ -26,7 +42,7 @@ jQuery('.getsocial-tab').on('click', function(e){
     }
 
     // setInterval('checkForUpdate()', 10000);
-    setInterval('forceUpdate()', 5000);
+    setInterval('forceUpdateWithValues()', 5000);
 })
 
 function handleMessage(event){
@@ -72,7 +88,6 @@ jQuery(function($){
         jQuery('.loading-create').addClass('active');
 
         jQuery.post(jQuery(this).attr('href'), { source: 'wordpress' }, function(data){
-            console.log(data);
             if(data.errors != undefined){
                 jQuery('.loading-create').removeClass('active');
                 jQuery('.account-info').hide();
@@ -196,4 +211,5 @@ jQuery(function($){
         });
     }
 
+    forceUpdateWithValues();
 });

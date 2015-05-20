@@ -4,11 +4,11 @@ class GS {
     private $gs_url = "https://api.at.getsocial.io";
     private $gs_url_api = "//api.at.getsocial.io";
     private $gs_account = "https://getsocial.io/";
-    private $api_url = "https://getsocial.io/api/v1/";
+    public $api_url = "https://getsocial.io/api/v1/";
     // private $gs_url = "//localhost:3001";
     // private $gs_account = "http://localhost:3000/";
     // private $gs_url_api = "http://localhost:3001";
-    // private $api_url = "http://localhost:3000/api/v1/";
+    // public $api_url = "http://localhost:3000/api/v1/";
 
     function __construct($api_key, $identifier, $lang){
         $this->api_key = $api_key;
@@ -46,8 +46,12 @@ class GS {
         endif;
     }
 
-    function refreshSite(){
-        $site = $this->getSite();
+    function refreshSite($data = null){
+        if($data == null){
+            $site = (array) $this->getSite();
+        } else {
+            $site = $data;
+        }
 
         if($site != null):
             $this->save($site);
@@ -55,9 +59,14 @@ class GS {
     }
 
     function save($site_info){
-        update_option('gs-identifier', $site_info->identifier);
-        update_option('gs-pro', $site_info->pro);
-        update_option('gs-apps', json_encode($site_info->gs_apps));
+        update_option('gs-identifier', $site_info['identifier']);
+        update_option('gs-pro', $site_info['pro']);
+        update_option('gs-apps', json_encode($site_info['gs_apps']));
+        update_option('gs-ask-review', $site_info['ask_review']);
+
+        update_option('gs-alert-msg', $site_info['alert_msg']);
+        update_option('gs-alert-utm', $site_info['alert_utm']);
+        update_option('gs-alert-cta', $site_info['alert_cta']);
     }
 
     function apps($app_name){
@@ -77,7 +86,7 @@ class GS {
     function is_active($app_name){
         $app = $this->apps($app_name);
 
-        return (!empty($app) ? $app['active'] : false);
+        return (!empty($app) ? $app['active'] == 'true' : false);
     }
 
     function prop($app_name, $prop){
@@ -91,9 +100,9 @@ class GS {
     var GETSOCIAL_ID = "$this->identifier";
     var GETSOCIAL_LANG = "$this->lang";
     (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = '$this->gs_url_api/widget/v1/gs_async.js?id='+GETSOCIAL_ID;
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+    po.src = "$this->gs_url_api/widget/v1/gs_async.js?id="+GETSOCIAL_ID;
+    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
     })();
 </script>
 EOF;

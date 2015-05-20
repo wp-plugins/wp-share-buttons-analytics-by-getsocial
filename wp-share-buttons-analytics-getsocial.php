@@ -28,6 +28,7 @@ function slug_path($s) {
 }
 
 add_action( 'wp_ajax_gs_update', 'update_getsocial' );
+add_action( 'wp_ajax_gs_update_with_values', 'update_getsocial_with_values' );
 
 function update_getsocial() {
     global $wpdb; // this is how you get access to the database
@@ -37,6 +38,17 @@ function update_getsocial() {
 
     wp_die(); // this is required to terminate immediately and return a proper response
 }
+
+function update_getsocial_with_values() {
+    global $wpdb; // this is how you get access to the database
+
+    $GS = get_gs();
+
+    $GS->refreshSite($_POST['response']);
+
+    wp_die(); // this is required to terminate immediately and return a proper response
+}
+
 
 function register_gs_settings(){
     register_setting( 'getsocial-gs-settings' , 'gs-api-key' );

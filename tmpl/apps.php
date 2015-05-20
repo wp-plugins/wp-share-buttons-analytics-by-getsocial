@@ -22,6 +22,13 @@
                 'href' => $GS->gs_account().'/sites/gs-wordpress/floating_bar/new?api_key='.$GS->api_key.'&amp;source=wordpress',
                 "desc" => "Use one of our templates or design your own floating sharing bar. Customize size, shape & placement and pick from 15 social networks."
             ),
+            'Image Sharing' => array(
+                'file' => 'image-sharing',
+                'active' => $GS->is_active('image_sharing'),
+                'pro' => true,
+                'href' => $GS->gs_account().'/sites/gs-wordpress/image_sharing/new?api_key='.$GS->api_key.'&amp;source=wordpress',
+                "desc" => "Increase shares on images on your website. Great for media-based websites."
+            ),
             'Copy Paste Share Tracking' => array(
                 'file' => 'address-tracker',
                 'active' => $GS->is_active('address_tracking'),

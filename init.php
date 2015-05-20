@@ -3,7 +3,7 @@
 
     <?php include('tmpl/alerts.php'); ?>
 
-    <main>
+    <main data-href="<?php echo $GS->api_url ?>sites/<?php echo get_option('gs-api-key') ?>">
 
         <?php if( isset($_GET['settings-updated']) && $_GET['settings-updated'] == true): ?>
 
@@ -41,8 +41,8 @@
                     </div>
                 </div>
                 <div class="form-button-group">
-                    <a href="<?php echo $GS->gs_account() ?>/api/v1/sites/create?source=wordpress&amp;email=<?php echo get_option('admin_email') ?>&amp;url=<?php echo get_option('siteurl') ?>" class="gs-button success create-gs-account">Activate your account</a>
-                    <span class="loading-create gs-button success trans border">
+                    <a href="<?php echo $GS->gs_account() ?>/api/v1/sites/create?source=wordpress&amp;email=<?php echo get_option('admin_email') ?>&amp;url=<?php echo get_option('siteurl') ?>" class="gs-button gs-big success create-gs-account"><i class="fa fa-check"></i> Activate your account</a>
+                    <span class="loading-create gs-button success trans border gs-big">
                         <i class="fa fa-refresh rotate"></i> Activating Account...
                     </span>
                 </div>
@@ -83,11 +83,11 @@
 
             <?php if( !isset($_GET['tab']) ): ?>
 
-                <?php if(!$GS->is_pro()): ?>
+                <?php if(!$GS->is_pro() && get_option('gs-alert-msg')): ?>
                 <div class="gs-alert cta default gs-clearfix simple">
                     <div class="gs-col-16">
-                        <p class="alert-title">Unlock amazing <span style="background: #e78834">PRO FEATURES</span> such as Mobile Share Bar!</p>
-                        <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress&amp;utm_source=pluginwp&amp;utm_medium=alert9usd&amp;utm_campaign=alert" target="_blank" class="gs-button cta pro">Upgrade to PRO @ <strong>9$ / month</strong></a>
+                        <p class="alert-title"><?php echo get_option('gs-alert-msg') ?></p>
+                        <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress<?php echo get_option('gs-alert-utm') ?>" target="_blank" class="gs-button cta pro"><?php echo get_option('gs-alert-cta') ?></a>
                     </div>
                     <!-- <a href="javascript:void(0)" class="close"><i class="fa fa-times"></i></a> -->
                 </div>
@@ -176,3 +176,29 @@
         <div class="modal-cover modal-close"></div>
     </div>
 </div>
+
+<script>
+// Include the UserVoice JavaScript SDK (only needed once on a page)
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/hizF2VOh3oNKSWQxuKYjg.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+// Set colors
+UserVoice.push(['set', {
+    accent_color: '#448dd6',
+    trigger_color: 'white',
+    trigger_background_color: '#e2753a'
+}]);
+
+// Identify the user and pass traits
+// To enable, replace sample data with actual user traits and uncomment the line
+UserVoice.push(['identify', {
+    email: '<?php echo get_option('admin_email') ?>'
+}]);
+
+// Add default trigger to the bottom-right corner of the window:
+UserVoice.push(['addTrigger', { trigger_position: 'bottom-right' }]);
+
+UserVoice.push(['addTrigger', '#support']);
+
+// Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
+// UserVoice.push(['autoprompt', {}]);
+</script>

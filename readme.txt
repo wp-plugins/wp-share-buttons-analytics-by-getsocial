@@ -1,7 +1,7 @@
 === Share Buttons by GetSocial.io ===
 Contributors: GetSocial.io, joaoromao
 
-Tags: addthis, addtoany, artiss social share , big counter, bookmark, button, e-commerce, ecommerce share buttons, count shares, facebook, floating social share, getsocial, getsocial share, google, google plus, hupso share buttons, like button, linkedin share, lockerz, mobile shares, mobile sharing, mobile web shares, pin, pin button, pinterest share, plugin, plugin shares, plugin sharing, plus 1, post, posts, really simple share, reddit, reddit share button, sexybookmarks, sexybookmarks share, share, share bar, share button, share button bookmarks, share buttons, share counter, share links, shareaholic, shareaholic share bar, sharedaddy, sharethis, sharethis share bar, sharing, sharing bar, sharing button, sharing buttons, sharing widget, sidebar, slick social share buttons, sociable share plugin, social, social analytics, social bookmarking sharing, social bookmarks shares, social button, social buttons, social media buttons, social media icons, social media bar, social media, social media widget, social metrics, social share, social share bar, social share buttons for wordpress, social share widget, social sharing, socialize, socialize this, social widgets, stats, social plugins, stumbleupon, tilt social share widget , total shares, trackable social share icons, tumblr, tweet button, tweet share, twitter, woocommerce, woocommerce shares, price alert, price comparison, check price changes, follow price, price button, hello bar, top bar, welcome bar, subscribe bar, email bar, email popup, get emails, increase subscribers, flat design, flat buttons, flat icons, flat sharing buttons, social flat, social sharing flat, whatsapp, weibo, baidu, vk, renren, buffer, facebook send, hacker news, odnoklassniki, pdf, print, p3, performance   
+Tags: addthis, addtoany, artiss social share , big counter, bookmark, button, e-commerce, ecommerce share buttons, count shares, facebook, floating social share, getsocial, getsocial share, google, google plus, hupso share buttons, like button, linkedin share, lockerz, mobile shares, mobile sharing, mobile web shares, pin, pin button, pinterest share, plugin, plugin shares, plugin sharing, plus 1, post, posts, really simple share, reddit, reddit share button, sexybookmarks, sexybookmarks share, share, share bar, share button, share button bookmarks, share buttons, share counter, share links, shareaholic, shareaholic share bar, sharedaddy, sharethis, sharethis share bar, sharing, sharing bar, sharing button, sharing buttons, sharing widget, sidebar, slick social share buttons, sociable share plugin, social, social analytics, social bookmarking sharing, social bookmarks shares, social button, social buttons, social media buttons, social media icons, social media bar, social media, social media widget, social metrics, social share, social share bar, social share buttons for wordpress, social share widget, social sharing, socialize, socialize this, social widgets, stats, social plugins, stumbleupon, tilt social share widget , total shares, trackable social share icons, tumblr, tweet button, tweet share, twitter, woocommerce, woocommerce shares, price alert, price comparison, check price changes, follow price, price button, hello bar, top bar, welcome bar, subscribe bar, email bar, email popup, get emails, increase subscribers, flat design, flat buttons, flat icons, flat sharing buttons, social flat, social sharing flat, whatsapp, weibo, baidu, vk, renren, buffer, facebook send, hacker news, odnoklassniki, pdf, print, p3, performance, image sharing, image shares, share buttons on images   
 
 Requires at least: 3.0
 Tested up to: 4.2.2
@@ -31,6 +31,8 @@ In this plugin, you'll find the following features:
 <h4>Social Sharing Tools</h4>
 
 * **Social media shares bar**: Add our horizontal and vertical social shares bar and get free social media tracking of the shares made on your website. This social media widget will help your users to do more social shares of your content. Social sharing is a vital piece to increase your website’s traffic.
+
+* **Image Sharing**: For visually rich websites having the ability to share each image individually is paramount. The image sharing feature allows you to increase shares from images on your website. This works particularly well for rich-media social networks such as Pinterest or Tumblr. 
 
 * **Copy Paste Share tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL (Dark Social) will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter clients.
 
@@ -71,6 +73,7 @@ In this plugin, you'll find the following features:
 
 <h4>List of Paid Apps:</h4>
 - Mobile Web Sharing Bar
+- Image Sharing
 - Big Total Shares Horizontal
 - Big Total Shares Floating
 - Subscribe Bar
