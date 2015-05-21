@@ -1,21 +1,21 @@
 === Share Buttons by GetSocial.io ===
 Contributors: GetSocial.io, joaoromao
 
-Tags: addthis share, addtoany share, artiss social share , big counter, bookmark share, bookmarking shares, button, e-commerce sharing, ecommerce share buttons, facebook, facebook like, facebook like button, facebook share, facebook share buttons, facebook social plugins, facebook social widgets, floating social share, getsocial, getsocial share, google, google plus, google plus one, google share, google share button, hupso share buttons, like button, linkedin share, lockerz share button, mobile shares, mobile sharing, mobile web shares, pin, pin button, pin it share button, pin share button, pinterest shares, plugin, plugin shares, plugin sharing, plus 1, plus one, post, posts, really simple share, reddit, reddit share button, sexybookmarks, sexybookmarks share, share, share bar, share button, share button bookmarks, share buttons, share counter, share links, shareaholic, shareaholic share bar, sharedaddy, sharethis, sharethis share bar, sharing, sharing bar, sharing button, sharing buttons, sharing widget, sidebar, slick social share buttons, sociable share plugin, social, social analytics, social bookmarking sharing, social bookmarks shares, social button, social buttons, social media buttons, social media icons, social media bar, social media, social media widget, social metrics, social share, social share bar , social share buttons for wordpress , social share widget , social sharing, socialize share buttons, socialize this sharing buttons, stats, stumbleupon share, tilt social share widget , total shares, trackable social share icons, tumblr share button, tweet button, tweet share, twitter, woocommerce share buttons, woocommerce shares, price alert, price comparison, check price changes, price woocommerce, follow price, price button, hello bar, top bar, welcome bar, subscribe bar, email bar, email popup, get emails, increase subscribers, flat design, flat buttons, flat icons, flat sharing buttons, social flat, social sharing flat 
+Tags: addthis, addtoany, artiss social share , big counter, bookmark, button, e-commerce, ecommerce share buttons, count shares, facebook, floating social share, getsocial, getsocial share, google, google plus, hupso share buttons, like button, linkedin share, lockerz, mobile shares, mobile sharing, mobile web shares, pin, pin button, pinterest share, plugin, plugin shares, plugin sharing, plus 1, post, posts, really simple share, reddit, reddit share button, sexybookmarks, sexybookmarks share, share, share bar, share button, share button bookmarks, share buttons, share counter, share links, shareaholic, shareaholic share bar, sharedaddy, sharethis, sharethis share bar, sharing, sharing bar, sharing button, sharing buttons, sharing widget, sidebar, slick social share buttons, sociable share plugin, social, social analytics, social bookmarking sharing, social bookmarks shares, social button, social buttons, social media buttons, social media icons, social media bar, social media, social media widget, social metrics, social share, social share bar, social share buttons for wordpress, social share widget, social sharing, socialize, socialize this, social widgets, stats, social plugins, stumbleupon, tilt social share widget , total shares, trackable social share icons, tumblr, tweet button, tweet share, twitter, woocommerce, woocommerce shares, price alert, price comparison, check price changes, follow price, price button, hello bar, top bar, welcome bar, subscribe bar, email bar, email popup, get emails, increase subscribers, flat design, flat buttons, flat icons, flat sharing buttons, social flat, social sharing flat, whatsapp, weibo, baidu, vk, renren, buffer, facebook send, hacker news, odnoklassniki, pdf, print, p3, performance, image sharing, image shares, share buttons on images   
 
 Requires at least: 3.0
-Tested up to: 4.1
-Stable tag: 2.5
+Tested up to: 4.2.2
+Stable tag: 2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Share buttons for Wordpress & WooCommerce. Increase web & mobile traffic and sharing to Facebook, Twitter, Pinterest, WhatsApp and more.
+Grow web & mobile shares with Facebook, Twitter, Pinterest & WhatsApp share tools. Welcome bar + Engagement tools. FREE & quick support. 
 
 == Description ==
 
-**Share Buttons by GetSocial.io** is a freemium WordPress plugin that enables you to track social shares on Wordpress. Provide beautiful wordpress sharing buttons, track how many shares were made in each post and see how much traffic, conversions and shares each post generated. Optimize your SEO and increase social shares with GetSocial.io.
+**Share Buttons by GetSocial.io** is a one stop shop for all social media needs. Provide beautiful Wordpress sharing buttons, track how many shares were made in each post and see how much traffic, conversions and shares each post generated. Optimize your SEO and increase social shares with GetSocial.io. 
 
-GetSocial.io is the social media app store for all your needs: **from awareness to conversion**. You can find more info about our product <a href="http://getsocial.io/?utm_source=wordpress_plugin">here</a>. This app store is organized in 4 different product verticals:
+Our apps include trackable sharing buttons, welcome & subscribe bars, conversion tracking, copy paste share tracking and more. You can find more info about our product <a href="http://getsocial.io/?utm_source=wordpress_plugin">here</a>. This app store is organized in 4 different product verticals:
 
 * **Social Sharing Tools**: You'll find 5 apps focused on improving, optimizing and streamlining the number of shares made on your website. A/B test the placement of your share buttons and increase your referral traffic coming from social networks. Track dark social sharing and enable mobile sharing to your mobile users.
 
@@ -30,11 +30,13 @@ In this plugin, you'll find the following features:
 
 <h4>Social Sharing Tools</h4>
 
-* **Social media shares bar**: Add our horizontal and vertical social shares bar and get free social media tracking of the shares made on your website. This social media widget will help your users to do more social shares of your content. Social sharing is a vital piece to increase website traffic.
+* **Social media shares bar**: Add our horizontal and vertical social shares bar and get free social media tracking of the shares made on your website. This social media widget will help your users to do more social shares of your content. Social sharing is a vital piece to increase your website’s traffic.
 
-* **Dark social media shares tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter clients.
+* **Image Sharing**: For visually rich websites having the ability to share each image individually is paramount. The image sharing feature allows you to increase shares from images on your website. This works particularly well for rich-media social networks such as Pinterest or Tumblr. 
 
-* **Free Social Sharing Analytics**: All our social sharing plugins contribute for your undertanding on how social sharing is driving you traffic and conversions. From social share buttons to conversion tracking, your social shares monitoring will be available in simple yet comprehensive dashboards. Share buttons don’t have to be just counters. Here you’ll find a way to have insights on the shares made on your website.
+* **Copy Paste Share tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL (Dark Social) will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter clients.
+
+* **Free Social Sharing Analytics**: All our social sharing plugins contribute for your understanding on how social sharing is driving you traffic and conversions. From social share buttons to conversion tracking, your social shares monitoring will be available in simple yet comprehensive dashboards. Share buttons don’t have to be just counters. Here you’ll find a way to have insights on the shares made on your website.
 
 * **Custom Sharing Actions**: Sometimes we need to say more than a simple 'Like'. Here you'll find more than 50 custom stories such as Awesome, Wish or Love. Allow your customers to share your content in a unique and personalized way through custom sharing buttons.
 
@@ -48,7 +50,7 @@ In this plugin, you'll find the following features:
 
 <h4>Engagement Apps</h4>
 
-* **Welcome Bar**: Easily lead your visitors to a specific link. Great to generate conversions, engage with promotions and increase traffic. Increase your conversion rates and improve your funnel with this hello bar like feature. Track conversions coming from this top bar for wordpress.
+* **Welcome Bar**: Easily lead your visitors to a specific link. Great to generate conversions, engage with promotions and increase traffic. Increase your conversion rates and improve your funnel with this hello bar like feature. Track conversions coming from this top bar for Wordpress.
 
 * **Subscriber Bar**: Easily capture emails from your visitors by providing them with an engaging top bar. Export data to your favorite CRM or e-Mail marketing software. Improve engagement, conversion and even sales with this easy to install, no code required feature.
 
@@ -56,7 +58,7 @@ In this plugin, you'll find the following features:
 
 * **WooCommerce Integrated**: GetSocial integrates seamlessly with eCommerce. Streamline your social share activities for your eCommerce store without handling a single line of code. Improve conversion rates, traffic and shares to your online shop.
 
-* **Price Alert**: Allow your customers to track a product's price. By having your visitors receiving an email everytime a price changes, you'll have a great way to increase conversion rate, returning traffic and sales to your online commerce website.
+* **Price Alert**: Allow your customers to track a product's price. By having your visitors receiving an email every time a price changes, you'll have a great way to increase conversion rate, returning traffic and sales to your online commerce website.
 
 <h4>Free Apps & Paid Apps:</h4> Most of our apps are free (and we intent it to keep it that way) but we do have some paid features as well. Our <strong>Pro Plan</strong> gives you access to all paid features and costs <u>$9/month</u> or <u>$90/year</u>. Join hundreds of other paid users.
 
@@ -67,18 +69,19 @@ In this plugin, you'll find the following features:
 - Address Bar Tracking
 - Conversion Tracking
 - Welcome Bar
+- Custom Facebook Shares
 
 <h4>List of Paid Apps:</h4>
-- Custom Sharing Actions
 - Mobile Web Sharing Bar
+- Image Sharing
 - Big Total Shares Horizontal
 - Big Total Shares Floating
 - Subscribe Bar
 - Price Alert
 
-Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="http://blog.getsocial.io/add-social-sharing-buttons-wordpress/?utm_source=wordpress_plugin">How to add free Social Sharing Buttons on WordPress</a>
+Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="http://blog.getsocial.io/add-social-sharing-buttons-wordpress/?utm_source=wordpress_plugin">How to add free Social Share Buttons on WordPress</a>
 
-<h4>These are the shortcodes available:</h4>
+<h4>These are the short codes available:</h4>
 
 * Sharing Bar
 
@@ -101,7 +104,7 @@ Also, there's a tutorial on how to install this plugin in your Wordpress Account
 For an automatic installation through WordPress:
 
 1. Go to the "Plugins" menu in your left sidebar, and click "Add New" link.
-2. Search for 'Share Buttons by GetSocial'
+2. Search for 'Share Buttons & Analytics by GetSocial'
 3. Click 'Install Now' and activate the plugin
 4. On the left bar a menu item 'GetSocial' will appear.
 
@@ -123,7 +126,7 @@ We've made our best to make the installation process as seamless as it can be. I
 
 **What if I don’t know how to handle code?**
 
-If you're not confortable around code and if we've failed to help you with our tutorials, we strongly recommend using one of our plugins. We've developed a social sharing plugin focused on content, specifically on Wordpress websites which you can download at: <a href="http://goo.gl/bdgOLN”></a>. We have also developed a social sharing plugin for eCommerce websites using Shopify as their platform. You can get our app here: <a href="http://goo.gl/4R82PS”></a>.
+If you're not comfortable around code and if we've failed to help you with our tutorials, we strongly recommend using one of our plugins. We've developed a social sharing plugin focused on content, specifically on Wordpress websites which you can download at: <a href="http://goo.gl/bdgOLN”></a>. We have also developed a social sharing plugin for eCommerce websites using Shopify as their platform. You can get our app here: <a href="http://goo.gl/4R82PS”></a>.
 
 **Do you have a visit limit for my website?**
 
@@ -131,7 +134,7 @@ Yes. The plans above (Free, Pro, Premium) are available for websites with less t
 
 **What is included in the free plan?**
 
-The free plan has a set of social media tools that can help you increase your traffic and conversions. You'll have access to our social sharing bars (horizontal, floating and native) and also to dark social sharing tracking. You can also create your own conversions to see how social is driving your business. Included in the free package is also our basic social analytics panel. This will give you a brief understanding on how many visits and shares you have. We then ananlyze how many visits (leads) those shares generated. You can also see the top 3 users, posts and social networks.
+The free plan has a set of social media tools that can help you increase your traffic and conversions. You'll have access to our social sharing bars (horizontal, floating and native) and also to dark social sharing tracking. You can also create your own conversions to see how social is driving your business. Included in the free package is also our basic social analytics panel. This will give you a brief understanding on how many visits and shares you have. We then analyze how many visits (leads) those shares generated. You can also see the top 3 users, posts and social networks.
 
 **What is different about GetSocial to other plugins and tools?**
 
@@ -151,11 +154,11 @@ The Free and Pro plans differ in the access to certain features. By subscribing 
 
 **What is the difference between the Free/Pro Plan and the Premium Plan?**
 
-The Pro and Premium plans differ in the access to certain features and also in the depth of our analytics section. Premium users are able to track their users in an identified way. This means that instead of knowing that someone made 50 shares, they know Mark has performed those 50 shares. Premium users also get access to a GetSocial tool that allows them to track their competitors' sharing perfomance. An usage example would be a newspaper trying to know which pieces of content are trending in their country/industry, in real time.
+The Pro and Premium plans differ in the access to certain features and also in the depth of our analytics section. Premium users are able to track their users in an identified way. This means that instead of knowing that someone made 50 shares, they know Mark has performed those 50 shares. Premium users also get access to a GetSocial tool that allows them to track their competitors' sharing performance. An usage example would be a newspaper trying to know which pieces of content are trending in their country/industry, in real time.
 
 **How do I upgrade and pay for GetSocial?**
 
-In your billing area you have a ‘Select a plan’ menu where you can easily upgrade your plan.Paying for GetSocial is as simple as introducing a valid credit card in your billing area.
+In your billing area you have a 'Select a plan' menu where you can easily upgrade your plan.Paying for GetSocial is as simple as introducing a valid credit card in your billing area.
 
 **Do I need to sign a long-term contract?**
 
@@ -177,7 +180,7 @@ In the free plan you'll have access to the following features, for free: Horizon
 
 In the PRO plan you'll have access to the following features, for $9/month or $90/year: Custom Sharing Actions, Mobile Web Sharing Bar, Big Total Shares Horizontal, Big Total Shares Floating, Subscribe Bar, and Price Alert.
 
-Have more doubts? You can go to <a href="http://feedback.getsocial.io">Getsocial Help Page</a> or <a mailto="support@getsocial.io">contact us</a>. We will try to be as fast as possible.
+Have more doubts? You can go to <a href="http://feedback.getsocial.io">GetSocial Help Page</a> or <a mailto="support@getsocial.io">contact us</a>. We will try to be as fast as possible.
 
 == Screenshots ==
 
@@ -204,7 +207,7 @@ Have more doubts? You can go to <a href="http://feedback.getsocial.io">Getsocial
 **2.4.2**
 
 - Setting to select if buttons appear on pages or/and pages
-- Deactivate app from wordpress plugin
+- Deactivate app from Wordpress plugin
 
 **2.4.1**
 
@@ -228,7 +231,7 @@ Have more doubts? You can go to <a href="http://feedback.getsocial.io">Getsocial
 
 **2.0.1**
 
-- Added Shortcodes
+- Added Short codes
 
 **2.0.0**
 
@@ -253,7 +256,7 @@ Have more doubts? You can go to <a href="http://feedback.getsocial.io">Getsocial
 
 - Create account without leaving the plugin
 - Add Floating Sharing Bar
-- Basic Analytics avaliable
+- Basic Analytics available
 
 **1.0.1**
 

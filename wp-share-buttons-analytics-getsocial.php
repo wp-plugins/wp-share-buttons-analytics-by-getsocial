@@ -3,7 +3,7 @@
  * Plugin Name:  Share Buttons by GetSocial.io
  * Plugin URI: http://getsocial.io
  * Description: Share Buttons by GetSocial.io is a freemium WordPress plugin that enables you to track social shares on Wordpress. Provide beautiful wordpress sharing buttons, track how many shares were made in each post and see how much traffic, conversions and shares each post generated. Optimize your SEO and increase social shares with GetSocial.io.
- * Version: 2.5
+ * Version: 2.6
  * Author: Getsocial, S.A.
  * Author URI: http://getsocial.io
  * License: GPL2
@@ -28,6 +28,7 @@ function slug_path($s) {
 }
 
 add_action( 'wp_ajax_gs_update', 'update_getsocial' );
+add_action( 'wp_ajax_gs_update_with_values', 'update_getsocial_with_values' );
 
 function update_getsocial() {
     global $wpdb; // this is how you get access to the database
@@ -37,6 +38,17 @@ function update_getsocial() {
 
     wp_die(); // this is required to terminate immediately and return a proper response
 }
+
+function update_getsocial_with_values() {
+    global $wpdb; // this is how you get access to the database
+
+    $GS = get_gs();
+
+    $GS->refreshSite($_POST['response']);
+
+    wp_die(); // this is required to terminate immediately and return a proper response
+}
+
 
 function register_gs_settings(){
     register_setting( 'getsocial-gs-settings' , 'gs-api-key' );
