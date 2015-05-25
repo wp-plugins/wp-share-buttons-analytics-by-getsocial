@@ -175,11 +175,11 @@ Yes you can! When you edit your post/page in the right sidebar you have an optio
 
 **What apps are included in your free plan?**
 
-In the free plan you'll have access to the following features, for free: Horizontal Sharing Bar, Native Sharing Bar, Floating Sharing Bar, Address Bar Tracking, Conversion Tracking, and Welcome Bar.
+In the free plan you'll have access to the following features, for free: Horizontal Sharing Bar, Native Sharing Bar, Floating Sharing Bar, Address Bar Tracking, Conversion Tracking, Custom Facebook Shares and Welcome Bar.
 
 **What apps are included in your PRO(paid) plan?**
 
-In the PRO plan you'll have access to the following features, for $9/month or $90/year: Custom Sharing Actions, Mobile Web Sharing Bar, Big Total Shares Horizontal, Big Total Shares Floating, Subscribe Bar, and Price Alert.
+In the PRO plan you'll have access to the following features, for $9/month or $90/year: Mobile Web Sharing Bar, Big Total Shares Horizontal, Big Total Shares Floating, Subscribe Bar, and Price Alert.
 
 Have more doubts? You can go to <a href="http://feedback.getsocial.io">GetSocial Help Page</a> or <a mailto="support@getsocial.io">contact us</a>. We will try to be as fast as possible.
 
