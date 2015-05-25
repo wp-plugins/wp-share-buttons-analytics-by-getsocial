@@ -171,7 +171,7 @@ Sure, we’re always here to help. You can contact us at support@getsocial.io or
 
 **Can I hide GetSocial in specific posts / pages?**
 
-Yes you can! When you edit your post/page in the right sidebar you have an option to hide the social horizontal bars ( this does not include the mobile bar ).
+Yes you can! When you edit your post/page in the right sidebar you have an option to hide the social horizontal bars ( this does not include the mobile bar ). There’s an article on our knowledge base about this: <a href="http://feedback.getsocial.io/knowledgebase/articles/566541-can-i-exclude-apps-from-specific-pages">Can I exclude apps from specific pages?</a>
 
 **What apps are included in your free plan?**
 
