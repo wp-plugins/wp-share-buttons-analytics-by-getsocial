@@ -61,6 +61,8 @@ In this plugin, you'll find the following features:
 
 * **Price Alert**: Allow your customers to track a product's price. By having your visitors receiving an email every time a price changes, you'll have a great way to increase conversion rate, returning traffic and sales to your online commerce website.
 
+* **Social Bar Customization**: After upgrading to our PRO plan, you’ll be able to edit a share bar’s shape, color and personalized twitter handle.
+
 <h4>Free Apps & Paid Apps:</h4> Most of our apps are free (and we intent it to keep it that way) but we do have some paid features as well. Our <strong>Pro Plan</strong> gives you access to all paid features and costs <u>$9/month</u> or <u>$90/year</u>. Join hundreds of other paid users.
 
 <h4>List of Free Apps:</h4>
@@ -80,6 +82,7 @@ In this plugin, you'll find the following features:
 - Big Total Shares Floating
 - Subscribe Bar
 - Price Alert
+- Bar customization
 
 Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="http://blog.getsocial.io/add-social-sharing-buttons-wordpress/?utm_source=wordpress_plugin">How to add free Social Share Buttons on WordPress</a>
 
@@ -183,6 +186,17 @@ In the free plan you'll have access to the following features, for free: Horizon
 In the PRO plan you'll have access to the following features, for $9/month or $90/year: Mobile Web Sharing Bar, Big Total Shares Horizontal, Big Total Shares Floating, Subscribe Bar, and Price Alert.
 
 Have more doubts? You can go to <a href="http://feedback.getsocial.io">GetSocial Help Page</a> or <a mailto="support@getsocial.io">contact us</a>. We will try to be as fast as possible.
+
+**How can I edit color, shape and twitter handle?**
+
+Editing color, shape and twitter handle is a customization available only to our PRO users. By activating it, all these configurations become available, improving your conversions, awareness & reach.
+
+The features where you can edit these configurations are: 
+- Horizontal Shares Bar
+- Floating Shares Bar
+- Total Shares Bar (Horizontal + Floating)
+- Mobile Share Bar
+- Image Sharing 
 
 == Screenshots ==
 
