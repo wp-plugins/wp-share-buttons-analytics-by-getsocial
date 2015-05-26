@@ -25,7 +25,7 @@ Our apps include trackable sharing buttons, welcome & subscribe bars, conversion
 
 * **eCommerce specific**: Allow your customers to follow the price of your products, generating more returning traffic with increase purchase intent.
 
-* **Integrations**: To use with you favorite software.
+* **Integrations**: To use with you favorite software. Currently we offer the integration with Google Analytics. 
 
 In this plugin, you'll find the following features:
 
