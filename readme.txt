@@ -63,7 +63,7 @@ In this plugin, you'll find the following features:
 
 * **Social Bar Customization**: After upgrading to our PRO plan, you’ll be able to edit a share bar’s shape, color and personalized twitter handle.
 
-<h4>Free Apps & Paid Apps:</h4> Most of our apps are free (and we intent it to keep it that way) but we do have some paid features as well. Our <strong>Pro Plan</strong> gives you access to all paid features and costs <u>$9/month</u> or <u>$90/year</u>. Join hundreds of other paid users.
+<h4>Free Apps & Paid Apps:</h4> Most of our apps are free (and we intent it to keep it that way) but we do have some paid features as well. Our **Pro Plan** gives you access to all paid features and costs <u>$9/month</u> or <u>$90/year</u>. Join hundreds of other paid users.
 
 <h4>List of Free Apps:</h4>
 - Horizontal Sharing Bar
@@ -123,80 +123,122 @@ For a manual installation:
 
 **What is GetSocial?**
 
-GetSocial is a software as a service that helps websites owners understand how social sharing drives their traffic and conversions. We provide a social media app store for all your needs, from awareness to conversion.
+GetSocial is a software that helps websites increase their traffic, shares and conversions. It is a set of apps that a user can easily install in her website. 
+
+There are a total of 15 apps across 5 categories: Sharing, Tracking, Engagement, eCommerce and Integration apps.
 
 **How do I install GetSocial?**
 
-We've made our best to make the installation process as seamless as it can be. If you created an account through our website, you'll be asked to place a bit of code on your website, just like Google Analytics or any other similar service. If you are familiar with it, you can use Google Tag Manager for easily do this. After installing our snippet of code, you'll have access to some 1-click install apps on our app store. If you’re using our Wordpress social sharing plugin good news: no code is required. Install all the apps with a click on our app store.
+We've made our best to make the installation process as seamless as it can be. If you created an account through our website, you'll be asked to place a bit of code on your website, just like Google Analytics or any other similar service. 
+
+If you are familiar with it, you can use Google Tag Manager for easily do this. After installing our snippet of code, you'll have access to some 1-click install apps on our app store. 
+
+If you're using WordPress download our plugin at <a href='http://goo.gl/bdgOLN'>http://goo.gl/bdgOLN</a>.
 
 **What if I don’t know how to handle code?**
 
-If you're not comfortable around code and if we've failed to help you with our tutorials, we strongly recommend using one of our plugins. We've developed a social sharing plugin focused on content, specifically on Wordpress websites which you can download at: <a href="http://goo.gl/bdgOLN”></a>. We have also developed a social sharing plugin for eCommerce websites using Shopify as their platform. You can get our app here: <a href="http://goo.gl/4R82PS”></a>.
+If you're not confortable around code and if we've failed to help you with our tutorials, we strongly recommend using one of our plugins. 
 
-**Do you have a visit limit for my website?**
+We've developed a social sharing plugin focused on content, specifically on **Wordpress** websites which you can download at: <a class='link_only' href='http://goo.gl/bdgOLN'>http://goo.gl/bdgOLN</a>.
 
-Yes. The plans above (Free, Pro, Premium) are available for websites with less then 1 million visits per month. A visit is the period time a user is actively engaged on areas of your website where our share buttons are available. If your traffic is above 1M per month please request a quote from us. Pricing goes from 9$/month ( Pro Plan ) to 99$/month ( Premium Plan ).
+**Do you provide support? How much does it cost?**
+
+GetSocial provides **FREE and quick support** for all its users, free or paid. We give priority to PRO user requests but all tickets get answered. Our support is not outsourced and it is provided by everyone in the team, from the CEO to the designer.
 
 **What is included in the free plan?**
 
-The free plan has a set of social media tools that can help you increase your traffic and conversions. You'll have access to our social sharing bars (horizontal, floating and native) and also to dark social sharing tracking. You can also create your own conversions to see how social is driving your business. Included in the free package is also our basic social analytics panel. This will give you a brief understanding on how many visits and shares you have. We then analyze how many visits (leads) those shares generated. You can also see the top 3 users, posts and social networks.
+The free plan has a set of social media tools that can help you increase your traffic and conversions. You'll have access to our social sharing bars (horizontal, floating and native) and also to dark social sharing tracking. You can also create your own conversions to see how social is driving your business. 
+
+Included in the free package is also our basic social analytics panel. This will give you a brief understanding on how many visits and shares you have. Please notice that some of the abovementioned features have some customization options which are reserved to our PRO users. These include: color, shape & twitter handle.
+
+**What is the difference between the Free Plan and the Pro Plan?**
+
+The Free and Pro plans differ in the access to certain features. GetSocial PRO users have higher visit limits and priority in support. Within the product, there are some customizations and features that they also have unique access to.
+
+
+<h4>List of FREE features</h4>
+- Horizontal Share Bar
+-Floating Share Bar
+- Original Share Bar
+- Custom Facebook Shares
+- Copy & Paste Share Tracking
+- Conversion Tracking
+- Welcome Bar
+- Google Analytics Integration
+
+<h4>List of FREE features</h4>               
+- Mobile Share Bar
+- Image Sharing
+- Total Floating Share Bar
+- Total Horizontal Share Bar
+- Subscribe Bar
+- Price Alert
+
+**Do you have a visit limit for my website?**
+
+Yes. As every new website that registers with GetSocial is also a new cost for us, we must regulate the number of visitors for the websites who use us. However, visits limits change according to your plan.
+
+
+**FREE Plan﻿:** If you're using our free plan, your limit is 50,000 visits per month. Once you reach this limit you'll be notified via email. If you don't upgrade to our PRO plan, we'll stop the service to your website. This means that all the apps you have installed will become inactive.
+
+﻿**PRO Plan﻿:** Our customers have a higher limit and can get up to 1,000,000 visits per month. If you reach this limit as a PRO user you'll be also notified but ﻿we won't stop serving our apps into your website﻿. However, we'll add a second subscription to your account. Every extra million visits costs $9/month. See more information about our traffic packages here. 
+**How much does the PRO version cost?**
+
+Our pricing is very transparent. We sell **monthly and annual subscriptions** of our product. If you choose monthly, you'll be charged $9 per month. If you choose annual, you'll be charged $90 per year.
+
+**How much will I pay in the PRO plan with 5 million visits?**
+
+We sell our extra visits traffic packages at an extra $9/month per million visits. In this case, your PRO plan gives you the first million visits so you'll only need to buy 4 extra traffic packages. Your subscription cost will be $9 (PRO) + 4x $9 (visits), so $45/month.
 
 **What is different about GetSocial to other plugins and tools?**
 
 From the feedback we've been receiving from our thousands of users, people join GetSocial for its design, easy installation and in-depth analytics. Our easy to user interface allows you to install our social media tools with no code required in just seconds, it's that easy. You also gain a simple to read dashboard with social analytics about your website.
 
-**What is the Address Bar Tracking?**
-
-If you imagine the last times you shared something, it's probable that you haven't done so by clicking on a share button. If you're sharing a video to a friend or sending a link via email, you're sharing something and normally that doesn't get measured. What happens is that you'll have these people being identified as 'direct' traffic to your website. They're not. The Address Bar feature allows you to track dark social sharing, which is sharing via alternative methods such as Copy&Paste, chats and link sharing in general.
-
-**What's the difference between Basic Social Analytics & Advanced Social Analytics?**
-
-In the Free and Pro plans you have access to a basic set of analytics. Like mentioned in the question 'What is included in the free plan?' we provide you with an overview of your sharing activity, namely top 3 users, posts and social networks. By subscribing the Premium plan, you'll have access to more thoroguh stats about your users, posts and networks. You'll be able to understand which of your users are sharing and how those shares are generating traffic and conversions to your website. You'll also be able to know which posts/articles are trending and being most shared.
-
-**What is the difference between the Free Plan and the Pro Plan?**
-
-The Free and Pro plans differ in the access to certain features. By subscribing to our Pro Plan you'll be able to (1) use our Custom Actions feature. Custom actions allow you to provide alternative sharing methods to your readers. These actions can be 'Love', 'Dislike', 'Agree' or any of the 50+ actions we have arranged for your website. Secondly, you'll be able to include beautifully designed social sharing buttons for your mobile readers. This allows them to have a great reading experience while providing them the ability to share the content they love. Thirdly, all GetSocial branding becomes optional and you're free to remove it from your sharing bars.
-
-**What is the difference between the Free/Pro Plan and the Premium Plan?**
-
-The Pro and Premium plans differ in the access to certain features and also in the depth of our analytics section. Premium users are able to track their users in an identified way. This means that instead of knowing that someone made 50 shares, they know Mark has performed those 50 shares. Premium users also get access to a GetSocial tool that allows them to track their competitors' sharing performance. An usage example would be a newspaper trying to know which pieces of content are trending in their country/industry, in real time.
-
 **How do I upgrade and pay for GetSocial?**
 
-In your billing area you have a 'Select a plan' menu where you can easily upgrade your plan.Paying for GetSocial is as simple as introducing a valid credit card in your billing area.
+Upgrading your GetSocial account is quick and easy. On your account, you'll find multiple times our 'Upgrade to PRO' call to action buttons.
 
-**Do I need to sign a long-term contract?**
+Clicking on one of these buttons will guide you to our pricing page. Here, you'll be able to perceive the benefits of subscribing to our pro plan.
 
-Absolutely not! There are no contracts. Pay monthly, cancel anytime. There are no initiation fees, cancellation costs, license fees or any other charges. If you no longer wish to use GetSocial, you can cancel at any time. At that point, your paid subscription will last until the end of the current monthly billing cycle.
+After you have decided which plan you want to subscribe to (we recommend the Annual plan as it provides with 2 months free as discount), you just need to click on upgrade and provide your billing details.
 
-**Is there someone I can talk about GetSocial?**
+**What is the Copy Paste Share Tracking?**
 
-Sure, we’re always here to help. You can contact us at support@getsocial.io or use the help widget on the bottom-right corner of this page.
+If you imagine the last times you shared something, it's probable that you haven't done so by clicking on a share button. If you're sharing a video to a friend or sending a link via email, you're sharing something and normally that doesn't get measured. 
+
+What happens is that you'll have these people being identified as 'direct' traffic to your website. They're not. The Address Bar feature allows you to track dark social sharing, which is sharing via alternative methods such as Copy&Paste, chats and link sharing in general.
+
+**How can I edit color, shape and twitter handle?**
+
+Editing color, shape and twitter handle is a customization available only to our PRO users. By activating it, all these configurations become available, improving your conversions, awareness & reach.The features where you can edit these configurations are:
+
+- Horizontal Shares Bar
+- Floating Shares Bar
+- Total Shares Bar (Horizontal + Floating)
+- Mobile Share Bar
+- Image Sharing
+
+**What is the Copy Paste Share Tracking?**
+
+If you imagine the last times you shared something, it's probable that you haven't done so by clicking on a share button. If you're sharing a video to a friend or sending a link via email, you're sharing something and normally that doesn't get measured. 
+
+What happens is that you'll have these people being identified as 'direct' traffic to your website. They're not. The Address Bar feature allows you to track dark social sharing, which is sharing via alternative methods such as Copy&Paste, chats and link sharing in general.
 
 **Can I hide GetSocial in specific posts / pages?**
 
 Yes you can! When you edit your post/page in the right sidebar you have an option to hide the social horizontal bars ( this does not include the mobile bar ). There’s an article on our knowledge base about this: <a href="http://feedback.getsocial.io/knowledgebase/articles/566541-can-i-exclude-apps-from-specific-pages">Can I exclude apps from specific pages?</a>
 
-**What apps are included in your free plan?**
+**Do I need to sign a long-term contract?**
 
-In the free plan you'll have access to the following features, for free: Horizontal Sharing Bar, Native Sharing Bar, Floating Sharing Bar, Address Bar Tracking, Conversion Tracking, Custom Facebook Shares and Welcome Bar.
+Absolutely not! There are no contracts. Pay monthly, cancel anytime. There are no initiation fees, cancellation costs, license fees or any other charges. If you no longer wish to use GetSocial, you can cancel at any time. At that point, your paid subscription will last until the end of the current monthly billing cycle.
 
-**What apps are included in your PRO(paid) plan?**
+**What is your refund policy?**
 
-In the PRO plan you'll have access to the following features, for $9/month or $90/year: Mobile Web Sharing Bar, Big Total Shares Horizontal, Big Total Shares Floating, Subscribe Bar, and Price Alert.
+GetSocial services or applications subscriptions, advertising or any other kind of service are non-refundable and GetSocial is not obligated to provide the User a refund at any time. We may, at our discretion, provide credits toward future services or applications subscription, advertising, or any other kind of service charges on a case-by-case basis.
 
-Have more doubts? You can go to <a href="http://feedback.getsocial.io">GetSocial Help Page</a> or <a mailto="support@getsocial.io">contact us</a>. We will try to be as fast as possible.
+**Is there someone I can talk about GetSocial?**
 
-**How can I edit color, shape and twitter handle?**
-
-Editing color, shape and twitter handle is a customization available only to our PRO users. By activating it, all these configurations become available, improving your conversions, awareness & reach.
-
-The features where you can edit these configurations are: 
-- Horizontal Shares Bar
-- Floating Shares Bar
-- Total Shares Bar (Horizontal + Floating)
-- Mobile Share Bar
-- Image Sharing 
+Sure, we’re always here to help. You can contact us at support@getsocial.io or use the help widget on the bottom-right corner of the plugin page. 
 
 == Screenshots ==
 
