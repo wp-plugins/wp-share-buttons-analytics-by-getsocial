@@ -27,7 +27,7 @@ Our apps include trackable sharing buttons, welcome & subscribe bars, conversion
 
 * **Integrations**: To use with you favorite software. Currently we offer the integration with Google Analytics. 
 
-In this plugin, you'll find the following features:
+In this plugin, you'll find the following categories:
 
 <h4>Social Sharing Tools</h4>
 
