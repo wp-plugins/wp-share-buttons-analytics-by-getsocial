@@ -49,7 +49,7 @@ In this plugin, you'll find the following categories:
 
 * **Copy Paste Share tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL (Dark Social) will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter clients.
 
-<h4>Engagement Apps</h4>
+<h4>Engagement Tools</h4>
 
 * **Welcome Bar**: Easily lead your visitors to a specific link. Great to generate conversions, engage with promotions and increase traffic. Increase your conversion rates and improve your funnel with this hello bar like feature. Track conversions coming from this top bar for Wordpress.
 
