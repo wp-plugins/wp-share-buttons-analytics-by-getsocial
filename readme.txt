@@ -35,8 +35,6 @@ In this plugin, you'll find the following categories:
 
 * **Image Sharing**: For visually rich websites having the ability to share each image individually is paramount. The image sharing feature allows you to increase shares from images on your website. This works particularly well for rich-media social networks such as Pinterest or Tumblr. 
 
-* **Copy Paste Share tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL (Dark Social) will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter clients.
-
 * **Free Social Sharing Analytics**: All our social sharing plugins contribute for your understanding on how social sharing is driving you traffic and conversions. From social share buttons to conversion tracking, your social shares monitoring will be available in simple yet comprehensive dashboards. Share buttons don’t have to be just counters. Here you’ll find a way to have insights on the shares made on your website.
 
 * **Custom Sharing Actions**: Sometimes we need to say more than a simple 'Like'. Here you'll find more than 50 custom stories such as Awesome, Wish or Love. Allow your customers to share your content in a unique and personalized way through custom sharing buttons.
@@ -45,9 +43,11 @@ In this plugin, you'll find the following categories:
 
 * **Mobile Web Sharing**: Mobile sharing doesn't have to be a terrible experience. Create beautiful interfaces for your mobile users to share their thoughts about your content. Sharing in mobile has actually a higher sharing rate than on desktop. Allow your users to share your content to facebook, twitter, linkedin, tumblr, google+, whatsapp and others easily on their smartphones. Smartphone sharing is smart.
 
-<h4>Conversion Tools</h4>
+<h4>Tracking Tools</h4>
 
-* **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network. Social sharing definitely contributes to your website and your share analytics shall prove just that
+* **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network. Social sharing definitely contributes to your website and your share analytics shall prove just that.
+
+* **Copy Paste Share tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL (Dark Social) will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter clients.
 
 <h4>Engagement Apps</h4>
 
