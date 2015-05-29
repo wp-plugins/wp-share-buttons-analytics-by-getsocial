@@ -47,7 +47,7 @@ In this plugin, you'll find the following categories:
 
 * **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network. Social sharing definitely contributes to your website and your share analytics shall prove just that.
 
-* **Copy Paste Share tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL (Dark Social) will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter clients.
+* **Copy Paste Share tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL (Dark Social) will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter management tools.
 
 <h4>Engagement Tools</h4>
 
