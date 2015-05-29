@@ -63,7 +63,7 @@ In this plugin, you'll find the following categories:
 
 * **Social Bar Customization**: After upgrading to our PRO plan, you’ll be able to edit a share bar’s shape, color and personalized twitter handle.
 
-<h4>Free Apps & Paid Apps:</h4> Most of our apps are free (and we intent it to keep it that way) but we do have some paid features as well. Our **Pro Plan** gives you access to all paid features and costs <u>$9/month</u> or <u>$90/year</u>. Join hundreds of other paid users.
+<h4>Free Apps & Paid Apps:</h4> Most of our apps are free (and we intent it to keep it that way) but we do have some paid features as well. Our **Pro Plan** gives you access to all paid features and costs <u>$9/month</u> or <u>$90/year</u> (big discount). Join hundreds of other paid users.
 
 <h4>List of Free Apps:</h4>
 - Horizontal Sharing Bar
