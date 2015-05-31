@@ -41,7 +41,7 @@ In this plugin, you'll find the following categories:
 
 * **Total Shares Counter**: Our total shares counter allows you to aggregate shares per post or page. Offer your visitors a fantastic way to see that a content is becoming viral and increase social sharing in that location.
 
-* **Mobile Web Sharing**: Mobile sharing doesn't have to be a terrible experience. Create beautiful interfaces for your mobile users to share their thoughts about your content. Sharing in mobile has actually a higher sharing rate than on desktop. Allow your users to share your content to facebook, twitter, linkedin, tumblr, google+, whatsapp and others easily on their smartphones. Smartphone sharing is smart.
+* **Mobile Web Sharing**: Mobile sharing doesn't have to be a terrible experience. Create beautiful interfaces for your mobile users to share their thoughts about your content. Sharing in mobile has actually a higher sharing rate than on desktop. Allow your users to share your content to facebook, twitter, linkedin, Pinterest, google+, WhatsApp and others easily on their smartphones. Smartphone sharing is smart.
 
 <h4>Tracking Tools</h4>
 
