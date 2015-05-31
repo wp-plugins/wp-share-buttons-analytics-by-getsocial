@@ -33,7 +33,7 @@ In this plugin, you'll find the following categories:
 
 * **Social media shares bar**: Add our horizontal and vertical social shares bar and get free social media tracking of the shares made on your website. This social media widget will help your users to do more social shares of your content. Social sharing is a vital piece to increase your website’s traffic.
 
-* **Image Sharing**: For visually rich websites having the ability to share each image individually is paramount. The image sharing feature allows you to increase shares from images on your website. This works particularly well for rich-media social networks such as Pinterest or Tumblr. 
+* **Image Sharing**: For visually rich websites having the ability to share each image individually is paramount. The image sharing feature allows you to increase shares from images on your website. This works particularly well for rich-media social networks such as Pinterest, Tumblr & others. 
 
 * **Free Social Sharing Analytics**: All our social sharing plugins contribute for your understanding on how social sharing is driving you traffic and conversions. From social share buttons to conversion tracking, your social shares monitoring will be available in simple yet comprehensive dashboards. Share buttons don’t have to be just counters. Here you’ll find a way to have insights on the shares made on your website.
 
