@@ -76,7 +76,7 @@ In this plugin, you'll find the following categories:
 - Google Analytics Integration
 
 <h4>List of Paid Apps:</h4>
-- Mobile Web Sharing Bar
+- Mobile Share Bar
 - Image Sharing
 - Big Total Shares Horizontal
 - Big Total Shares Floating
