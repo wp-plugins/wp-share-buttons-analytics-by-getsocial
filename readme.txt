@@ -19,7 +19,7 @@ Our apps include customizable sharing buttons, welcome & subscribe bars, convers
 
 * **Social Sharing Tools**: You'll find 5 apps focused on improving, optimizing and streamlining the number of shares made on your website. A/B test the placement of your share buttons and increase your referral traffic coming from social networks. Track dark social sharing (copy paste) and enable mobile sharing to your mobile users.
 
-* **Conversion Tools**: Social media is fantastic if you are able to measure it. Track how your share buttons are driving your conversions. Add conversion pixels easily, no code required, to signups and purchases.
+* **Conversion Tools**: Social media is fantastic if you are able to measure it. Track how your share buttons are driving your conversions. Add conversion moments easily, no code required, to signups and purchases.
 
 * **Engagement Apps**: Drive your visitors to a particular page with our welcome bar feature or get their email with our subscribe bar feature. Optimize your email marketing efforts in a affordable way.
 
