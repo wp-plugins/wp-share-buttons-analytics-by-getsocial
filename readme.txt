@@ -37,7 +37,7 @@ In this plugin, you'll find the following categories:
 
 * **Free Social Sharing Analytics**: All our social sharing plugins contribute for your understanding on how social sharing is driving you traffic and conversions. From social share buttons to conversion tracking, your social shares monitoring will be available in simple yet comprehensive dashboards. Share buttons don’t have to be just counters. Here you’ll find a way to have insights on the shares made on your website.
 
-* **Custom Sharing Actions**: Sometimes we need to say more than a simple 'Like'. Here you'll find more than 50 custom stories such as Awesome, Wish or Love. Allow your customers to share your content in a unique way through custom facebook shares.
+* **Custom Facebook Shares**: Sometimes we need to say more than a simple 'Like'. Here you'll find more than 50 custom stories such as Awesome, Wish or Love. Allow your customers to share your content in a unique way through custom facebook shares.
 
 * **Total Shares Counter**: Our total shares counter allows you to aggregate shares per post or page. Offer your visitors a fantastic way to see that a content is becoming viral and increase social sharing in that location.
 
