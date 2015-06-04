@@ -96,7 +96,7 @@ Also, there's a tutorial on how to install this plugin in your Wordpress Account
 
 `[getsocial app="native_bar"]`
 
-* Custom Actions
+* Custom Facebook Shares
 
 `[getsocial app="custom_actions"]`
 
