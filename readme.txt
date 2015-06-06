@@ -78,8 +78,7 @@ In this plugin, you'll find these categories:
 <h4>List of Paid Apps:</h4>
 - Mobile Share Bar
 - Image Sharing
-- Big Total Shares Horizontal
-- Big Total Shares Floating
+- Big Total Shares Horizontal & Floating
 - Subscribe Bar
 - Price Alert
 - Extended Customization (Color, Shape, Twitter handle)
