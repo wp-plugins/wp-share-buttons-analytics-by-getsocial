@@ -81,7 +81,7 @@ In this plugin, you'll find these categories:
 - Big Total Shares Horizontal & Floating
 - Subscribe Bar
 - Price Alert
-- Extended Customization (Color, Shape, Twitter handle)
+- Extended Customization (Shape, Color, Twitter handle in several apps)
 
 Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="http://blog.getsocial.io/add-social-sharing-buttons-wordpress/?utm_source=wordpress_plugin">How to add free Social Share Buttons on WordPress</a>
 
