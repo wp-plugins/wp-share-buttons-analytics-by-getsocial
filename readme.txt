@@ -53,7 +53,7 @@ In this plugin, you'll find these categories:
 
 * **Welcome Bar**: Easily lead your visitors to a specific link. Great to generate conversions, engage with promotions and increase traffic. Increase your conversion rates and improve your funnel with this hello bar like feature. Track conversions coming from this top bar for Wordpress.
 
-* **Subscriber Bar**: Easily capture emails from your visitors by providing them with an engaging top bar. Export data to your favorite CRM or e-Mail marketing software. Improve engagement, conversion and even sales with this easy to install, no code required feature.
+* **Subscriber Bar (List Builder)**: Easily capture emails from your visitors by providing them with an engaging top bar. Export data to your favorite CRM or e-Mail marketing software. Improve engagement, conversion and even sales with this easy to install, no code required feature.
 
 <h4>eCommerce specific </h4>
 
