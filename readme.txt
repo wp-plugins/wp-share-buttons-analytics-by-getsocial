@@ -65,24 +65,6 @@ In this plugin, you'll find these categories:
 
 <h4>Free Apps & Paid Apps:</h4> Most of our apps are free (and we intent it to keep it that way) but we do have some paid features as well. Our **Pro Plan** gives you access to all paid features and costs <u>$9/month</u> or <u>$90/year</u> (big discount). Join hundreds of other paid users.
 
-<h4>List of Free Apps:</h4>
-- Horizontal Sharing Bar
-- Native Sharing Bar
-- Floating Sharing Bar
-- Address Bar Tracking
-- Conversion Tracking
-- Welcome Bar
-- Custom Facebook Shares
-- Google Analytics Integration
-
-<h4>List of Paid Apps:</h4>
-- Mobile Share Bar
-- Image Sharing
-- Big Total Shares Horizontal & Floating
-- Subscribe Bar
-- Price Alert
-- Extended Customization (Shape, Color, Twitter handle in several apps)
-
 Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="http://blog.getsocial.io/add-social-sharing-buttons-wordpress/?utm_source=wordpress_plugin">How to add free Social Share Buttons on WordPress</a>
 
 <h4>These are the short codes available:</h4>
@@ -155,23 +137,23 @@ Included in the free package is also our basic social analytics panel. This will
 The Free and Pro plans differ in the access to certain features. GetSocial PRO users have higher visit limits and priority in support. Within the product, there are some customizations and features that they also have unique access to.
 
 
-<h4>List of FREE features</h4>
-- Horizontal Share Bar
--Floating Share Bar
-- Original Share Bar
-- Custom Facebook Shares
-- Copy & Paste Share Tracking
+<h4>List of Free Apps:</h4>
+- Horizontal Sharing Bar
+- Native Sharing Bar
+- Floating Sharing Bar
+- Address Bar Tracking
 - Conversion Tracking
 - Welcome Bar
+- Custom Facebook Shares
 - Google Analytics Integration
 
-<h4>List of FREE features</h4>               
+<h4>List of Paid Apps:</h4>
 - Mobile Share Bar
 - Image Sharing
-- Total Floating Share Bar
-- Total Horizontal Share Bar
+- Big Total Shares Horizontal & Floating
 - Subscribe Bar
 - Price Alert
+- Extended Customization (Shape, Color, Twitter handle in several apps)
 
 **Do you have a visit limit for my website?**
 
