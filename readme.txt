@@ -1,7 +1,7 @@
 === Share Buttons by GetSocial.io ===
 Contributors: GetSocial.io, joaoromao
 
-Tags: AddThis, addtoany, analytics, button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing 
+Tags: addthis, addtoany, analytics, button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing 
 
 Requires at least: 3.0
 Tested up to: 4.2.2
@@ -67,24 +67,6 @@ In this plugin, you'll find these categories:
 
 Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="http://blog.getsocial.io/add-social-sharing-buttons-wordpress/?utm_source=wordpress_plugin">How to add free Social Share Buttons on WordPress</a>
 
-<h4>These are the short codes available:</h4>
-
-* Sharing Bar
-
-`[getsocial app="sharing_bar"]`
-
-* Native Bar
-
-`[getsocial app="native_bar"]`
-
-* Custom Facebook Shares
-
-`[getsocial app="custom_actions"]`
-
-* Big Total Shares Horizontal
-
-`[getsocial app="social_bar_big_counter"]`
-
 == Installation ==
 
 For an automatic installation through WordPress:
@@ -132,10 +114,29 @@ The free plan has a set of social media tools that can help you increase your tr
 
 Included in the free package is also our basic social analytics panel. This will give you a brief understanding on how many visits and shares you have. Please notice that some of the abovementioned features have some customization options which are reserved to our PRO users. These include: color, shape & twitter handle.
 
+**Are there any short codes available?**
+
+<h4>These are the short codes available:</h4>
+
+* Sharing Bar
+
+`[getsocial app="sharing_bar"]`
+
+* Native Bar
+
+`[getsocial app="native_bar"]`
+
+* Custom Facebook Shares
+
+`[getsocial app="custom_actions"]`
+
+* Big Total Shares Horizontal
+
+`[getsocial app="social_bar_big_counter"]`
+
 **What is the difference between the Free Plan and the Pro Plan?**
 
 The Free and Pro plans differ in the access to certain features. GetSocial PRO users have higher visit limits and priority in support. Within the product, there are some customizations and features that they also have unique access to.
-
 
 <h4>List of Free Apps:</h4>
 - Horizontal Sharing Bar
