@@ -9,7 +9,7 @@ Stable tag: 2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Grow web & mobile shares with Facebook, WhatsApp, Twitter & Pinterest share tools. Welcome Bar + Analytics. Support is FREE & Quick
+Grow web & mobile traffic and shares from Facebook, WhatsApp, Twitter & Pinterest. Welcome Bar + Analytics. Support is FREE & Quick
 
 == Description ==
 
