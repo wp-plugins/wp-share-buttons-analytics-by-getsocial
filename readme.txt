@@ -51,7 +51,7 @@ In this plugin, you'll find these categories:
 
 <h4>Engagement Tools</h4>
 
-* **Welcome Bar**: Easily lead your visitors to a specific link. Great to generate conversions, engage with promotions and increase traffic. Increase your conversion rates and improve your funnel with this hello bar like feature. Track conversions coming from this top bar for Wordpress.
+* **Welcome Bar**: Easily redirect your visitors to a specific link. Generate conversions, engage with promotions and increase traffic with this hello bar like feature. Track conversions coming from this top bar for Wordpress.
 
 * **Subscriber Bar (List Builder)**: Easily capture emails from your visitors by providing them with an engaging top bar. Export data to your favorite CRM or e-Mail marketing software. Improve engagement, conversion and even sales with this easy to install, no code required feature.
 
