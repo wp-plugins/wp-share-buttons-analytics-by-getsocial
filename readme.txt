@@ -100,13 +100,13 @@ If you're using WordPress download our plugin at <a href='http://goo.gl/bdgOLN'>
 
 **What if I don’t know how to handle code?**
 
-If you're not confortable around code and if we've failed to help you with our tutorials, we strongly recommend using one of our plugins. 
+If you're not comfortable around code and if we've failed to help you with our tutorials, we strongly recommend using one of our plugins. 
 
 We've developed a social sharing plugin focused on content, specifically on **Wordpress** websites which you can download at: <a class='link_only' href='http://goo.gl/bdgOLN'>http://goo.gl/bdgOLN</a>.
 
-**Do you provide support? How much does it cost?**
+**Do you provide free support? How much does it cost?**
 
-GetSocial provides **FREE and quick support** for all its users, free or paid. We give priority to PRO user requests but all tickets get answered. Our support is not outsourced and it is provided by everyone in the team, from the CEO to the designer.
+GetSocial provides **FREE and quick support** for all its users, free or paid. We give priority to PRO user requests but all tickets get answered. Our support is not outsourced and it is provided by everyone in the team, from the CEO to the designer. We try to get back at you, during business days, in less than 24 hours (although we are quite fast answering every ticket).
 
 **What is included in the free plan?**
 
