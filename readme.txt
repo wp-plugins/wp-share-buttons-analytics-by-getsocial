@@ -1,7 +1,7 @@
 === Share Buttons by GetSocial.io ===
 Contributors: GetSocial.io, joaoromao
 
-Tags: addthis, addtoany, analytics, button, facebook share, facebook button, like button, tweet button, twitter share, pinterest share, pin button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social analytics, social media, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing 
+Tags: addthis, addtoany, analytics, button, facebook share, facebook button, like button, tweet button, twitter share, pinterest share, pin button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social analytics, social media, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing, mobile share bar, mobile sharing, top bar, welcome bar, hello bar 
 
 Requires at least: 3.0
 Tested up to: 4.2.2
