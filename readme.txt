@@ -43,6 +43,8 @@ In this plugin, you'll find these categories:
 
 * **Mobile Web Sharing**: Mobile sharing doesn't have to be a terrible experience. Create beautiful interfaces for your mobile users to share their thoughts about your content. Sharing in mobile has actually a higher sharing rate than on desktop. Allow your users to share your content to facebook, twitter, linkedin, Pinterest, google+, WhatsApp and others easily on their smartphones. Smartphone sharing is smart.
 
+* **Social Bar Customization**: After upgrading to our PRO plan, you’ll be able to edit your share bar’s shape, color and personalized twitter handle. Great for that extra touch. 
+
 <h4>Tracking Tools</h4>
 
 * **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network. Social sharing definitely contributes to your website and your share analytics shall prove just that.
@@ -61,7 +63,6 @@ In this plugin, you'll find these categories:
 
 * **Price Alert**: Allow your customers to track a product's price. By having your visitors receiving an email every time a price changes, you'll have a great way to increase conversion rate, returning traffic and sales to your online commerce website.
 
-* **Social Bar Customization**: After upgrading to our PRO plan, you’ll be able to edit a share bar’s shape, color and personalized twitter handle.
 
 <h4>Free Apps & Paid Apps:</h4> Most of our apps are free (and we intent it to keep it that way) but we do have some paid features as well. Our **Pro Plan** gives you access to all paid features and costs <u>$9/month</u> or <u>$90/year</u> (big discount). Join hundreds of other paid users.
 
