@@ -13,7 +13,7 @@ Grow web & mobile traffic and shares from Facebook, WhatsApp, Twitter & Pinteres
 
 == Description ==
 
-**Share Buttons by GetSocial.io** is a WordPress plugin for all your social media needs. Track social shares and see how much traffic & conversions each post generated. Optimize your SEO and increase social shares with GetSocial. It is a freemium plugin so there are some free apps and some paid apps. 
+**Share Buttons by GetSocial.io** is a WordPress all in one toolkit to help you grow your shares, traffic and conversions. Track social shares and see how much traffic & conversions each post generated. Optimize your SEO and increase social shares with GetSocial. It is a freemium plugin so there are some free apps and some paid apps. 
 
 **ANNOUNCEMENT:** Our newest app (Follow Buttons) and our new powerful social analytics module are coming very soon! 
 
