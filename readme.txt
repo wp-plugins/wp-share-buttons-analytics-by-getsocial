@@ -1,7 +1,7 @@
-=== Share Buttons by GetSocial.io ===
+=== All-in-one social media toolkit. Grow traffic and shares with GetSocial.io ===
 Contributors: GetSocial.io, joaoromao
 
-Tags: addthis, addtoany, analytics, button, facebook share, facebook button, like button, tweet button, twitter share, pinterest share, pin button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social analytics, social media, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing, mobile share bar, mobile sharing, top bar, welcome bar, hello bar 
+Tags: addthis, addtoany, analytics, button, facebook share, facebook button, like button, tweet button, twitter share, pinterest share, pin button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social analytics, social media, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing, mobile share bar, mobile sharing, top bar, welcome bar, hello bar
 
 Requires at least: 3.0
 Tested up to: 4.2.2
@@ -9,7 +9,7 @@ Stable tag: 2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Grow web & mobile traffic and shares from Facebook, WhatsApp, Twitter & Pinterest. Welcome Bar + Analytics. Support is FREE & Quick
+All in one plugin with tools to grow your traffic, shares and conversions. Includes mobile bar (paid) & more. Support is FREE & Quick
 
 == Description ==
 
