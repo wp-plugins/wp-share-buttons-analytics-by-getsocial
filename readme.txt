@@ -1,4 +1,4 @@
-=== All-in-one social media toolkit. Grow traffic and shares with GetSocial.io ===
+=== Share Buttons & tools to grow traffic by GetSocial.io ===
 Contributors: GetSocial.io, joaoromao
 
 Tags: addthis, addtoany, analytics, button, facebook share, facebook button, like button, tweet button, twitter share, pinterest share, pin button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social analytics, social media, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing, mobile share bar, mobile sharing, top bar, welcome bar, hello bar
