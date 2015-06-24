@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:  Share Buttons by GetSocial.io
+ * Plugin Name: Share Buttons & tools to grow traffic by GetSocial.io
  * Plugin URI: http://getsocial.io
  * Description: Share Buttons by GetSocial.io is a freemium WordPress plugin that enables you to track social shares on Wordpress. Provide beautiful wordpress sharing buttons, track how many shares were made in each post and see how much traffic, conversions and shares each post generated. Optimize your SEO and increase social shares with GetSocial.io.
  * Version: 2.6
@@ -53,6 +53,7 @@ function update_getsocial_with_values() {
 function register_gs_settings(){
     register_setting( 'getsocial-gs-settings' , 'gs-api-key' );
     register_setting( 'getsocial-gs-settings' , 'gs-place' );
+    register_setting( 'getsocial-gs-settings' , 'gs-place-follow' );
     // register_setting( 'getsocial-gs-settings' , 'gs-buttons-position' );
     register_setting( 'getsocial-gs-settings' , 'gs-lang' );
 
@@ -137,99 +138,128 @@ function add_buttons_to_content($content, $woocomerce, $wooposition = null){
         $condition = false;
     endif;
 
-    if ( $condition ):
-        $GS = get_gs();
+    $places_follow = get_option('gs-place-follow');
 
-        $groups_active = $GS->is_active('sharing_bar');
-        $native_active = $GS->is_active('native_bar');
-        $custom_active = $GS->is_active('custom_actions');
-        $price_alert_active = $GS->is_active('price_alert');
-        $big_counter_bar_active = $GS->is_active('social_bar_big_counter');
-        //
-        $before_content = "";
-        $after_content = "";
+    $condition_follow = true;
 
-        $custom_content = $content;
-
-        //
-        if(!is_feed() && !is_home()):
-        // if(!is_home()):
-
-            if($groups_active):
-                $groups = $GS->getCode('sharing_bar');
-
-                $position = ($wooposition != null ? $wooposition : $GS->prop('sharing_bar', 'position'));
-
-                if($position == 'bottom' || $position == 'both'):
-                    $after_content = $groups;
-                endif;
-
-                if ( $position == 'top' || $position == 'both' ):
-                    $before_content = $groups.'<br/>';
-                endif;
-            endif;
-
-            if($price_alert_active && $wooposition):
-
-                $product = new WC_Product( get_the_ID() );
-                $price = $product->price;
-
-                $price_alert_button = $GS->getCode('price_alert', $price, get_woocommerce_currency_symbol());
-
-                $position = $wooposition;
-
-                $after_content = $price_alert_button;
-            endif;
-
-            if($custom_active):
-                $custom = $GS->getCode('custom_actions');
-
-                $position = ($wooposition != null ? $wooposition : $GS->prop('custom_actions', 'position'));
-
-                if($position == 'bottom' || $position == 'both'):
-                    $after_content = $after_content.$custom;
-                endif;
-
-                if ( $position == 'top' || $position == 'both' ):
-                    $before_content = $before_content.$custom.'<br/>';
-                endif;
-            endif;
-
-            if($big_counter_bar_active):
-                $big_counter = $GS->getCode('social_bar_big_counter');
-
-                $position = ($wooposition != null ? $wooposition : $GS->prop('social_bar_big_counter', 'position'));
-
-                if($position == 'bottom' || $position == 'both'):
-                    $after_content = $after_content.$big_counter;
-                endif;
-
-                if ( $position == 'top' || $position == 'both' ):
-                    $before_content = $before_content.$big_counter.'<br/>';
-                endif;
-            endif;
-
-            if($native_active):
-                $native = $GS->getCode('native_bar');
-
-                $position = ($wooposition != null ? $wooposition : $GS->prop('native_bar', 'position'));
-
-                if($position == 'bottom' || $position == 'both'):
-                    $after_content = $after_content.$native;
-                endif;
-
-                if ( $position == 'top' || $position == 'both' ):
-                    $before_content = $before_content.$native.'<br/>';
-                endif;
-            endif;
-
-            $custom_content = $before_content.$custom_content.$after_content;
-    	endif;
-
-    	return $custom_content;
-    else:
-        return $content;
+    if($places_follow == null || $places_follow == 'place-all'):
+        $condition_follow = (is_single() || is_page());
+    elseif ($places_follow == 'place-posts'):
+        $condition_follow = is_single();
+    elseif ($places_follow == 'place-pages'):
+        $condition_follow = is_page();
+    elseif ($places_follow == 'only-shortcodes'):
+        $condition_follow = false;
     endif;
+
+    // if ( $condition ):
+    $GS = get_gs();
+
+    $groups_active = $GS->is_active('sharing_bar');
+    $native_active = $GS->is_active('native_bar');
+    $custom_active = $GS->is_active('custom_actions');
+    $price_alert_active = $GS->is_active('price_alert');
+    $big_counter_bar_active = $GS->is_active('social_bar_big_counter');
+    $follow_bar_active = $GS->is_active('follow_bar');
+    //
+    $before_content = "";
+    $after_content = "";
+
+    $custom_content = $content;
+
+    //
+    if(!is_feed() && !is_home()):
+    // if(!is_home()):
+
+        if($groups_active && $condition):
+            $groups = $GS->getCode('sharing_bar');
+
+            $position = ($wooposition != null ? $wooposition : $GS->prop('sharing_bar', 'position'));
+
+            if($position == 'bottom' || $position == 'both'):
+                $after_content = $groups;
+            endif;
+
+            if ( $position == 'top' || $position == 'both' ):
+                $before_content = $groups.'<br/>';
+            endif;
+        endif;
+
+        if($price_alert_active && $wooposition && $condition):
+
+            $product = new WC_Product( get_the_ID() );
+            $price = $product->price;
+
+            $price_alert_button = $GS->getCode('price_alert', $price, get_woocommerce_currency_symbol());
+
+            $position = $wooposition;
+
+            $after_content = $price_alert_button;
+        endif;
+
+        if($custom_active && $condition):
+            $custom = $GS->getCode('custom_actions');
+
+            $position = ($wooposition != null ? $wooposition : $GS->prop('custom_actions', 'position'));
+
+            if($position == 'bottom' || $position == 'both'):
+                $after_content = $after_content.$custom;
+            endif;
+
+            if ( $position == 'top' || $position == 'both' ):
+                $before_content = $before_content.$custom.'<br/>';
+            endif;
+        endif;
+
+        if($big_counter_bar_active && $condition):
+            $big_counter = $GS->getCode('social_bar_big_counter');
+
+            $position = ($wooposition != null ? $wooposition : $GS->prop('social_bar_big_counter', 'position'));
+
+            if($position == 'bottom' || $position == 'both'):
+                $after_content = $after_content.$big_counter;
+            endif;
+
+            if ( $position == 'top' || $position == 'both' ):
+                $before_content = $before_content.$big_counter.'<br/>';
+            endif;
+        endif;
+
+        if($follow_bar_active && $condition_follow):
+            $follow_bar = $GS->getCode('follow_bar');
+
+            $position = ($wooposition != null ? $wooposition : $GS->prop('follow_bar', 'position'));
+
+            if($position == 'bottom' || $position == 'both'):
+                $after_content = $after_content.$follow_bar;
+            endif;
+
+            if ( $position == 'top' || $position == 'both' ):
+                $before_content = $before_content.$follow_bar.'<br/>';
+            endif;
+        endif;
+
+        if($native_active && $condition):
+            $native = $GS->getCode('native_bar');
+
+            $position = ($wooposition != null ? $wooposition : $GS->prop('native_bar', 'position'));
+
+            if($position == 'bottom' || $position == 'both'):
+                $after_content = $after_content.$native;
+            endif;
+
+            if ( $position == 'top' || $position == 'both' ):
+                $before_content = $before_content.$native.'<br/>';
+            endif;
+        endif;
+
+        $custom_content = $before_content.$custom_content.$after_content;
+	endif;
+
+	return $custom_content;
+    // else:
+    //     return $content;
+    // endif;
 }
 
 add_shortcode( 'getsocial', 'gs_bars_shortcode' );

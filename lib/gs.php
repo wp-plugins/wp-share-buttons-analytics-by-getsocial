@@ -34,6 +34,10 @@ class GS {
         }
     }
 
+    function utms($app){
+        return '&amp;utm_source=wordpress-user&amp;utm_medium=plugin&amp;utm_term='.get_option('siteurl').'&amp;utm_content='.$app.'&amp;utm_campaign=Wordpress%20Plugin';
+    }
+
     function api_url($path){
         return $this->api_url.$path;
     }
@@ -120,6 +124,8 @@ EOF;
                 return '<div class="getsocial gs-custom-actions"></div>';
             case 'social_bar_big_counter':
                 return '<div class="getsocial gs-inline-group gs-big-counter"></div>';
+            case 'follow_bar':
+                return '<div class="getsocial gs-inline-group gs-follow"></div>';
             case 'price_alert':
                 return '<div class="getsocial gs-price-alert" data-price="'.$price.'" data-currency="'.$currency.'"></div>';
             default:
