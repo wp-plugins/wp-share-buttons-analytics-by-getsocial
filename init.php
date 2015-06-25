@@ -103,10 +103,7 @@
 
                 <?php endif; ?>
 
-                <div class="gs-medium">
-                    <?php include('tmpl/apps.php') ?>
-                </div>
-
+                <?php include('tmpl/apps.php') ?>
 
             <?php else: ?>
 
@@ -145,11 +142,11 @@
                     </div>
                     <div class="field-group">
                         <div class="field-label">
-                            <label for="">Where to display</label>
+                            <label for="">Where to display sharing bars</label>
                         </div>
                         <div class="field-input">
                             <p>
-                                Choose where to have your apps displayed. <strong>For now this is limited to Horizontal Bars</strong>
+                                Choose where to have your apps displayed. <strong>For now this is limited to Horizontal Sharing Bars</strong>
                             </p>
 
                             <div class="checkbox-list">
@@ -163,6 +160,29 @@
                             </div>
                             <div class="checkbox-list">
                                 <label><input type="radio" name="gs-place" value="only-shortcodes" <?php echo (get_option('gs-place') == 'only-shortcodes') ? 'checked' : '' ?> />None. I will use shortcodes.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <div class="field-label">
+                            <label for="">Where to display follow bar</label>
+                        </div>
+                        <div class="field-input">
+                            <p>
+                                Choose where to have your apps displayed.
+                            </p>
+
+                            <div class="checkbox-list">
+                                <label><input type="radio" name="gs-place-follow" value="place-posts" <?php echo (get_option('gs-place-follow') == 'place-posts') ? 'checked' : '' ?> />Only Posts</label>
+                            </div>
+                            <div class="checkbox-list">
+                                <label><input type="radio" name="gs-place-follow" value="place-pages" <?php echo (get_option('gs-place-follow') == 'place-pages') ? 'checked' : '' ?>/>Only Pages</label>
+                            </div>
+                            <div class="checkbox-list">
+                                <label><input type="radio" name="gs-place-follow" value="place-all" <?php echo (get_option('gs-place-follow') == 'place-all' || get_option('gs-place-follow') == null) ? 'checked' : '' ?>/>Pages & Posts</label>
+                            </div>
+                            <div class="checkbox-list">
+                                <label><input type="radio" name="gs-place-follow" value="only-shortcodes" <?php echo (get_option('gs-place-follow') == 'only-shortcodes') ? 'checked' : '' ?> />None. I will use shortcodes.</label>
                             </div>
                         </div>
                     </div>
