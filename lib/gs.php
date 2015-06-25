@@ -1,14 +1,14 @@
 <?php
 
 class GS {
-    // private $gs_url = "https://api.at.getsocial.io";
-    // private $gs_url_api = "//api.at.getsocial.io";
-    // private $gs_account = "https://getsocial.io/";
-    // public $api_url = "https://getsocial.io/api/v1/";
-    private $gs_url = "//localhost:3001";
-    private $gs_account = "http://localhost:3000/";
-    private $gs_url_api = "http://localhost:3001";
-    public $api_url = "http://localhost:3000/api/v1/";
+    private $gs_url = "https://api.at.getsocial.io";
+    private $gs_url_api = "//api.at.getsocial.io";
+    private $gs_account = "https://getsocial.io/";
+    public $api_url = "https://getsocial.io/api/v1/";
+    // private $gs_url = "//localhost:3001";
+    // private $gs_account = "http://localhost:3000/";
+    // private $gs_url_api = "http://localhost:3001";
+    // public $api_url = "http://localhost:3000/api/v1/";
 
     function __construct($api_key, $identifier, $lang){
         $this->api_key = $api_key;
@@ -32,6 +32,10 @@ class GS {
         } catch (HttpException $ex) {
             echo "Error: ".$ex;
         }
+    }
+
+    function utms($app){
+        return '&amp;utm_source=wordpress-user&amp;utm_medium=plugin&amp;utm_term='.get_option('siteurl').'&amp;utm_content='.$app.'&amp;utm_campaign=Wordpress%20Plugin';
     }
 
     function api_url($path){
@@ -120,6 +124,8 @@ EOF;
                 return '<div class="getsocial gs-custom-actions"></div>';
             case 'social_bar_big_counter':
                 return '<div class="getsocial gs-inline-group gs-big-counter"></div>';
+            case 'follow_bar':
+                return '<div class="getsocial gs-inline-group gs-follow"></div>';
             case 'price_alert':
                 return '<div class="getsocial gs-price-alert" data-price="'.$price.'" data-currency="'.$currency.'"></div>';
             default:
