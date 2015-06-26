@@ -1,4 +1,4 @@
-=== Share Buttons & tools to grow traffic by GetSocial.io ===
+=== Social Sharing & tools to grow traffic by GetSocial.io ===
 Contributors: GetSocial.io, joaoromao
 
 Tags: addthis, addtoany, analytics, button, facebook share, facebook button, like button, tweet button, twitter share, pinterest share, pin button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social analytics, social media, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing, mobile share bar, mobile sharing, top bar, welcome bar, hello bar, follow buttons, instagram, youtube, increase followers, increase shares, increase traffic
@@ -13,7 +13,7 @@ All in one plugin with tools to grow your traffic, shares and followers. Include
 
 == Description ==
 
-**Share Buttons by GetSocial.io** is a WordPress all in one toolkit to help you grow your shares, traffic and followers. Get more Visitors, Conversions, Subscribers, Shares and Revenue from your site. Optimize your SEO and increase social shares with GetSocial. It is a freemium plugin so there are some free apps and some paid apps.
+**Social Sharing Buttons by GetSocial.io** is a WordPress all in one toolkit to help you grow your shares, traffic and followers. Get more Visitors, Conversions, Subscribers, Shares and Revenue from your site. Optimize your SEO and increase social shares with GetSocial. It is a freemium plugin so there are some free apps and some paid apps.
 
 Our apps include native & customizable share buttons, welcome & subscribe bars, conversion tracking, copy paste share tracking and much more. You can find more info about our product <a href="http://getsocial.io/?utm_source=wordpress_plugin">here</a>. This app store is organized in 5 different categories:
 
