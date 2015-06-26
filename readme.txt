@@ -1,7 +1,7 @@
 === Share Buttons & tools to grow traffic by GetSocial.io ===
 Contributors: GetSocial.io, joaoromao
 
-Tags: addthis, addtoany, analytics, button, facebook share, facebook button, like button, tweet button, twitter share, pinterest share, pin button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social analytics, social media, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing, mobile share bar, mobile sharing, top bar, welcome bar, hello bar
+Tags: addthis, addtoany, analytics, button, facebook share, facebook button, like button, tweet button, twitter share, pinterest share, pin button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social analytics, social media, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing, mobile share bar, mobile sharing, top bar, welcome bar, hello bar, follow buttons, instagram, youtube, increase followers, increase shares, increase traffic
 
 Requires at least: 3.0
 Tested up to: 4.2.2
@@ -9,17 +9,17 @@ Stable tag: 2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-All in one plugin with tools to grow your traffic, shares and conversions. Includes mobile bar (paid) & more. Support is FREE & Quick
+All in one plugin with tools to grow your traffic, shares and followers. Includes mobile bar (paid) & more. Support is FREE & Quick
 
 == Description ==
 
-**Share Buttons by GetSocial.io** is a WordPress all in one toolkit to help you grow your shares, traffic and conversions. Track social shares and see how much traffic & conversions each post generated. Optimize your SEO and increase social shares with GetSocial. It is a freemium plugin so there are some free apps and some paid apps.
-
-**ANNOUNCEMENT:** Our newest app (Follow Buttons with mobile follow included) and our new powerful social analytics module are coming very soon! Stay tuned!
+**Share Buttons by GetSocial.io** is a WordPress all in one toolkit to help you grow your shares, traffic and followers. Get more Visitors, Conversions, Subscribers, Shares and Revenue from your site. Optimize your SEO and increase social shares with GetSocial. It is a freemium plugin so there are some free apps and some paid apps.
 
 Our apps include native & customizable share buttons, welcome & subscribe bars, conversion tracking, copy paste share tracking and much more. You can find more info about our product <a href="http://getsocial.io/?utm_source=wordpress_plugin">here</a>. This app store is organized in 5 different categories:
 
 * **Social Sharing Tools**: You'll find 5 apps focused on improving, optimizing and streamlining the number of shares made on your website. A/B test the placement of your share buttons and increase your referral traffic coming from social networks. Track dark social sharing (copy paste) and enable mobile sharing to your mobile users.
+
+* **Following Tools**: There are 3 new apps focused on increasing your brands’ follower base. Provide quick and beautiful follow buttons and get more people engaging your brand in social media. 
 
 * **Conversion Tools**: Social media is fantastic if you are able to measure it. Track how your share buttons are driving your conversions. Add conversion moments easily, no code required, to signups and purchases.
 
@@ -46,6 +46,14 @@ In this plugin, you'll find these categories:
 * **Mobile Web Sharing**: Mobile sharing doesn't have to be a terrible experience. Create beautiful interfaces for your mobile users to share their thoughts about your content. Sharing in mobile has actually a higher sharing rate than on desktop. Allow your users to share your content to facebook, twitter, linkedin, Pinterest, google+, WhatsApp and others easily on their smartphones. Smartphone sharing is smart.
 
 * **Social Bar Customization**: After upgrading to our PRO plan, you’ll be able to edit your share bar’s shape, color and personalized twitter handle. Great for that extra touch.
+
+<h4>Following Tools</h4>
+
+* **Horizontal Follow Bar**: Provide a quick and engaging way for your visitors to like, follow and subscribe to your brands’ updates. Available for all major networks including Instagram & Youtube. 
+
+* **Floating Follow Bar**: Make it clear that you want more followers with the always present social follow bar. Increase followers, improve reach, aim for more people loving your brand. 
+
+* **Mobile Follow Bar**: Mobile social media doesn’t have to suck. Have awesome follow buttons in your mobile website and increase followers where they see your website the most. 
 
 <h4>Tracking Tools</h4>
 
@@ -125,6 +133,10 @@ Included in the free package is also our basic social analytics panel. This will
 
 `[getsocial app="sharing_bar"]`
 
+* Follow Bar
+
+`[getsocial app=“follow_bar”]`
+
 * Native Bar
 
 `[getsocial app="native_bar"]`
@@ -150,9 +162,12 @@ The Free and Pro plans differ in the access to certain features. GetSocial PRO u
 - Welcome Bar
 - Custom Facebook Shares
 - Google Analytics Integration
+- Horizontal Follow Bar
+- Floating Follow Bar
 
 <h4>List of Paid Apps:</h4>
 - Mobile Share Bar
+- Mobile Follow Bar
 - Image Sharing
 - Big Total Shares Horizontal & Floating
 - Subscribe Bar
@@ -201,6 +216,7 @@ Editing color, shape and twitter handle is a customization available only to our
 - Floating Shares Bar
 - Total Shares Bar (Horizontal + Floating)
 - Mobile Share Bar
+- Mobile Follow Bar
 - Image Sharing
 
 **What is the Copy Paste Share Tracking?**
@@ -238,6 +254,10 @@ Sure, we’re always here to help. You can contact us at support@getsocial.io or
 9. Analytics for your Social Bars
 
 == Changelog ==
+
+**2.7**
+
+- Added new social analytics module and follow tools (horizontal, floating and mobile follow bar)
 
 **2.6**
 
