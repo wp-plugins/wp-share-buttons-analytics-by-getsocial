@@ -1,4 +1,4 @@
-=== Social Sharing & tools to grow traffic by GetSocial.io ===
+=== Social Sharing, Follow Bar & Share Buttons by GetSocial.io ===
 Contributors: GetSocial.io, joaoromao
 
 Tags: addthis, addtoany, analytics, button, facebook share, facebook button, like button, tweet button, twitter share, pinterest share, pin button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social analytics, social media, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing, mobile share bar, mobile sharing, top bar, welcome bar, hello bar, follow buttons, instagram, youtube, increase followers, increase shares, increase traffic
@@ -213,7 +213,9 @@ What happens is that you'll have these people being identified as 'direct' traff
 Editing color, shape and twitter handle is a customization available only to our PRO users. By activating it, all these configurations become available, improving your conversions, awareness & reach.The features where you can edit these configurations are:
 
 - Horizontal Shares Bar
+- Horizontal Follow Bar
 - Floating Shares Bar
+- Floating Follow Bar
 - Total Shares Bar (Horizontal + Floating)
 - Mobile Share Bar
 - Mobile Follow Bar
