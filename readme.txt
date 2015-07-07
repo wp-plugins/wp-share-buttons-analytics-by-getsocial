@@ -17,7 +17,7 @@ All in one plugin with tools to grow your traffic, shares and followers. Include
 
 —
 
-**Partnership with WP Slimstat**: As of June/2016 we started providing all Slimstat users free social sharing analytics. We provide a list of top shared posts and shares count in top social networks. 
+**Partnership with WP Slimstat**: As of June/2015 we started providing all Slimstat users free social sharing analytics. We provide a list of top shared posts and shares count in top social networks. 
 
 —
 
