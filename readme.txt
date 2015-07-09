@@ -27,7 +27,7 @@ Our apps include native & customizable share buttons, welcome & subscribe bars, 
 
 * **Following Tools**: There are 3 new apps focused on increasing your brands’ follower base. Provide quick and beautiful follow buttons and get more people engaging your brand in social media. 
 
-* **Conversion & Tools**: Social media is fantastic if you are able to measure it. Track how your share buttons are driving your conversions. Add conversion moments easily, no code required, to signups and purchases. Drive your visitors to a particular page with our welcome bar feature or get their email with our subscribe bar feature. Optimize your email marketing efforts in a affordable way.
+* **Conversion & Engagement Tools**: Social media is fantastic if you are able to measure it. Track how your share buttons are driving your conversions. Add conversion moments easily, no code required, to signups and purchases. Drive your visitors to a particular page with our welcome bar feature or get their email with our subscribe bar feature. Optimize your email marketing efforts in a affordable way.
 
 * **eCommerce specific**: Allow your customers to follow the price of your products, generating more returning traffic with increase purchase intent.
 
