@@ -27,9 +27,7 @@ Our apps include native & customizable share buttons, welcome & subscribe bars, 
 
 * **Following Tools**: There are 3 new apps focused on increasing your brands’ follower base. Provide quick and beautiful follow buttons and get more people engaging your brand in social media. 
 
-* **Conversion Tools**: Social media is fantastic if you are able to measure it. Track how your share buttons are driving your conversions. Add conversion moments easily, no code required, to signups and purchases.
-
-* **Engagement Apps**: Drive your visitors to a particular page with our welcome bar feature or get their email with our subscribe bar feature. Optimize your email marketing efforts in a affordable way.
+* **Conversion & Tools**: Social media is fantastic if you are able to measure it. Track how your share buttons are driving your conversions. Add conversion moments easily, no code required, to signups and purchases. Drive your visitors to a particular page with our welcome bar feature or get their email with our subscribe bar feature. Optimize your email marketing efforts in a affordable way.
 
 * **eCommerce specific**: Allow your customers to follow the price of your products, generating more returning traffic with increase purchase intent.
 
@@ -61,17 +59,15 @@ In this plugin, you'll find these categories:
 
 * **Mobile Follow Bar**: Mobile social media doesn’t have to suck. Have awesome follow buttons in your mobile website and increase followers where they see your website the most. 
 
-<h4>Tracking Tools</h4>
-
-* **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network. Social sharing definitely contributes to your website and your share analytics shall prove just that.
-
-* **Copy Paste Share tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL (Dark Social) will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter management tools.
-
-<h4>Engagement Tools</h4>
+<h4>Engagement & Tracking Tools</h4>
 
 * **Welcome Bar**: Easily redirect your visitors to a specific link. Generate conversions, engage with promotions and increase traffic with this hello bar like feature. Track conversions coming from this top bar for Wordpress.
 
 * **Subscriber Bar (List Builder)**: Easily capture emails from your visitors by providing them with an engaging top bar. Export data to your favorite CRM or e-Mail marketing software. Improve engagement, conversion and even sales with this easy to install, no code required feature.
+
+* **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network. Social sharing definitely contributes to your website and your share analytics shall prove just that.
+
+* **Copy Paste Share tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL (Dark Social) will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter management tools.
 
 <h4>eCommerce specific </h4>
 
