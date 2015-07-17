@@ -91,7 +91,7 @@ if ( class_exists( 'WooCommerce' ) ) {
     add_action( 'woocommerce_single_product_summary', 'on_product_after_content', 55 );
 }
 
-add_filter('the_content', 'on_post_content');
+add_filter('the_content', 'on_post_content', 0);
 
 function on_product_after_content($content) {
     echo add_buttons_to_content($content, true, 'bottom');
