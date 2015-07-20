@@ -267,7 +267,7 @@ add_shortcode( 'getsocial', 'gs_bars_shortcode' );
 function gs_bars_shortcode($atts) {
     $GS = get_gs();
     // if no type defined
-    if(array_key_exists('app',$atts) && (is_single() || is_page())){
+    if($atts['app'] == 'follow_bar' || (array_key_exists('app',$atts) && (is_single() || is_page()))){
         return $GS->getCode($atts['app']);
     } else {
         return "";
