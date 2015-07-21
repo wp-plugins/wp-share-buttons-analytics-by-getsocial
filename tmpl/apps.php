@@ -33,6 +33,7 @@
                 'file' => 'address-tracker',
                 'active' => $GS->is_active('address_tracking'),
                 'only_activate' => true,
+                'pro' => true,
                 'href' => $GS->api_url('sites/activate/'.get_option('gs-api-key').'/address-tracker'),
                 "desc" => "Don't lose track of shares made through copying and pasting an URL on the address bar to social networks, email or other platforms."
             ),
@@ -118,7 +119,7 @@
         <?php else: ?>
             <?php if( isset($settings['pro']) && $settings['pro'] ): ?>
                 <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress" target="_blank" class="app-link-plan gs-clearfix text-right gs-tooltip plan-pro">
-                    Pro <div>This app is only available in the <strong>Pro plan</strong></div>
+                    STARTER <div>This app is only available in the <strong>Starter plan</strong></div>
                 </a>
             <?php endif; ?>
         <?php endif; ?>
@@ -163,6 +164,6 @@
     <a id="backToTop" href="javascript:void(0)" class="gs-button primary"><i class="fa fa-angle-up"></i> Back to Top</a>
     <?php if(!$GS->is_pro()): ?>
     &nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress" target="_blank" class="gs-button plan-pro">Upgrade to Pro</a>
+    <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress" target="_blank" class="gs-button plan-pro">Upgrade to STARTER</a>
     <?php endif; ?>
 </footer>

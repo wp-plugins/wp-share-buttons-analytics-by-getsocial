@@ -79,7 +79,7 @@ wp_enqueue_script( 'plugin' );
                         <?php if(get_option('gs-ask-review')): ?>
                             <a href="https://wordpress.org/support/view/plugin-reviews/wp-share-buttons-analytics-by-getsocial" target="_blank" class="gs-cta gs-button trans special">Support us with a 5 <i class="fa fa-star"></i> Review!</a>
                         <?php endif; ?>
-                        <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress<?php echo $GS->utms('pro_header') ?>" target="_blank" class="gs-button plan-pro">Upgrade to PRO</a>
+                        <a href="<?php echo $GS->gs_account() ?>/sites/gs-wordpress/billing/select_tier?api_key=<?php echo $GS->api_key ?>&amp;source=wordpress<?php echo $GS->utms('pro_header') ?>" target="_blank" class="gs-button plan-pro">Upgrade to STARTER</a>
                     </li>
                 <?php endif; ?>
             </ul>
