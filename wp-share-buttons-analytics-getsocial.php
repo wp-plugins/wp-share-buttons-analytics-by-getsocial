@@ -3,7 +3,7 @@
  * Plugin Name: Share Buttons & tools to grow traffic by GetSocial.io
  * Plugin URI: http://getsocial.io
  * Description: Share Buttons by GetSocial.io is a freemium WordPress plugin that enables you to track social shares on Wordpress. Provide beautiful wordpress sharing buttons, track how many shares were made in each post and see how much traffic, conversions and shares each post generated. Optimize your SEO and increase social shares with GetSocial.io.
- * Version: 2.7
+ * Version: 2.7.1
  * Author: Getsocial, S.A.
  * Author URI: http://getsocial.io
  * License: GPL2
