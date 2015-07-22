@@ -109,7 +109,7 @@
 
         foreach($apps as $app => $settings):
     ?>
-
+    <?php if($settings['file'] != 'address-tracker' || ($settings['file'] == 'address-tracker' && $GS->is_pro())): ?>
     <div class="app-link-wrapper">
         <?php if($settings['active']): ?>
             <div class="app-status gs-tooltip">
@@ -156,7 +156,7 @@
             </div>
         </div>
     </div>
-
+    <?php endif; ?>
     <?php endforeach; ?>
 </div>
 

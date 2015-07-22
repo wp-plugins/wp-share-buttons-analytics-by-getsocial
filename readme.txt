@@ -1,29 +1,66 @@
-=== Share Buttons & tools to grow traffic by GetSocial.io ===
+=== Social Sharing, Follow Bar & Share Buttons by GetSocial.io ===
 Contributors: GetSocial.io, joaoromao
 
-Tags: addthis, addtoany, analytics, button, facebook share, facebook button, like button, tweet button, twitter share, pinterest share, pin button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social analytics, social media, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing, mobile share bar, mobile sharing, top bar, welcome bar, hello bar
+Tags: addthis, addtoany, analytics, button, facebook share, facebook button, like button, tweet button, twitter share, pinterest share, pin button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social analytics, social media, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing, mobile share bar, mobile sharing, top bar, welcome bar, hello bar, follow buttons, instagram, youtube, increase followers, increase shares, increase traffic, copy paste shares, google analytics integration
 
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 2.7
+Stable tag: 2.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-All in one plugin with tools to grow your traffic, shares and conversions. Includes mobile bar (paid) & more. Support is FREE & Quick
+All in one plugin with tools to grow your traffic, shares and followers. Includes mobile bar (paid) & more. Support is FREE & Quick
 
 == Description ==
 
-**Share Buttons by GetSocial.io** is a WordPress all in one toolkit to help you grow your shares, traffic and conversions. Track social shares and see how much traffic & conversions each post generated. Optimize your SEO and increase social shares with GetSocial. It is a freemium plugin so there are some free apps and some paid apps.
+**Social Sharing Buttons by GetSocial.io** is a freemium WordPress all in one toolkit to help you grow your shares, traffic and followers. Get more Visitors, Conversions, Subscribers, Shares and Revenue from your site. Increase your shares, followers & conversionswith GetSocial. **This is a freemium plugin so there are some free apps and some paid apps, depending on your needs**
 
-**ANNOUNCEMENT:** Our newest app (Follow Buttons with mobile follow included) and our new powerful social analytics module are coming very soon! Stay tuned!
+—
+
+**Partnership with WP Slimstat**: As of June/2015 we started providing all Slimstat users free social sharing analytics. We provide a list of top shared posts and shares count in top social networks. 
+
+—
+
+<h4>Free & Paid plans:</h4> GetSocial provides a free version and 3 paid versions. Here's the breakdown of features and visits limit involved in each plan:
+
+<h4>List of Free Features</h4>
+- Horizontal Sharing Bar
+- Native Sharing Bar
+- Floating Sharing Bar
+- Welcome Bar
+- Custom Facebook Shares
+- Horizontal Follow Bar
+- Floating Follow Bar
+- Most Shared Pages
+
+<h4>List of Paid Features</h4>
+- Mobile Share Bar
+- Mobile Follow Bar
+- Image Sharing
+- Big Total Shares Horizontal & Floating
+- Subscribe Bar
+- Price Alert
+- Extended Customization (Shape, Color, Twitter handle in several apps)
+- Address Bar Tracking
+- Conversion Tracking
+- Google Analytics Integration
+- Social Sharing Analytics
+
+<h4>Visits Limit</h4>
+- Free: 10,000 per month;
+- Starter: 30,000 per month;
+- Growth: 100,000 per month;
+- Insights: 1,000,000 per month.
+
+-
 
 Our apps include native & customizable share buttons, welcome & subscribe bars, conversion tracking, copy paste share tracking and much more. You can find more info about our product <a href="http://getsocial.io/?utm_source=wordpress_plugin">here</a>. This app store is organized in 5 different categories:
 
 * **Social Sharing Tools**: You'll find 5 apps focused on improving, optimizing and streamlining the number of shares made on your website. A/B test the placement of your share buttons and increase your referral traffic coming from social networks. Track dark social sharing (copy paste) and enable mobile sharing to your mobile users.
 
-* **Conversion Tools**: Social media is fantastic if you are able to measure it. Track how your share buttons are driving your conversions. Add conversion moments easily, no code required, to signups and purchases.
+* **Following Tools**: There are 3 new apps focused on increasing your brands’ follower base. Provide quick and beautiful follow buttons and get more people engaging your brand in social media. 
 
-* **Engagement Apps**: Drive your visitors to a particular page with our welcome bar feature or get their email with our subscribe bar feature. Optimize your email marketing efforts in a affordable way.
+* **Conversion & Engagement Tools**: Social media is fantastic if you are able to measure it. Track how your share buttons are driving your conversions. Add conversion moments easily, no code required, to signups and purchases. Drive your visitors to a particular page with our welcome bar feature or get their email with our subscribe bar feature. Optimize your email marketing efforts in a affordable way.
 
 * **eCommerce specific**: Allow your customers to follow the price of your products, generating more returning traffic with increase purchase intent.
 
@@ -45,19 +82,25 @@ In this plugin, you'll find these categories:
 
 * **Mobile Web Sharing**: Mobile sharing doesn't have to be a terrible experience. Create beautiful interfaces for your mobile users to share their thoughts about your content. Sharing in mobile has actually a higher sharing rate than on desktop. Allow your users to share your content to facebook, twitter, linkedin, Pinterest, google+, WhatsApp and others easily on their smartphones. Smartphone sharing is smart.
 
-* **Social Bar Customization**: After upgrading to our PRO plan, you’ll be able to edit your share bar’s shape, color and personalized twitter handle. Great for that extra touch.
+* **Social Bar Customization**: After upgrading to a paid plan, you’ll be able to edit your share bar’s shape, color and personalized twitter handle. Great for that extra touch.
 
-<h4>Tracking Tools</h4>
+<h4>Following Tools</h4>
 
-* **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network. Social sharing definitely contributes to your website and your share analytics shall prove just that.
+* **Horizontal Follow Bar**: Provide a quick and engaging way for your visitors to like, follow and subscribe to your brands’ updates. Available for all major networks including Instagram & Youtube. 
 
-* **Copy Paste Share tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL (Dark Social) will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter management tools.
+* **Floating Follow Bar**: Make it clear that you want more followers with the always present social follow bar. Increase followers, improve reach, aim for more people loving your brand. 
 
-<h4>Engagement Tools</h4>
+* **Mobile Follow Bar**: Mobile social media doesn’t have to suck. Have awesome follow buttons in your mobile website and increase followers where they see your website the most. 
+
+<h4>Engagement & Tracking Tools</h4>
 
 * **Welcome Bar**: Easily redirect your visitors to a specific link. Generate conversions, engage with promotions and increase traffic with this hello bar like feature. Track conversions coming from this top bar for Wordpress.
 
 * **Subscriber Bar (List Builder)**: Easily capture emails from your visitors by providing them with an engaging top bar. Export data to your favorite CRM or e-Mail marketing software. Improve engagement, conversion and even sales with this easy to install, no code required feature.
+
+* **Conversion Tracking**: Understand how social sharing is driving your conversions. Analyze results per user, per post or per social network. Social sharing definitely contributes to your website and your share analytics shall prove just that.
+
+* **Copy Paste Share tracking**: Tracking social media in alternative methods such as SMS, Chat or Copy & Paste URL (Dark Social) will allow you to effectively measure social media ROI. Understand how many shares are being made without using social sharing buttons. Get share information on shares made through copy & paste, facebook messenger and other chat applications, email and twitter management tools.
 
 <h4>eCommerce specific </h4>
 
@@ -65,10 +108,7 @@ In this plugin, you'll find these categories:
 
 * **Price Alert**: Allow your customers to track a product's price. By having your visitors receiving an email every time a price changes, you'll have a great way to increase conversion rate, returning traffic and sales to your online commerce website.
 
-
-<h4>Free Apps & Paid Apps:</h4> Most of our apps are free (and we intent it to keep it that way) but we do have some paid features as well. Our **Pro Plan** gives you access to all paid features and costs <u>$9/month</u> or <u>$90/year</u> (big discount). Join hundreds of other paid users.
-
-Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="http://blog.getsocial.io/add-social-sharing-buttons-wordpress/?utm_source=wordpress_plugin">How to add free Social Share Buttons on WordPress</a>
+Also, there's a tutorial on how to install this plugin in your Wordpress Account: <a href="hhttp://getsocial.io/tutorials/wordpress">How to add free Social Share Buttons on WordPress</a>
 
 == Installation ==
 
@@ -89,7 +129,7 @@ For a manual installation:
 
 **What is GetSocial?**
 
-GetSocial is a software that helps websites increase their traffic, shares and conversions. It is a set of apps that a user can easily install in her website.
+GetSocial is an all-in-one social media toolkit that helps websites increase their traffic, shares, followers and conversions. It is a set of apps that a user can easily install in a website. 
 
 There are a total of 15 apps across 5 categories: Sharing, Tracking, Engagement, eCommerce and Integration apps.
 
@@ -101,21 +141,21 @@ If you are familiar with it, you can use Google Tag Manager for easily do this. 
 
 If you're using WordPress download our plugin at <a href='http://goo.gl/bdgOLN'>http://goo.gl/bdgOLN</a>.
 
-**What if I don’t know how to handle code?**
+**Do I need to to handle code?**
 
-If you're not comfortable around code and if we've failed to help you with our tutorials, we strongly recommend using one of our plugins.
+If you're not comfortable around code and if we've failed to help you with our tutorials, we strongly recommend using one of our plugins (<a href='http://getsocial.io/tutorials/wordpress'>check them here</a>).
 
 We've developed a social sharing plugin focused on content, specifically on **Wordpress** websites which you can download at: <a class='link_only' href='http://goo.gl/bdgOLN'>http://goo.gl/bdgOLN</a>.
 
 **Do you provide free support? How much does it cost?**
 
-GetSocial provides **FREE and quick support** for all its users, free or paid. We give priority to PRO user requests but all tickets get answered. Our support is not outsourced and it is provided by everyone in the team, from the CEO to the designer. We try to get back at you, during business days, in less than 24 hours (although we are quite fast answering every ticket).
+GetSocial provides **FREE and quick support** for all its users, free or paid. We give priority to paid customers' requests but all tickets get answered. Our support is not outsourced and it is provided by everyone in the team, from the CEO to the designer. We try to get back at you, during business days, in less than 24 hours (although we are quite fast answering every ticket).
 
 **What is included in the free plan?**
 
-The free plan has a set of social media tools that can help you increase your traffic and conversions. You'll have access to our social sharing bars (horizontal, floating and native) and also to dark social sharing tracking. You can also create your own conversions to see how social is driving your business.
+The free plan has a set of social media tools that can help you increase your traffic, shares and follows. You'll have access to our social sharing bars (horizontal, floating and native), custom facebook shares and also to our welcome bar.
 
-Included in the free package is also our basic social analytics panel. This will give you a brief understanding on how many visits and shares you have. Please notice that some of the abovementioned features have some customization options which are reserved to our PRO users. These include: color, shape & twitter handle.
+Included in the free package is also our basic 'Most Shared Pages' panel. This will give you a brief understanding which pages are getting more shares on your website and in which networks. Please notice that some of the abovementioned features have some customization options which are reserved to our paid users. These include: color, shape & twitter handle.
 
 **Are there any short codes available?**
 
@@ -124,6 +164,10 @@ Included in the free package is also our basic social analytics panel. This will
 * Sharing Bar
 
 `[getsocial app="sharing_bar"]`
+
+* Follow Bar
+
+`[getsocial app=“follow_bar”]`
 
 * Native Bar
 
@@ -137,43 +181,58 @@ Included in the free package is also our basic social analytics panel. This will
 
 `[getsocial app="social_bar_big_counter"]`
 
-**What is the difference between the Free Plan and the Pro Plan?**
+**What is the difference between the Free Plan and paid Plans?**
 
-The Free and Pro plans differ in the access to certain features. GetSocial PRO users have higher visit limits and priority in support. Within the product, there are some customizations and features that they also have unique access to.
+The Free and paid plans differ in the access to certain features. GetSocial paid users have higher visit limits and priority in support. Within the product, there are some customizations and features that they also have unique access to.
 
 <h4>List of Free Apps:</h4>
 - Horizontal Sharing Bar
 - Native Sharing Bar
 - Floating Sharing Bar
-- Address Bar Tracking
-- Conversion Tracking
 - Welcome Bar
 - Custom Facebook Shares
-- Google Analytics Integration
+- Horizontal Follow Bar
+- Floating Follow Bar
+- Most Shared Pages
 
 <h4>List of Paid Apps:</h4>
 - Mobile Share Bar
+- Mobile Follow Bar
 - Image Sharing
 - Big Total Shares Horizontal & Floating
 - Subscribe Bar
 - Price Alert
 - Extended Customization (Shape, Color, Twitter handle in several apps)
+- Address Bar Tracking
+- Conversion Tracking
+- Google Analytics Integration
+- Social Sharing Analytics
 
 **Do you have a visit limit for my website?**
 
 Yes. As every new website that registers with GetSocial is also a new cost for us, we must regulate the number of visitors for the websites who use us. However, visits limits change according to your plan.
 
+**FREE Plan﻿:** If you're using our free plan, your limit is 50,000 visits per month. Once you reach this limit you'll be notified via email. If you don't upgrade to a paid plan, we'll stop the service to your website. This means that all the apps you have installed will become inactive.
 
-**FREE Plan﻿:** If you're using our free plan, your limit is 50,000 visits per month. Once you reach this limit you'll be notified via email. If you don't upgrade to our PRO plan, we'll stop the service to your website. This means that all the apps you have installed will become inactive.
+﻿**Starter Plan﻿:** The Starter plan has a higher limit and can get up to 25,000 visits per month. After reaching this limit we'll charge $5 for every 25,000 new visits. You can opt-out from the extra-vists packages in your Site Options area. If you do, we'll stop serving our apps once the limit is reached.
 
-﻿**PRO Plan﻿:** Our customers have a higher limit and can get up to 1,000,000 visits per month. If you reach this limit as a PRO user you'll be also notified but ﻿we won't stop serving our apps into your website﻿. However, we'll add a second subscription to your account. Every extra million visits costs $9/month. See more information about our traffic packages here.
-**How much does the PRO version cost?**
+**Growth Plan﻿:** The Growth plan expands the visit limit to 100,000 visits per month. After reaching this limit we'll charge $15 for every 25,000 new visits. 
 
-Our pricing is very transparent. We sell **monthly and annual subscriptions** of our product. If you choose monthly, you'll be charged $9 per month. If you choose annual, you'll be charged $90 per year.
+﻿﻿**Insights Plan﻿:** The Insights plan expands the visit limit to 1,000,000 visits per month. After reaching this limit we'll charge $199 for every 1,000,000 new visits.
 
-**How much will I pay in the PRO plan with 5 million visits?**
+**How much does the paid versions cost?**
 
-We sell our extra visits traffic packages at an extra $9/month per million visits. In this case, your PRO plan gives you the first million visits so you'll only need to buy 4 extra traffic packages. Your subscription cost will be $9 (PRO) + 4x $9 (visits), so $45/month.
+Our pricing is very transparent. We sell **monthly and annual subscriptions** of our product. 
+
+Price for monthly plans:
+﻿**Starter Plan﻿:** $9/month; 
+**Growth Plan﻿:** $29/month;
+﻿﻿**Insights Plan﻿:** $99/month;
+
+Price for annual plans:
+﻿**Starter Plan﻿:** $84/year; 
+**Growth Plan﻿:** $288/year;
+﻿﻿**Insights Plan﻿:** $948/year;
 
 **What is different about GetSocial to other plugins and tools?**
 
@@ -181,7 +240,7 @@ From the feedback we've been receiving from our thousands of users, people join 
 
 **How do I upgrade and pay for GetSocial?**
 
-Upgrading your GetSocial account is quick and easy. On your account, you'll find multiple times our 'Upgrade to PRO' call to action buttons.
+Upgrading your GetSocial account is quick and easy. On your account, you'll find multiple times our 'Upgrade Plan' call to action buttons.
 
 Clicking on one of these buttons will guide you to our pricing page. Here, you'll be able to perceive the benefits of subscribing to our pro plan.
 
@@ -195,19 +254,16 @@ What happens is that you'll have these people being identified as 'direct' traff
 
 **How can I edit color, shape and twitter handle?**
 
-Editing color, shape and twitter handle is a customization available only to our PRO users. By activating it, all these configurations become available, improving your conversions, awareness & reach.The features where you can edit these configurations are:
+Editing color, shape and twitter handle is a customization available only to our paid users. By activating it, all these configurations become available, improving your conversions, awareness & reach. The features where you can edit these configurations are:
 
 - Horizontal Shares Bar
+- Horizontal Follow Bar
 - Floating Shares Bar
+- Floating Follow Bar
 - Total Shares Bar (Horizontal + Floating)
 - Mobile Share Bar
+- Mobile Follow Bar
 - Image Sharing
-
-**What is the Copy Paste Share Tracking?**
-
-If you imagine the last times you shared something, it's probable that you haven't done so by clicking on a share button. If you're sharing a video to a friend or sending a link via email, you're sharing something and normally that doesn't get measured.
-
-What happens is that you'll have these people being identified as 'direct' traffic to your website. They're not. The Address Bar feature allows you to track dark social sharing, which is sharing via alternative methods such as Copy&Paste, chats and link sharing in general.
 
 **Can I hide GetSocial in specific posts / pages?**
 
@@ -238,6 +294,10 @@ Sure, we’re always here to help. You can contact us at support@getsocial.io or
 9. Analytics for your Social Bars
 
 == Changelog ==
+
+**2.7**
+
+- Added new social analytics module and follow tools (horizontal, floating and mobile follow bar)
 
 **2.6**
 
