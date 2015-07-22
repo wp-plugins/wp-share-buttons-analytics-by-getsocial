@@ -259,6 +259,10 @@ Sure, we’re always here to help. You can contact us at support@getsocial.io or
 
 == Changelog ==
 
+**2.7.1**
+
+- Adapted the plugin to the new GetSocial pricing model. Removed Copy Paste Tracking for free users. 
+
 **2.7**
 
 - Added new social analytics module and follow tools (horizontal, floating and mobile follow bar)
