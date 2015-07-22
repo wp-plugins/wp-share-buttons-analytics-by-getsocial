@@ -9,7 +9,7 @@ Stable tag: 2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Allin one plugin with tools to grow your traffic, shares and followers. Includes mobile bar (paid) & more. Support is FREE & Quick
+All in one plugin with tools to grow your traffic, shares and followers. Includes mobile bar (paid) & more. Support is FREE & Quick
 
 == Description ==
 
