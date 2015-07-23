@@ -23,8 +23,6 @@ function forceUpdateWithValues(){
             console.log('getsocial.io updated');
         });
     });
-
-
 }
 
 var getsocial_window;
@@ -190,6 +188,113 @@ jQuery(function($){
                 $('.uv-popover').hide().removeClass().addClass('uv-popover  uv-is-hidden').removeAttr('style id');
             }
         }
+    });
+
+    /** ==================================== *\
+     *    APP FILTER DROPDOWN
+     * ===================================== */
+    var app_title_parent = $('#app-title'),
+        app_title = app_title_parent.children('span'),
+        app_title_text = app_title.html();
+
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+    function clearFilters() {
+        $('div.app-link-wrapper').show();
+        $('div.app-group').show();
+        app_title.html(app_title_text);
+        app_title_parent.removeClass('filter-on');
+        $('#clear-filter').hide();
+        $('div.app-grid-filter-holder a').addClass('trans');
+        $('#app-finder').show();
+    }
+
+    function filterApps() {
+        var filters = [],
+            title = '',
+            categoryFilter = '';
+
+        $('div.app-grid-titles-wrapper').show();
+        $('div.app-link-wrapper').hide();
+
+        $('div.app-grid-filter-holder').find('a').each(function(i, el) {
+            var filter = $(el).data('filter'),
+                filterIsActive = !$(el).hasClass('trans'),
+                isCategoryFilter = $(el).parent().attr('id') === 'app-filter-dropdown',
+                filter_name = filter === 'two' ? 'starter' : filter;
+
+            if(typeof(filter) === 'undefined') return;
+
+            if(filterIsActive){
+                filters.push('filter-' + filter);
+
+                if(title.length > 0) title += '<i class="fa fa-plus"></i>';
+
+                if(isCategoryFilter) {
+                    categoryFilter = filter;
+
+                    title += '<span class="filter-primary gs-tooltip">' + capitalizeFirstLetter(filter_name) + ' Apps';
+                    title += "<div>";
+                    title += 'Apps that are <strong>related to ' + capitalizeFirstLetter(filter_name) + '</strong>';
+                } else {
+                    title += '<span class="filter-' + filter + ' gs-tooltip">' + capitalizeFirstLetter(filter_name) + ' Apps';
+                    title += "<div>";
+                    title += filter === 'nocode' ? "Apps that <strong>require no code</strong> to be installed" : "Apps that are only available in the <strong>" + capitalizeFirstLetter(filter_name)  + " Plan</strong>";
+                }
+
+                title += "</div></span>";
+            }
+        });
+
+        if(filters.length > 0) {
+            $('div.app-link-wrapper.' + filters.join('.')).show();
+            $('div.app-link-wrapper.' + filters.join('.')).parents('.app-group').first().show();
+            app_title_parent.addClass('filter-on');
+
+            console.log(title)
+
+            app_title.html(title.replace('_', ' '));
+            $('#clear-filter').show();
+            $('#app-finder').hide();
+        } else {
+            clearFilters();
+        }
+
+        $.each($('.app-group'), function(i, group){
+            if($(group).find('.app-link-wrapper:visible').length > 0){
+                $(group).show();
+            } else {
+                $(group).hide();
+            }
+        });
+    }
+
+    $('div.app-grid-filter-holder').find('a:not(#app-filter):not(.gs-error)').on('click', function() {
+        var enableFilter = $(this).hasClass('trans'),
+            isCategoryFilter = $(this).parent().attr('id') === 'app-filter-dropdown';
+
+        // disable other filters
+        if(isCategoryFilter) {
+            $('div.app-grid-filter-holder').find('a:not(#app-filter):not(.gs-error)').each(function(i, el) { $(el).addClass('trans') });
+        }
+
+        if(enableFilter) {
+            $(this).removeClass('trans');
+
+            if(isCategoryFilter) { $('#app-filter').removeClass('trans'); }
+        } else {
+            $(this).addClass('trans');
+
+            if(isCategoryFilter) { $('#app-filter').addClass('trans'); }
+        }
+
+        filterApps();
+    });
+
+    $('#clear-filter').on('click', function() {
+        clearFilters();
     });
 
     /** ==================================== *\

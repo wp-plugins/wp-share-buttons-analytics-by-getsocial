@@ -82,6 +82,9 @@
 
                 <?php if( !isset($_GET['tab']) ): ?>
 
+                    <?php include('tmpl/apps_config.php') ?>
+                    <?php include('tmpl/apps_filters.php') ?>
+
                     <?php if(!$GS->is_pro() && get_option('gs-alert-msg')): ?>
                         <div class="alert-block center large plan-two">
                             <div class="alert-info">
@@ -106,10 +109,12 @@
 
                 <?php else: ?>
 
+                    <?php include('tmpl/apps_config.php') ?>
+                    <?php include('tmpl/apps_filters.php') ?>
 
                     <?php include('tmpl/apps/'.$_GET['tab'].'.php') ?>
-                <?php endif; ?>
 
+                <?php endif; ?>
 
             <?php endif; ?>
         

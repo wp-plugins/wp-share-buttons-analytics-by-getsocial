@@ -1,5 +1,3 @@
-<?php include('apps_config.php') ?>
-
 <div class="app-grid">
     <?php $i = 0; foreach($plan_categories as $cat): $count = 0; ?>
         <?php
@@ -10,7 +8,7 @@
 
         <div class="app-group active">
             <div class="app-group-title">
-                <h3><?php echo $plan_categories_name[$i] ?> <span>(<?php echo $count; echo $count > 1 ? ' Apps' : ' App' ?>)</span></h3>
+                <h2><?php echo $plan_categories_name[$i] ?> <span>(<?php echo $count; echo $count > 1 ? ' Apps' : ' App' ?>)</span></h2>
                 <a class="app-group-toggle" href="javascript:void(0)">
                     <i class="fa fa-minus-square"></i><span>Open</span>
                 </a>
@@ -24,7 +22,7 @@
                             if($category_app == $cat):
                         ?>
 
-                            <div class="app-link-wrapper">
+                            <div class="app-link-wrapper <?php if($settings['nocode']){ echo 'filter-nocode'; } ?> filter-<?php echo plan_class($settings['plan']); ?> filter-<?php echo $settings['category']; ?>">
                                 <div class="app-link">
                                     <?php if($settings['nocode']): ?>
                                         <div class="app-badge nocode">No Code</div>
@@ -74,7 +72,7 @@
                                             <?php endif; ?>
 
                                             <?php if($settings['active']): ?>
-                                                <a href="javascript:void(0)" class="gs-button disable trans border stop" data-disable-app="<?php echo $GS->api_url('sites/disable/'.get_option('gs-api-key').'/'.$settings['file']) ?>">
+                                                <a href="javascript:void(0)" class="gs-button disable trans border stop deactivate" data-disable-app="<?php echo $GS->api_url('sites/disable/'.get_option('gs-api-key').'/'.$settings['file']) ?>">
                                                     Deactivate
                                                 </a>
                                             <?php endif; ?>

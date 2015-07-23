@@ -94,12 +94,12 @@ wp_enqueue_script( 'plugin' );
         </div>
     </nav>
 
-    <div class="title-wrapper">
+    <div class="title-wrapper <?php echo get_option('gs-api-key') == '' ? '' : 'app-page' ?>">
         <?php if(get_option('gs-api-key') == ''): ?>
             <h1>Welcome and thanks for downloading <span>GetSocial’s Share Buttons & Social Media App Store</span></h1>
             <p>To get started click on the button below to automatically activate your GetSocial account.</strong></p>
         <?php else: ?>
-            <h1>Install your apps below</h1>
+            <h1 id="app-title" class="app-grid-titles"><span>Install your apps below</span></h1>
         <?php endif; ?>
     </div>
 </header>
