@@ -1,7 +1,7 @@
 === Social Sharing, Follow Bar & Share Buttons by GetSocial.io ===
 Contributors: GetSocial.io, joaoromao
 
-Tags: addthis, addtoany, analytics, button, facebook share, facebook button, like button, tweet button, twitter share, pinterest share, pin button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social analytics, social media, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing, mobile share bar, mobile sharing, top bar, welcome bar, hello bar, follow buttons, instagram, youtube, increase followers, increase shares, increase traffic, copy paste shares, google analytics integration
+Tags: addthis, addtoany, analytics, button, facebook share, facebook button, like button, tweet button, twitter share, pinterest share, pin button, floating buttons, share, share button, share buttons, share links, shareaholic, sharethis, sharing, social, social analytics, social media, social bookmarking, social buttons, social media, social plugin, social share, social share buttons, social sharing, mobile share bar, mobile sharing, top bar, welcome bar, hello bar, follow buttons, instagram, youtube, copy paste shares, google analytics integration
 
 Requires at least: 3.0
 Tested up to: 4.2.2
@@ -13,7 +13,7 @@ All in one plugin with tools to grow your traffic, shares and followers. Include
 
 == Description ==
 
-**Social Sharing Buttons by GetSocial.io** is a freemium WordPress all in one toolkit to help you grow your shares, traffic and followers. Get more Visitors, Conversions, Subscribers, Shares and Revenue from your site. Increase your shares, followers & conversionswith GetSocial. **This is a freemium plugin so there are some free apps and some paid apps, depending on your needs**
+**Social Sharing Buttons by GetSocial.io** is a freemium WordPress all in one toolkit to help you grow your shares, traffic and followers. Get more Visitors, Conversions, Subscribers, Shares and Revenue from your site. Increase your shares, followers & conversions with GetSocial. **This is a freemium plugin so there are some free apps and some paid apps, depending on your needs**
 
 —
 
