@@ -209,9 +209,15 @@ jQuery(function($){
         $('#clear-filter').hide();
         $('div.app-grid-filter-holder a').addClass('trans');
         $('#app-finder').show();
+
+        // update app title count
+        $.each($('.app-group'), function(i, group){
+            $(group).find('.app-group-title h2 span').html("(" + $(group).find('.app-link-wrapper').length + " Apps)");
+        });
     }
 
     function filterApps() {
+
         var filters = [],
             title = '',
             categoryFilter = '';
@@ -252,9 +258,6 @@ jQuery(function($){
             $('div.app-link-wrapper.' + filters.join('.')).show();
             $('div.app-link-wrapper.' + filters.join('.')).parents('.app-group').first().show();
             app_title_parent.addClass('filter-on');
-
-            console.log(title)
-
             app_title.html(title.replace('_', ' '));
             $('#clear-filter').show();
             $('#app-finder').hide();
@@ -263,10 +266,15 @@ jQuery(function($){
         }
 
         $.each($('.app-group'), function(i, group){
-            if($(group).find('.app-link-wrapper:visible').length > 0){
-                $(group).show();
-            } else {
+
+            var selectedApps = $(group).find('.app-link-wrapper').filter(function () { 
+                return this.style.display == 'block'; 
+            });
+            
+            if (selectedApps.length == 0) {
                 $(group).hide();
+            } else {
+                $(group).find('.app-group-title h2 span').html("(" + selectedApps.length + " Apps)");
             }
         });
     }
