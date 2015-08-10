@@ -343,24 +343,37 @@ jQuery(function($){
     /** ==================================== *\
      *    MODAL ACTION
      * ===================================== */
-    function modal(trigger){
-        $(trigger).on('click', function(){
-            var modal_link = $(this).attr('id'),
-                modal_id = '#' + modal_link + '-modal';
 
-            if( !$(modal_id).hasClass('active') ){
-                $(modal_id).removeClass('hide').addClass('active');
-                $('body').addClass('no-scroll');
+    var detectIE = document.addEventListener && !window.requestAnimationFrame;
+
+    function modal(trigger){
+        jQuery(trigger).on('click', function(){
+            var modal_link = jQuery(this).attr('id'),
+                modal_id = jQuery('#' + modal_link + '-modal');
+
+            if( !modal_id.hasClass('active') ){
+                modal_id.removeClass('hide').addClass('active');
+
+                if(detectIE){
+                    modal_id.find('.gs-modal').css({ 'opacity' : 1 });
+                }
+                
+                jQuery('body').addClass('no-scroll');
             }
         });
     }
     modal('#settings');
 
-    $('.modal-close').on('click', function(){
-        $('.modal-wrapper.active').stop().removeClass('active').addClass('rewind').delay(700).queue(function(){
-            $(this).removeClass('rewind').addClass('hide');
-            $('body').removeClass('no-scroll');
-            $.dequeue(this);
+    jQuery('.modal-close').on('click', function(){
+        jQuery('.modal-wrapper.active').stop().removeClass('active').addClass('rewind').delay(detectIE ? 0 : 700).queue(function(){
+            jQuery(this).removeClass('rewind').addClass('hide');
+
+            if(detectIE){
+                jQuery(this).find('.gs-modal').css({ 'opacity' : 0 });
+            }
+
+            jQuery('body').removeClass('no-scroll');
+            jQuery.dequeue(this);
         });
     });
 

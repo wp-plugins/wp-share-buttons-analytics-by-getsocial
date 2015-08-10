@@ -25,7 +25,6 @@ wp_enqueue_script( 'plugin' );
 
 ?>
 
-
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700|Raleway:800">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" media="all">
 
