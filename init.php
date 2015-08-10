@@ -31,7 +31,7 @@
                                 <label for="site-name">Email</label>
                             </div>
                             <div class="field-input">
-                                <?php echo get_option('admin_email') ?>
+                                <?php echo wp_get_current_user()->data->user_email ?>
                             </div>
                         </div>
                     </div>
