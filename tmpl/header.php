@@ -16,11 +16,8 @@ $site_info = $GS->refreshSite();
 
 wp_register_style( 'getsocial-style', plugins_url('../css/getsocial-style.css?v=2.7', __FILE__) );
 wp_enqueue_style( 'getsocial-style' );
-wp_register_style( 'fix-style', plugins_url('../css/fix.css', __FILE__) );
-wp_enqueue_style( 'fix-style' );
 
 wp_register_script( 'plugin', plugins_url('../js/plugin.js', __FILE__) );
-
 wp_enqueue_script( 'plugin' );
 
 ?>
