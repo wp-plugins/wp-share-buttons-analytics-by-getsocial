@@ -48,7 +48,7 @@ All in one plugin with tools to grow your traffic, shares and followers. Include
 
 <h4>Visits Limit</h4>
 - Free: 10,000 per month;
-- Starter: 30,000 per month;
+- Starter: 25,000 per month;
 - Growth: 100,000 per month;
 - Insights: 1,000,000 per month.
 
